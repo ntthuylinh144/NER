@@ -19,7 +19,7 @@ This project implements a mini NER pipeline that extracts and manages named enti
 ---
 
 ## 📁 Project Structure
-"""
+'''
 NER/
 ├── src/
 │   ├── ner_classical.py          # Classical NER module (spaCy)
@@ -49,7 +49,8 @@ NER/
 ├── instructions.json             # Dataset
 ├── requirements.txt              # Python dependencies
 └── README.md                     # This file
-"""
+
+'''
 ---
 
 ## 🚀 Quick Start

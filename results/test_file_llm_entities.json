@@ -1,0 +1,309 @@
+{
+  "entities": [
+    {
+      "id": 1,
+      "text": "Connect",
+      "label": "ACTION",
+      "occurrences": 3,
+      "aliases": [
+        "connect",
+        "Connect"
+      ],
+      "source_texts": [
+        23,
+        9,
+        11
+      ]
+    },
+    {
+      "id": 2,
+      "text": "the wires Power (gray)",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the wires Power (gray)"
+      ],
+      "source_texts": [
+        23
+      ]
+    },
+    {
+      "id": 3,
+      "text": "TO0 (blue)",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "TO0 (blue)"
+      ],
+      "source_texts": [
+        23
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ground (red)",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "Ground (red)"
+      ],
+      "source_texts": [
+        23
+      ]
+    },
+    {
+      "id": 5,
+      "text": "TO1 (pink)",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "TO1 (pink)"
+      ],
+      "source_texts": [
+        23
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Push",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "Push"
+      ],
+      "source_texts": [
+        9
+      ]
+    },
+    {
+      "id": 7,
+      "text": "the Teach Pendant plug",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the Teach Pendant plug"
+      ],
+      "source_texts": [
+        9
+      ]
+    },
+    {
+      "id": 8,
+      "text": "into the Teach Pendant port",
+      "label": "LOCATION",
+      "occurrences": 1,
+      "aliases": [
+        "into the Teach Pendant port"
+      ],
+      "source_texts": [
+        9
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Initialize Robot screen",
+      "label": "LOCATION",
+      "occurrences": 1,
+      "aliases": [
+        "Initialize Robot screen"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 10,
+      "text": "tap",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "tap"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 11,
+      "text": "the ON button",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the ON button"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 12,
+      "text": "allow",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "allow"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 13,
+      "text": "the robot state",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the robot state"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 14,
+      "text": "change",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "change"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Idle",
+      "label": "PARAMETER",
+      "occurrences": 1,
+      "aliases": [
+        "Idle"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 16,
+      "text": "the main power cable",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the main power cable"
+      ],
+      "source_texts": [
+        11
+      ]
+    },
+    {
+      "id": 17,
+      "text": "the power source",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the power source"
+      ],
+      "source_texts": [
+        11
+      ]
+    },
+    {
+      "id": 18,
+      "text": "power on",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "power on"
+      ],
+      "source_texts": [
+        11
+      ]
+    },
+    {
+      "id": 19,
+      "text": "the control box",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "the control box"
+      ],
+      "source_texts": [
+        11
+      ]
+    }
+  ],
+  "statistics": {
+    "total_entities": 19,
+    "processed_texts": 4,
+    "entities_by_label": {
+      "ACTION": {
+        "count": 6,
+        "total_occurrences": 8
+      },
+      "COMPONENT": {
+        "count": 10,
+        "total_occurrences": 10
+      },
+      "LOCATION": {
+        "count": 2,
+        "total_occurrences": 2
+      },
+      "PARAMETER": {
+        "count": 1,
+        "total_occurrences": 1
+      }
+    },
+    "top_10_entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "count": 3
+      },
+      {
+        "text": "the wires Power (gray)",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "TO0 (blue)",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "Ground (red)",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "TO1 (pink)",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "Push",
+        "label": "ACTION",
+        "count": 1
+      },
+      {
+        "text": "the Teach Pendant plug",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "into the Teach Pendant port",
+        "label": "LOCATION",
+        "count": 1
+      },
+      {
+        "text": "Initialize Robot screen",
+        "label": "LOCATION",
+        "count": 1
+      },
+      {
+        "text": "tap",
+        "label": "ACTION",
+        "count": 1
+      }
+    ]
+  }
+}

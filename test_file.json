@@ -1,0 +1,18 @@
+[
+  {
+    "id": 23,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink)."
+  },
+  {
+    "id": 9,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect."
+  },
+  {
+    "id": 30,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle."
+  },
+  {
+    "id": 11,
+    "text": "Connect the main power cable to the power source and power on the control box."
+  }
+]

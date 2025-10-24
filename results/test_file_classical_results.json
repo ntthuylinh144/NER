@@ -1,0 +1,122 @@
+[
+  {
+    "id": 23,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink).",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": true,
+        "canonical_text": "Connect",
+        "occurrences": 1
+      },
+      {
+        "text": "Ground (",
+        "label": "COMPONENT",
+        "entity_id": 2,
+        "is_new": true,
+        "canonical_text": "Ground (",
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect.",
+    "entities": [
+      {
+        "text": "Push",
+        "label": "ACTION",
+        "entity_id": 3,
+        "is_new": true,
+        "canonical_text": "Push",
+        "occurrences": 1
+      },
+      {
+        "text": "Teach Pendant",
+        "label": "COMPONENT",
+        "entity_id": 4,
+        "is_new": true,
+        "canonical_text": "Teach Pendant",
+        "occurrences": 1
+      },
+      {
+        "text": "Teach Pendant",
+        "label": "COMPONENT",
+        "entity_id": 4,
+        "is_new": false,
+        "canonical_text": "Teach Pendant",
+        "occurrences": 2
+      },
+      {
+        "text": "connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": false,
+        "canonical_text": "Connect",
+        "occurrences": 2
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle.",
+    "entities": [
+      {
+        "text": "allow",
+        "label": "ACTION",
+        "entity_id": 5,
+        "is_new": true,
+        "canonical_text": "allow",
+        "occurrences": 1
+      },
+      {
+        "text": "Idle",
+        "label": "ACTION",
+        "entity_id": 6,
+        "is_new": true,
+        "canonical_text": "Idle",
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Connect the main power cable to the power source and power on the control box.",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": false,
+        "canonical_text": "Connect",
+        "occurrences": 3
+      },
+      {
+        "text": "power source",
+        "label": "COMPONENT",
+        "entity_id": 7,
+        "is_new": true,
+        "canonical_text": "power source",
+        "occurrences": 1
+      },
+      {
+        "text": "power on",
+        "label": "COMPONENT",
+        "entity_id": 8,
+        "is_new": true,
+        "canonical_text": "power on",
+        "occurrences": 1
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT",
+        "entity_id": 9,
+        "is_new": true,
+        "canonical_text": "control box",
+        "occurrences": 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,286 @@
+[
+  {
+    "id": 1,
+    "text": "Hold the device up to the surface prepared for screw fastening."
+  },
+  {
+    "id": 2,
+    "text": "Hold the device firmly."
+  },
+  {
+    "id": 3,
+    "text": "Remove the push-in lugs from the device."
+  },
+  {
+    "id": 4,
+    "text": "Place the back of the device onto the upper edge of the standard mounting rail."
+  },
+  {
+    "id": 5,
+    "text": "Pull the lower half of the device away from the standard mounting rail."
+  },
+  {
+    "id": 6,
+    "text": "Place the back of the device connector on the upper edge of the standard mounting rail."
+  },
+  {
+    "id": 7,
+    "text": "Push the device connectors together until they engage."
+  },
+  {
+    "id": 8,
+    "text": "Pull the lower half of the device away from the device connector."
+  },
+  {
+    "id": 9,
+    "text": "Hang the back of the device connector onto the upper edge of the standard mounting rail."
+  },
+  {
+    "id": 10,
+    "text": "Hold the device connector against the level surface prepared for screw fastening."
+  },
+  {
+    "id": 11,
+    "text": "Pull the device away from the device connector."
+  },
+  {
+    "id": 12,
+    "text": "Release the screws."
+  },
+  {
+    "id": 13,
+    "text": "Remove the cover."
+  },
+  {
+    "id": 14,
+    "text": "Note the clearances required for the 90 mm devices."
+  },
+  {
+    "id": 15,
+    "text": "Seal the cover to secure it against unauthorized removal."
+  },
+  {
+    "id": 16,
+    "text": "Hold the cable in the screw-type terminal."
+  },
+  {
+    "id": 17,
+    "text": "Tighten the screw with a torque of 0.6 … 0.8 Nm."
+  },
+  {
+    "id": 18,
+    "text": "Pull on the cable to ensure it is screwed tight."
+  },
+  {
+    "id": 19,
+    "text": "Remove the cable from the unscrewed screw terminal."
+  },
+  {
+    "id": 20,
+    "text": "Pull on the cable to ensure it is tight."
+  },
+  {
+    "id": 21,
+    "text": "Disconnect the spring-loaded (push-in) terminal • Screwdriver DIN 5264 of the size 0.5 x 3 mm"
+  },
+  {
+    "id": 22,
+    "text": "Remove the cable from the oval opening."
+  },
+  {
+    "id": 23,
+    "text": "Remove the screwdriver."
+  },
+  {
+    "id": 24,
+    "text": "Pull the terminals out to the front."
+  },
+  {
+    "id": 25,
+    "text": "Remove the cable from the unscrewed screw-type terminal."
+  },
+  {
+    "id": 26,
+    "text": "Push-in terminals Disconnecting the conductor"
+  },
+  {
+    "id": 27,
+    "text": "Tighten the screw of the terminal in which the cable is inserted."
+  },
+  {
+    "id": 28,
+    "text": "Hold the cable in the spring-loaded terminal."
+  },
+  {
+    "id": 29,
+    "text": "Check that the clip of the removable terminals closes flush with the front panel."
+  },
+  {
+    "id": 30,
+    "text": "Disconnecting the spring-loaded terminal 3 mm ~10°"
+  },
+  {
+    "id": 31,
+    "text": "Deinstall the defective device."
+  },
+  {
+    "id": 32,
+    "text": "Connect the defective device at the terminals"
+  },
+  {
+    "id": 33,
+    "text": "Connect the power supply."
+  },
+  {
+    "id": 34,
+    "text": "Confirm the new configuration by operating the SET/RESET push button for more than 1s."
+  },
+  {
+    "id": 35,
+    "text": "Enter the article number of the desired device in the \"Products\" field."
+  },
+  {
+    "id": 36,
+    "text": "Click the \"Technical specifications\" link in the result."
+  },
+  {
+    "id": 37,
+    "text": "Click the \"CAx data\" link in the result."
+  },
+  {
+    "id": 38,
+    "text": "To connect the Ethernet cable by passing it through the hole at the base of the Control Box, and plugging it into the Ethernet port on the underside of the bracket."
+  },
+  {
+    "id": 39,
+    "text": "Replace the cap at the base of the Control Box with an appropriate cable gland to connect the cable to the Ethernet port."
+  },
+  {
+    "id": 40,
+    "text": "Power down the control box and disconnect the main power cable from the power source."
+  },
+  {
+    "id": 41,
+    "text": "Remove and discard the two cableties used for mounting the Teach Pendant cables."
+  },
+  {
+    "id": 42,
+    "text": "Pressinthe clips on both sides of the Teach Pendant plug as illustrated, and pull down to disconnect from the Teach Pendant port."
+  },
+  {
+    "id": 43,
+    "text": "Fully open/loosen the plastic grommet at the bottom of the control box and remove the Teach Pendant plug and cable."
+  },
+  {
+    "id": 44,
+    "text": "Place the Teach Pendant plug and cable in through the bottom of the control box and fully close/tighten the plastic grommet."
+  },
+  {
+    "id": 45,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect."
+  },
+  {
+    "id": 46,
+    "text": "Use two new cableties to mount the Teach Pendant cables."
+  },
+  {
+    "id": 47,
+    "text": "Connect the main power cable to the power source and power on the control box."
+  },
+  {
+    "id": 48,
+    "text": "Connect your drive power indicator to the Digital Outputs as shown in the image below."
+  },
+  {
+    "id": 49,
+    "text": "Verify the drive power indicator is correctly connected."
+  },
+  {
+    "id": 50,
+    "text": "You can power on the robot arm and verify the light turns on."
+  },
+  {
+    "id": 51,
+    "text": "In the PolyScope Header, tap Installation."
+  },
+  {
+    "id": 52,
+    "text": "In the Side Menu on the left, tap General and select I/O Setup."
+  },
+  {
+    "id": 53,
+    "text": "Under Output, select one of the digital_out outputs."
+  },
+  {
+    "id": 54,
+    "text": "Tap the Action in program dropdown."
+  },
+  {
+    "id": 55,
+    "text": "Select High when drive power is on, otherwise Low."
+  },
+  {
+    "id": 56,
+    "text": "In the Header, tap Installation."
+  },
+  {
+    "id": 57,
+    "text": "In the list on the left, tap General."
+  },
+  {
+    "id": 58,
+    "text": "Tap Tool IO and select Dual Pin Power."
+  },
+  {
+    "id": 59,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink)."
+  },
+  {
+    "id": 60,
+    "text": "On the Teach Pendant, press the emergency stop button."
+  },
+  {
+    "id": 61,
+    "text": "On the Teach Pendant, press the power button and allow the system to start, displaying text on the PolyScope."
+  },
+  {
+    "id": 62,
+    "text": "A popup appears on the touch screen indicating that the system is ready and that the robot must be initialized."
+  },
+  {
+    "id": 63,
+    "text": "Unlock the emergency stop button to change the robot state from Emergency Stopped to Power off."
+  },
+  {
+    "id": 64,
+    "text": "Step outside the reach (workspace) of the robot."
+  },
+  {
+    "id": 65,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle."
+  },
+  {
+    "id": 66,
+    "text": "In the Payload field, in Active Payload, verify the payload mass."
+  },
+  {
+    "id": 67,
+    "text": "Tap the Start button, for the robot to release its brake system."
+  },
+  {
+    "id": 68,
+    "text": "In your Poly Scope header right corner, press the Hamburger menu and select Settings."
+  },
+  {
+    "id": 69,
+    "text": "On the left of the screen, in the blue menu, press Password and select Safety."
+  },
+  {
+    "id": 70,
+    "text": "Now, in Confirm new password, type the same password and press Apply."
+  },
+  {
+    "id": 71,
+    "text": "In the bottom left of the blue menu, press Exit to return to previous screen."
+  }
+]

@@ -1,0 +1,1778 @@
+[
+  {
+    "id": 1,
+    "text": "Hold the device up to the surface prepared for screw fastening.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        15,
+        "COMPONENT"
+      ],
+      [
+        26,
+        33,
+        "LOCATION"
+      ],
+      [
+        47,
+        62,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Hold the device firmly.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        15,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Remove the push-in lugs from the device.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        23,
+        "COMPONENT"
+      ],
+      [
+        33,
+        39,
+        "LOCATION"
+      ]
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Place the back of the device onto the upper edge of the standard mounting rail.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        28,
+        "COMPONENT"
+      ],
+      [
+        38,
+        48,
+        "LOCATION"
+      ],
+      [
+        56,
+        78,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Pull the lower half of the device away from the standard mounting rail.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        33,
+        "COMPONENT"
+      ],
+      [
+        48,
+        70,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Place the back of the device connector on the upper edge of the standard mounting rail.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        46,
+        56,
+        "LOCATION"
+      ],
+      [
+        64,
+        86,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Push the device connectors together until they engage.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        26,
+        "COMPONENT"
+      ],
+      [
+        47,
+        53,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Pull the lower half of the device away from the device connector.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        33,
+        "COMPONENT"
+      ],
+      [
+        48,
+        64,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Hang the back of the device connector onto the upper edge of the standard mounting rail.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Hold the device connector against the level surface prepared for screw fastening.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        25,
+        "COMPONENT"
+      ],
+      [
+        38,
+        51,
+        "LOCATION"
+      ],
+      [
+        65,
+        80,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Pull the device away from the device connector.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        15,
+        "COMPONENT"
+      ],
+      [
+        30,
+        46,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Release the screws.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        18,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Remove the cover.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        16,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Note the clearances required for the 90 mm devices.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        19,
+        "PARAMETER"
+      ],
+      [
+        37,
+        50,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Seal the cover to secure it against unauthorized removal.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        14,
+        "COMPONENT"
+      ],
+      [
+        18,
+        24,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Hold the cable in the screw-type terminal.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        14,
+        "COMPONENT"
+      ],
+      [
+        22,
+        41,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 17,
+    "text": "Tighten the screw with a torque of 0.6 … 0.8 Nm.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        17,
+        "COMPONENT"
+      ],
+      [
+        25,
+        47,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Pull on the cable to ensure it is screwed tight.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        12,
+        17,
+        "COMPONENT"
+      ],
+      [
+        34,
+        41,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Remove the cable from the unscrewed screw terminal.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        16,
+        "COMPONENT"
+      ],
+      [
+        26,
+        50,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Pull on the cable to ensure it is tight.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        12,
+        17,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 21,
+    "text": "Disconnect the spring-loaded (push-in) terminal • Screwdriver DIN 5264 of the size 0.5 x 3 mm",
+    "entities": [
+      [
+        0,
+        10,
+        "ACTION"
+      ],
+      [
+        15,
+        47,
+        "COMPONENT"
+      ],
+      [
+        50,
+        70,
+        "TOOL"
+      ],
+      [
+        83,
+        93,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 22,
+    "text": "Remove the cable from the oval opening.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        16,
+        "COMPONENT"
+      ],
+      [
+        26,
+        38,
+        "LOCATION"
+      ]
+    ]
+  },
+  {
+    "id": 23,
+    "text": "Remove the screwdriver.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        22,
+        "TOOL"
+      ]
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Pull the terminals out to the front.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        18,
+        "COMPONENT"
+      ],
+      [
+        30,
+        35,
+        "LOCATION"
+      ]
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Remove the cable from the unscrewed screw-type terminal.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        16,
+        "COMPONENT"
+      ],
+      [
+        26,
+        55,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Push-in terminals Disconnecting the conductor",
+    "entities": [
+      [
+        0,
+        17,
+        "COMPONENT"
+      ],
+      [
+        18,
+        31,
+        "ACTION"
+      ],
+      [
+        36,
+        45,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Tighten the screw of the terminal in which the cable is inserted.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        33,
+        "COMPONENT"
+      ],
+      [
+        47,
+        52,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Hold the cable in the spring-loaded terminal.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        14,
+        "COMPONENT"
+      ],
+      [
+        22,
+        44,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Check that the clip of the removable terminals closes flush with the front panel.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        15,
+        46,
+        "COMPONENT"
+      ],
+      [
+        69,
+        80,
+        "LOCATION"
+      ]
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Disconnecting the spring-loaded terminal 3 mm ~10°",
+    "entities": [
+      [
+        0,
+        13,
+        "ACTION"
+      ],
+      [
+        18,
+        40,
+        "COMPONENT"
+      ],
+      [
+        41,
+        50,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 31,
+    "text": "Deinstall the defective device.",
+    "entities": [
+      [
+        0,
+        9,
+        "ACTION"
+      ],
+      [
+        14,
+        30,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Connect the defective device at the terminals",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        28,
+        "COMPONENT"
+      ],
+      [
+        36,
+        45,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Connect the power supply.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        24,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 34,
+    "text": "Confirm the new configuration by operating the SET/RESET push button for more than 1s.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        16,
+        29,
+        "COMPONENT"
+      ],
+      [
+        33,
+        42,
+        "ACTION"
+      ],
+      [
+        47,
+        68,
+        "COMPONENT"
+      ],
+      [
+        73,
+        85,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Enter the article number of the desired device in the \"Products\" field.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        24,
+        "PARAMETER"
+      ],
+      [
+        32,
+        46,
+        "COMPONENT"
+      ],
+      [
+        54,
+        70,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 36,
+    "text": "Click the \"Technical specifications\" link in the result.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        41,
+        "COMPONENT"
+      ],
+      [
+        49,
+        55,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 37,
+    "text": "Click the \"CAx data\" link in the result.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        25,
+        "COMPONENT"
+      ],
+      [
+        33,
+        39,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 38,
+    "text": "To connect the Ethernet cable by passing it through the hole at the base of the Control Box, and plugging it into the Ethernet port on the underside of the bracket.",
+    "entities": [
+      [
+        3,
+        10,
+        "ACTION"
+      ],
+      [
+        15,
+        29,
+        "COMPONENT"
+      ],
+      [
+        33,
+        40,
+        "ACTION"
+      ],
+      [
+        56,
+        60,
+        "COMPONENT"
+      ],
+      [
+        68,
+        72,
+        "LOCATION"
+      ],
+      [
+        80,
+        91,
+        "COMPONENT"
+      ],
+      [
+        97,
+        105,
+        "ACTION"
+      ],
+      [
+        118,
+        131,
+        "COMPONENT"
+      ],
+      [
+        139,
+        148,
+        "LOCATION"
+      ],
+      [
+        156,
+        163,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 39,
+    "text": "Replace the cap at the base of the Control Box with an appropriate cable gland to connect the cable to the Ethernet port.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        15,
+        "COMPONENT"
+      ],
+      [
+        23,
+        27,
+        "LOCATION"
+      ],
+      [
+        35,
+        46,
+        "COMPONENT"
+      ],
+      [
+        67,
+        78,
+        "COMPONENT"
+      ],
+      [
+        82,
+        89,
+        "ACTION"
+      ],
+      [
+        107,
+        120,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 40,
+    "text": "Power down the control box and disconnect the main power cable from the power source.",
+    "entities": [
+      [
+        0,
+        10,
+        "ACTION"
+      ],
+      [
+        15,
+        26,
+        "COMPONENT"
+      ],
+      [
+        31,
+        41,
+        "ACTION"
+      ],
+      [
+        46,
+        62,
+        "COMPONENT"
+      ],
+      [
+        72,
+        84,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 41,
+    "text": "Remove and discard the two cableties used for mounting the Teach Pendant cables.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        18,
+        "ACTION"
+      ],
+      [
+        27,
+        36,
+        "COMPONENT"
+      ],
+      [
+        46,
+        54,
+        "ACTION"
+      ],
+      [
+        59,
+        79,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 42,
+    "text": "Pressinthe clips on both sides of the Teach Pendant plug as illustrated, and pull down to disconnect from the Teach Pendant port.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        11,
+        16,
+        "COMPONENT"
+      ],
+      [
+        20,
+        30,
+        "LOCATION"
+      ],
+      [
+        38,
+        56,
+        "COMPONENT"
+      ],
+      [
+        77,
+        86,
+        "ACTION"
+      ],
+      [
+        90,
+        100,
+        "ACTION"
+      ],
+      [
+        110,
+        128,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 43,
+    "text": "Fully open/loosen the plastic grommet at the bottom of the control box and remove the Teach Pendant plug and cable.",
+    "entities": [
+      [
+        6,
+        10,
+        "ACTION"
+      ],
+      [
+        11,
+        17,
+        "ACTION"
+      ],
+      [
+        22,
+        37,
+        "COMPONENT"
+      ],
+      [
+        45,
+        51,
+        "LOCATION"
+      ],
+      [
+        59,
+        70,
+        "COMPONENT"
+      ],
+      [
+        75,
+        81,
+        "ACTION"
+      ],
+      [
+        86,
+        104,
+        "COMPONENT"
+      ],
+      [
+        109,
+        114,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 44,
+    "text": "Place the Teach Pendant plug and cable in through the bottom of the control box and fully close/tighten the plastic grommet.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        28,
+        "COMPONENT"
+      ],
+      [
+        33,
+        38,
+        "COMPONENT"
+      ],
+      [
+        54,
+        60,
+        "LOCATION"
+      ],
+      [
+        68,
+        79,
+        "COMPONENT"
+      ],
+      [
+        90,
+        103,
+        "ACTION"
+      ],
+      [
+        108,
+        123,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 45,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        27,
+        "COMPONENT"
+      ],
+      [
+        37,
+        55,
+        "LOCATION"
+      ],
+      [
+        59,
+        66,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 46,
+    "text": "Use two new cableties to mount the Teach Pendant cables.",
+    "entities": [
+      [
+        12,
+        21,
+        "COMPONENT"
+      ],
+      [
+        25,
+        30,
+        "ACTION"
+      ],
+      [
+        35,
+        55,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Connect the main power cable to the power source and power on the control box.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        28,
+        "COMPONENT"
+      ],
+      [
+        36,
+        48,
+        "COMPONENT"
+      ],
+      [
+        53,
+        61,
+        "ACTION"
+      ],
+      [
+        66,
+        77,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 48,
+    "text": "Connect your drive power indicator to the Digital Outputs as shown in the image below.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        13,
+        34,
+        "COMPONENT"
+      ],
+      [
+        42,
+        57,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 49,
+    "text": "Verify the drive power indicator is correctly connected.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        32,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 50,
+    "text": "You can power on the robot arm and verify the light turns on.",
+    "entities": [
+      [
+        8,
+        16,
+        "ACTION"
+      ],
+      [
+        21,
+        30,
+        "COMPONENT"
+      ],
+      [
+        35,
+        41,
+        "ACTION"
+      ],
+      [
+        46,
+        51,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 51,
+    "text": "In the PolyScope Header, tap Installation.",
+    "entities": [
+      [
+        7,
+        23,
+        "LOCATION"
+      ],
+      [
+        25,
+        28,
+        "ACTION"
+      ],
+      [
+        29,
+        41,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 52,
+    "text": "In the Side Menu on the left, tap General and select I/O Setup.",
+    "entities": [
+      [
+        7,
+        16,
+        "LOCATION"
+      ],
+      [
+        24,
+        28,
+        "LOCATION"
+      ],
+      [
+        30,
+        33,
+        "ACTION"
+      ],
+      [
+        34,
+        41,
+        "COMPONENT"
+      ],
+      [
+        46,
+        52,
+        "ACTION"
+      ],
+      [
+        53,
+        62,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 53,
+    "text": "Under Output, select one of the digital_out outputs.",
+    "entities": [
+      [
+        6,
+        12,
+        "COMPONENT"
+      ],
+      [
+        14,
+        20,
+        "ACTION"
+      ],
+      [
+        32,
+        51,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 54,
+    "text": "Tap the Action in program dropdown.",
+    "entities": [
+      [
+        0,
+        3,
+        "ACTION"
+      ],
+      [
+        8,
+        14,
+        "COMPONENT"
+      ],
+      [
+        18,
+        34,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 55,
+    "text": "Select High when drive power is on, otherwise Low.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        7,
+        11,
+        "PARAMETER"
+      ],
+      [
+        46,
+        49,
+        "PARAMETER"
+      ],
+      [
+        17,
+        28,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 56,
+    "text": "In the Header, tap Installation.",
+    "entities": [
+      [
+        7,
+        13,
+        "COMPONENT"
+      ],
+      [
+        15,
+        18,
+        "ACTION"
+      ],
+      [
+        19,
+        31,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 57,
+    "text": "In the list on the left, tap General.",
+    "entities": [
+      [
+        7,
+        11,
+        "COMPONENT"
+      ],
+      [
+        19,
+        23,
+        "LOCATION"
+      ],
+      [
+        25,
+        28,
+        "ACTION"
+      ],
+      [
+        29,
+        36,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 58,
+    "text": "Tap Tool IO and select Dual Pin Power.",
+    "entities": [
+      [
+        0,
+        3,
+        "ACTION"
+      ],
+      [
+        4,
+        11,
+        "COMPONENT"
+      ],
+      [
+        16,
+        22,
+        "ACTION"
+      ],
+      [
+        23,
+        37,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 59,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink).",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        30,
+        "COMPONENT"
+      ],
+      [
+        34,
+        44,
+        "COMPONENT"
+      ],
+      [
+        49,
+        61,
+        "COMPONENT"
+      ],
+      [
+        65,
+        75,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 60,
+    "text": "On the Teach Pendant, press the emergency stop button.",
+    "entities": [
+      [
+        7,
+        20,
+        "COMPONENT"
+      ],
+      [
+        22,
+        27,
+        "ACTION"
+      ],
+      [
+        32,
+        53,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 61,
+    "text": "On the Teach Pendant, press the power button and allow the system to start, displaying text on the PolyScope.",
+    "entities": [
+      [
+        7,
+        20,
+        "COMPONENT"
+      ],
+      [
+        22,
+        27,
+        "ACTION"
+      ],
+      [
+        32,
+        44,
+        "COMPONENT"
+      ],
+      [
+        49,
+        54,
+        "ACTION"
+      ],
+      [
+        59,
+        65,
+        "COMPONENT"
+      ],
+      [
+        69,
+        74,
+        "ACTION"
+      ],
+      [
+        99,
+        108,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 62,
+    "text": "A popup appears on the touch screen indicating that the system is ready and that the robot must be initialized.",
+    "entities": [
+      [
+        2,
+        7,
+        "COMPONENT"
+      ],
+      [
+        23,
+        35,
+        "COMPONENT"
+      ],
+      [
+        56,
+        62,
+        "COMPONENT"
+      ],
+      [
+        85,
+        90,
+        "COMPONENT"
+      ],
+      [
+        99,
+        110,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 63,
+    "text": "Unlock the emergency stop button to change the robot state from Emergency Stopped to Power off.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        32,
+        "COMPONENT"
+      ],
+      [
+        47,
+        58,
+        "COMPONENT"
+      ],
+      [
+        64,
+        81,
+        "PARAMETER"
+      ],
+      [
+        85,
+        94,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 64,
+    "text": "Step outside the reach (workspace) of the robot.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        17,
+        34,
+        "LOCATION"
+      ],
+      [
+        42,
+        47,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 65,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle.",
+    "entities": [
+      [
+        7,
+        30,
+        "COMPONENT"
+      ],
+      [
+        32,
+        35,
+        "ACTION"
+      ],
+      [
+        40,
+        49,
+        "COMPONENT"
+      ],
+      [
+        54,
+        59,
+        "ACTION"
+      ],
+      [
+        89,
+        93,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 66,
+    "text": "In the Payload field, in Active Payload, verify the payload mass.",
+    "entities": [
+      [
+        7,
+        20,
+        "COMPONENT"
+      ],
+      [
+        25,
+        39,
+        "COMPONENT"
+      ],
+      [
+        41,
+        47,
+        "ACTION"
+      ],
+      [
+        52,
+        64,
+        "PARAMETER"
+      ]
+    ]
+  },
+  {
+    "id": 67,
+    "text": "Tap the Start button, for the robot to release its brake system.",
+    "entities": [
+      [
+        0,
+        3,
+        "ACTION"
+      ],
+      [
+        8,
+        20,
+        "COMPONENT"
+      ],
+      [
+        39,
+        46,
+        "ACTION"
+      ],
+      [
+        51,
+        63,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 68,
+    "text": "In your Poly Scope header right corner, press the Hamburger menu and select Settings.",
+    "entities": [
+      [
+        8,
+        38,
+        "LOCATION"
+      ],
+      [
+        40,
+        45,
+        "ACTION"
+      ],
+      [
+        50,
+        64,
+        "COMPONENT"
+      ],
+      [
+        69,
+        75,
+        "ACTION"
+      ],
+      [
+        76,
+        84,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 69,
+    "text": "On the left of the screen, in the blue menu, press Password and select Safety.",
+    "entities": [
+      [
+        7,
+        11,
+        "LOCATION"
+      ],
+      [
+        19,
+        25,
+        "COMPONENT"
+      ],
+      [
+        34,
+        43,
+        "COMPONENT"
+      ],
+      [
+        45,
+        50,
+        "ACTION"
+      ],
+      [
+        51,
+        59,
+        "COMPONENT"
+      ],
+      [
+        64,
+        70,
+        "ACTION"
+      ],
+      [
+        71,
+        77,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 70,
+    "text": "Now, in Confirm new password, type the same password and press Apply.",
+    "entities": [
+      [
+        8,
+        28,
+        "COMPONENT"
+      ],
+      [
+        30,
+        34,
+        "ACTION"
+      ],
+      [
+        63,
+        68,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 71,
+    "text": "In the bottom left of the blue menu, press Exit to return to previous screen.",
+    "entities": [
+      [
+        7,
+        18,
+        "LOCATION"
+      ],
+      [
+        26,
+        35,
+        "COMPONENT"
+      ],
+      [
+        37,
+        42,
+        "ACTION"
+      ],
+      [
+        43,
+        47,
+        "COMPONENT"
+      ],
+      [
+        61,
+        76,
+        "LOCATION"
+      ]
+    ]
+  }
+]

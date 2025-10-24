@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "total_entities": 7,
+    "saved_at": "2025-10-24T09:43:16.592360"
+  },
+  "statistics": {
+    "total_entities": 7,
+    "total_extractions": 9,
+    "new_entities": 7,
+    "linked_entities": 2,
+    "link_rate": "22.2%",
+    "entities_by_type": {
+      "COMPONENT": 3,
+      "ACTION": 4
+    }
+  },
+  "entities": [
+    {
+      "entity_id": "ENT_0001",
+      "canonical_name": "control box",
+      "entity_type": "COMPONENT",
+      "variations": [
+        "control box",
+        "controller box"
+      ],
+      "count": 3,
+      "first_seen": "sent_001",
+      "occurrences": [
+        {
+          "text_id": "sent_001",
+          "matched_text": "control box"
+        },
+        {
+          "text_id": "sent_002",
+          "matched_text": "Control Box"
+        },
+        {
+          "text_id": "sent_003",
+          "matched_text": "controller box"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0002",
+      "canonical_name": "robot arm",
+      "entity_type": "COMPONENT",
+      "variations": [
+        "robot arm"
+      ],
+      "count": 1,
+      "first_seen": "sent_001",
+      "occurrences": [
+        {
+          "text_id": "sent_001",
+          "matched_text": "robot arm"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0003",
+      "canonical_name": "connect",
+      "entity_type": "ACTION",
+      "variations": [
+        "connect"
+      ],
+      "count": 1,
+      "first_seen": "sent_001",
+      "occurrences": [
+        {
+          "text_id": "sent_001",
+          "matched_text": "connect"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0004",
+      "canonical_name": "grounded",
+      "entity_type": "ACTION",
+      "variations": [
+        "grounded"
+      ],
+      "count": 1,
+      "first_seen": "sent_002",
+      "occurrences": [
+        {
+          "text_id": "sent_002",
+          "matched_text": "grounded"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0005",
+      "canonical_name": "mount",
+      "entity_type": "ACTION",
+      "variations": [
+        "mount"
+      ],
+      "count": 1,
+      "first_seen": "sent_003",
+      "occurrences": [
+        {
+          "text_id": "sent_003",
+          "matched_text": "mount"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0006",
+      "canonical_name": "teach pendant",
+      "entity_type": "COMPONENT",
+      "variations": [
+        "teach pendant"
+      ],
+      "count": 1,
+      "first_seen": "sent_004",
+      "occurrences": [
+        {
+          "text_id": "sent_004",
+          "matched_text": "teach pendant"
+        }
+      ]
+    },
+    {
+      "entity_id": "ENT_0007",
+      "canonical_name": "install",
+      "entity_type": "ACTION",
+      "variations": [
+        "install"
+      ],
+      "count": 1,
+      "first_seen": "sent_004",
+      "occurrences": [
+        {
+          "text_id": "sent_004",
+          "matched_text": "install"
+        }
+      ]
+    }
+  ]
+}

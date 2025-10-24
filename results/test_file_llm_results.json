@@ -1,0 +1,194 @@
+[
+  {
+    "id": 23,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink).",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": true,
+        "canonical_text": "Connect",
+        "occurrences": 1
+      },
+      {
+        "text": "the wires Power (gray)",
+        "label": "COMPONENT",
+        "entity_id": 2,
+        "is_new": true,
+        "canonical_text": "the wires Power (gray)",
+        "occurrences": 1
+      },
+      {
+        "text": "TO0 (blue)",
+        "label": "COMPONENT",
+        "entity_id": 3,
+        "is_new": true,
+        "canonical_text": "TO0 (blue)",
+        "occurrences": 1
+      },
+      {
+        "text": "Ground (red)",
+        "label": "COMPONENT",
+        "entity_id": 4,
+        "is_new": true,
+        "canonical_text": "Ground (red)",
+        "occurrences": 1
+      },
+      {
+        "text": "TO1 (pink)",
+        "label": "COMPONENT",
+        "entity_id": 5,
+        "is_new": true,
+        "canonical_text": "TO1 (pink)",
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect.",
+    "entities": [
+      {
+        "text": "Push",
+        "label": "ACTION",
+        "entity_id": 6,
+        "is_new": true,
+        "canonical_text": "Push",
+        "occurrences": 1
+      },
+      {
+        "text": "the Teach Pendant plug",
+        "label": "COMPONENT",
+        "entity_id": 7,
+        "is_new": true,
+        "canonical_text": "the Teach Pendant plug",
+        "occurrences": 1
+      },
+      {
+        "text": "into the Teach Pendant port",
+        "label": "LOCATION",
+        "entity_id": 8,
+        "is_new": true,
+        "canonical_text": "into the Teach Pendant port",
+        "occurrences": 1
+      },
+      {
+        "text": "connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": false,
+        "canonical_text": "Connect",
+        "occurrences": 2
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle.",
+    "entities": [
+      {
+        "text": "Initialize Robot screen",
+        "label": "LOCATION",
+        "entity_id": 9,
+        "is_new": true,
+        "canonical_text": "Initialize Robot screen",
+        "occurrences": 1
+      },
+      {
+        "text": "tap",
+        "label": "ACTION",
+        "entity_id": 10,
+        "is_new": true,
+        "canonical_text": "tap",
+        "occurrences": 1
+      },
+      {
+        "text": "the ON button",
+        "label": "COMPONENT",
+        "entity_id": 11,
+        "is_new": true,
+        "canonical_text": "the ON button",
+        "occurrences": 1
+      },
+      {
+        "text": "allow",
+        "label": "ACTION",
+        "entity_id": 12,
+        "is_new": true,
+        "canonical_text": "allow",
+        "occurrences": 1
+      },
+      {
+        "text": "the robot state",
+        "label": "COMPONENT",
+        "entity_id": 13,
+        "is_new": true,
+        "canonical_text": "the robot state",
+        "occurrences": 1
+      },
+      {
+        "text": "change",
+        "label": "ACTION",
+        "entity_id": 14,
+        "is_new": true,
+        "canonical_text": "change",
+        "occurrences": 1
+      },
+      {
+        "text": "Idle",
+        "label": "PARAMETER",
+        "entity_id": 15,
+        "is_new": true,
+        "canonical_text": "Idle",
+        "occurrences": 1
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Connect the main power cable to the power source and power on the control box.",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "entity_id": 1,
+        "is_new": false,
+        "canonical_text": "Connect",
+        "occurrences": 3
+      },
+      {
+        "text": "the main power cable",
+        "label": "COMPONENT",
+        "entity_id": 16,
+        "is_new": true,
+        "canonical_text": "the main power cable",
+        "occurrences": 1
+      },
+      {
+        "text": "the power source",
+        "label": "COMPONENT",
+        "entity_id": 17,
+        "is_new": true,
+        "canonical_text": "the power source",
+        "occurrences": 1
+      },
+      {
+        "text": "power on",
+        "label": "ACTION",
+        "entity_id": 18,
+        "is_new": true,
+        "canonical_text": "power on",
+        "occurrences": 1
+      },
+      {
+        "text": "the control box",
+        "label": "COMPONENT",
+        "entity_id": 19,
+        "is_new": true,
+        "canonical_text": "the control box",
+        "occurrences": 1
+      }
+    ]
+  }
+]

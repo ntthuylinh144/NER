@@ -1,0 +1,176 @@
+{
+  "entities": [
+    {
+      "id": 1,
+      "text": "Connect",
+      "label": "ACTION",
+      "occurrences": 3,
+      "aliases": [
+        "connect",
+        "Connect"
+      ],
+      "source_texts": [
+        23,
+        9,
+        11
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Ground (",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "Ground ("
+      ],
+      "source_texts": [
+        23
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Push",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "Push"
+      ],
+      "source_texts": [
+        9
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Teach Pendant",
+      "label": "COMPONENT",
+      "occurrences": 2,
+      "aliases": [
+        "Teach Pendant"
+      ],
+      "source_texts": [
+        9
+      ]
+    },
+    {
+      "id": 5,
+      "text": "allow",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "allow"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Idle",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "Idle"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 7,
+      "text": "power source",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "power source"
+      ],
+      "source_texts": [
+        11
+      ]
+    },
+    {
+      "id": 8,
+      "text": "power on",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "power on"
+      ],
+      "source_texts": [
+        11
+      ]
+    },
+    {
+      "id": 9,
+      "text": "control box",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "control box"
+      ],
+      "source_texts": [
+        11
+      ]
+    }
+  ],
+  "statistics": {
+    "total_entities": 9,
+    "processed_texts": 4,
+    "entities_by_label": {
+      "ACTION": {
+        "count": 4,
+        "total_occurrences": 6
+      },
+      "COMPONENT": {
+        "count": 5,
+        "total_occurrences": 6
+      }
+    },
+    "top_10_entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION",
+        "count": 3
+      },
+      {
+        "text": "Teach Pendant",
+        "label": "COMPONENT",
+        "count": 2
+      },
+      {
+        "text": "Ground (",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "Push",
+        "label": "ACTION",
+        "count": 1
+      },
+      {
+        "text": "allow",
+        "label": "ACTION",
+        "count": 1
+      },
+      {
+        "text": "Idle",
+        "label": "ACTION",
+        "count": 1
+      },
+      {
+        "text": "power source",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "power on",
+        "label": "COMPONENT",
+        "count": 1
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT",
+        "count": 1
+      }
+    ]
+  }
+}

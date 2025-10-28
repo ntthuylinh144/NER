@@ -1,4 +1,3 @@
-
 """
 LLM-based NER module using Google Gemini API.
 Supports entity extraction using prompt engineering with language models.
@@ -73,7 +72,7 @@ class LLMNER:
         Returns:
             Formatted prompt string
         """
-        base_prompt = """You are an AI model specialized in annotating technical assembly instructions. 
+        base_prompt = """You are an AI model specialized in detecting technical assembly instructions. 
         Your task is to identify and label entities in the text using the following categories:
 
 - COMPONENT: physical part or device (e.g., screw, motor, base plate, cable, device)
@@ -322,59 +321,26 @@ Return ONLY the JSON array:"""
         return results
 
 
-# # Example usage and testing
-# if __name__ == "__main__":
-#     import sys
-#
-#     # Check if API key is available
-#     api_key = os.getenv("GEMINI_API_KEY")
-#     if not api_key:
-#         print(" Error: GEMINI_API_KEY environment variable not set")
-#         print("\nPlease set your API key:")
-#         print("  export GEMINI_API_KEY='your-api-key-here'")
-#         print("\nOr get one at: https://aistudio.google.com/apikey")
-#         sys.exit(1)
-#
-#     print("=" * 60)
-#     print("Testing LLM-based NER with Gemini")
-#     print("=" * 60)
-#
-#     # Initialize
-#     try:
-#         llm_ner = LLMNER(api_key=api_key, delay=1.0)
-#     except Exception as e:
-#         print(f" Failed to initialize: {e}")
-#         sys.exit(1)
-#
-#     # Test single extraction
-#     print("\n Test 1: Single text extraction")
-#     print("-" * 60)
-#
-#     test_text = "Hold the device up to the surface prepared for screw fastening."
-#     entities = llm_ner.extract_entities(test_text)
-#
-#     print(f"Text: {test_text}")
-#     print(f"Entities found: {len(entities)}")
-#     for ent in entities:
-#         print(f"  - [{ent['label']}] {ent['text']}")
-#
-#     # Test batch extraction
-#     print("\n Test 2: Batch extraction with context")
-#     print("-" * 60)
-#
-#     test_texts = [
-#         "Insert the bolt into the mounting hole.",
-#         "Use the wrench to tighten the bolt to 5 Nm.",
-#         "Connect the power cable to the rear panel."
-#     ]
-#
-#     results = llm_ner.extract_with_context_management(test_texts)
-#
-#     for i, (text, entities) in enumerate(zip(test_texts, results), 1):
-#         print(f"\n{i}. {text}")
-#         for ent in entities:
-#             print(f"   - [{ent['label']}] {ent['text']}")
-#
-#     print("\n" + "=" * 60)
-#     print(" Testing complete!")
-#     print("=" * 60)
+
+if __name__ == "__main__":
+    import sys
+
+    # Check if API key is available
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        print(" Error: GEMINI_API_KEY environment variable not set")
+        print("\nPlease set your API key:")
+        print("  export GEMINI_API_KEY='your-api-key-here'")
+        print("\nOr get one at: https://aistudio.google.com/apikey")
+        sys.exit(1)
+
+    print("=" * 60)
+    print("Testing LLM-based NER with Gemini")
+    print("=" * 60)
+
+    # Initialize
+    try:
+        llm_ner = LLMNER(api_key=api_key, delay=1.0)
+    except Exception as e:
+        print(f" Failed to initialize: {e}")
+        sys.exit(1)

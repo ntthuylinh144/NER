@@ -7,9 +7,9 @@ import json
 import time
 from pathlib import Path
 from typing import List, Dict, Optional
-from ner_classical import ClassicalNER
-from ner_llms import LLMNER
-from entity_manager import EntityManager
+from ner_classical_model import ClassicalNER
+from ner_llm_model import LLMNER
+from manage_entities import EntityManager
 
 
 class NERPipeline:

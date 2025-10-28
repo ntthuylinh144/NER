@@ -1,10 +1,32 @@
+"""
+Convert annotated NER data (from LLM annotation or manual tagging)
+into a spaCy-compatible training format.
+
+Input:  annotated_instructions.json
+Output: spacy_ready.json
+
+Each entry in the output has:
+{
+  "id": <int>,
+  "text": "<sentence>",
+  "entities": [(start, end, label), ...]
+}
+"""
+
 import json
 import re
 
-INPUT_FILE = "annotated_instructions.json"
+# CONFIGURATION
+INPUT_FILE = "instructions.json"
 OUTPUT_FILE = "spacy_ready.json"
 
 def convert_to_spacy_format(data):
+    """
+    Convert list of annotated samples into spaCy NER training format.
+    - Finds each entity text in the sentence
+    - Computes (start, end, label) offsets
+    - Handles case-insensitive matches safely
+    """
     formatted = []
     for idx, sample in enumerate(data, start=1):
         text = sample["text"]
@@ -23,18 +45,15 @@ def convert_to_spacy_format(data):
         })
     return formatted
 
-# Đọc file JSON gốc
+
 with open(INPUT_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-# Nếu JSON là {"data": [...]} thì lấy data["data"]
 if isinstance(data, dict) and "data" in data:
     data = data["data"]
 
-# Chuyển đổi
 converted = convert_to_spacy_format(data)
 
-# Ghi ra file mới
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     json.dump(converted, f, indent=2, ensure_ascii=False)
 

@@ -105,11 +105,11 @@ and corrected for quality assurance.
 ==============================================
 🧩 Entity Definitions
 ============================================== 
-| **Entity Type** | **Description**                                                              | **Example**                                                                        |
-| --------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| **COMPONENT**   | Physical parts or hardware elements involved in assembly.                    | `servo motor`, `gripper`, `gear`, `screw`, `bracket`, `PCB`, `base plate`, `cable` |
-| **TOOL**        | Tools or instruments used to perform assembly actions.                       | `screwdriver`, `wrench`, `soldering iron`, `multimeter`                            |
-| **ACTION**      | Technical operations or procedures performed on components.                  | `attach`, `tighten`, `connect`, `calibrate`, `install`, `power on`                 |
-| **PARAMETER**   | Technical parameters, measurements, or numerical values used in the process. | `5V`, `10mm`, `30 °C`, `torque = 5 Nm`                                             |
-| **LOCATION**    | Physical or relative positions mentioned in the assembly steps.              | `left side`, `base`, `top`, `rear panel`, `slot A`                                 |
-| **MATERIAL**    | Materials or substances used in the assembly or fabrication process.         | `aluminum`, `plastic`, `copper wire`, `adhesive`, `silicone`                       |
+| Entity Type | Description                                                                  | Example                                                            |
+| ----------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| COMPONENT   | Physical parts or hardware elements involved in assembly.                    | servo motor, gripper, gear, screw, bracket, PCB, base plate, cable |
+| TOOL        | Tools or instruments used to perform assembly actions.                       | screwdriver, wrench, soldering iron, multimeter                    |
+| ACTION      | Technical operations or procedures performed on components.                  | attach, tighten, connect, calibrate, install, power on             |
+| PARAMETER   | Technical parameters, measurements, or numerical values used in the process. | 5V, 10mm, 30 °C, torque = 5 Nm                                     |
+| LOCATION    | Physical or relative positions mentioned in the assembly steps.              | left side, base, top, rear panel, slot A                           |
+| MATERIAL    | Materials or substances used in the assembly or fabrication process.         | aluminum, plastic, copper wire, adhesive, silicone                 |

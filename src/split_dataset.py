@@ -11,7 +11,7 @@ import random
 import os
 
 # Configuration
-INPUT_FILE = "spacy_ready.json"
+INPUT_FILE = "data\\annotated_data.json"
 TRAIN_RATIO = 0.7
 DEV_RATIO = 0.2  # Remaining 0.1 goes to test automatically
 
@@ -51,5 +51,6 @@ def split_dataset(input_path):
 
 
 if __name__ == "__main__":
+
     split_dataset(INPUT_FILE)
 

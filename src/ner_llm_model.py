@@ -9,6 +9,7 @@ import time
 from typing import List, Dict, Set, Optional
 import os
 from pathlib import Path
+from sklearn.metrics import precision_score, recall_score, f1_score
 
 
 class LLMNER:
@@ -320,6 +321,67 @@ Return ONLY the JSON array:"""
 
         return results
 
+    def evaluate(self, test_file: str, threshold: float = 0.9):
+        """
+        Evaluate LLM-based NER on a labeled test file.
+        Args:
+            test_file: Path to the JSON test dataset
+            threshold: Similarity threshold for fuzzy matching (optional)
+        """
+        from difflib import SequenceMatcher
+
+        def text_similarity(a, b):
+            return SequenceMatcher(None, a.lower(), b.lower()).ratio()
+
+        # Load test data
+        with open(test_file, "r", encoding="utf-8") as f:
+            test_data = json.load(f)
+
+        y_true, y_pred = [], []
+
+        print(f" Evaluating {len(test_data)} sentences...\n")
+
+        for i, item in enumerate(test_data, start=1):
+            text = item["text"]
+            gt_entities = item["entities"]
+
+            # Convert ground truth (char spans) -> entity texts
+            gt_labels = []
+            for start, end, label in gt_entities:
+                gt_labels.append((text[start:end], label))
+
+            # Predict entities from LLM
+            pred_entities = self.extract_entities(text)
+
+            # Compare predictions with ground truth
+            matched_pred = set()
+            for gt_text, gt_label in gt_labels:
+                found = False
+                for pred in pred_entities:
+                    if text_similarity(pred["text"], gt_text) > threshold and pred["label"].upper() == gt_label:
+                        found = True
+                        matched_pred.add(pred["text"])
+                        break
+                y_true.append(1)
+                y_pred.append(1 if found else 0)
+
+            # Handle false positives
+            for pred in pred_entities:
+                if pred["text"] not in matched_pred:
+                    y_true.append(0)
+                    y_pred.append(1)
+
+            print(f"[{i}] {text[:50]}...  ✅ {sum(y_true)}/{len(y_true)} matched")
+
+        # Compute precision/recall/F1
+        precision = precision_score(y_true, y_pred, average='micro')
+        recall = recall_score(y_true, y_pred, average='micro')
+        f1 = f1_score(y_true, y_pred, average='micro')
+
+        print(f"Precision (micro): {precision:.4f}")
+        print(f"Recall (micro): {recall:.4f}")
+        print(f"F1 (micro): {f1:.4f}")
+
 
 
 if __name__ == "__main__":
@@ -344,3 +406,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f" Failed to initialize: {e}")
         sys.exit(1)
+    llm_ner.evaluate("data\\data_test.json")
+

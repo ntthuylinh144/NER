@@ -6,18 +6,26 @@
       {
         "text": "Connect",
         "label": "ACTION",
-        "entity_id": 1,
+        "entity_id": 39,
+        "is_new": false,
+        "canonical_text": "connect",
+        "occurrences": 7
+      },
+      {
+        "text": "wires Power (",
+        "label": "COMPONENT",
+        "entity_id": 148,
         "is_new": true,
-        "canonical_text": "Connect",
+        "canonical_text": "wires Power (",
         "occurrences": 1
       },
       {
-        "text": "Ground (",
+        "text": "Ground (red",
         "label": "COMPONENT",
-        "entity_id": 2,
-        "is_new": true,
-        "canonical_text": "Ground (",
-        "occurrences": 1
+        "entity_id": 139,
+        "is_new": false,
+        "canonical_text": "Ground (red)",
+        "occurrences": 2
       }
     ]
   },
@@ -26,35 +34,19 @@
     "text": "Push the Teach Pendant plug into the Teach Pendant port to connect.",
     "entities": [
       {
-        "text": "Push",
-        "label": "ACTION",
-        "entity_id": 3,
-        "is_new": true,
-        "canonical_text": "Push",
-        "occurrences": 1
-      },
-      {
-        "text": "Teach Pendant",
+        "text": "Teach Pendant plug",
         "label": "COMPONENT",
-        "entity_id": 4,
-        "is_new": true,
-        "canonical_text": "Teach Pendant",
-        "occurrences": 1
+        "entity_id": 37,
+        "is_new": false,
+        "canonical_text": "Teach Pendant plug",
+        "occurrences": 5
       },
       {
-        "text": "Teach Pendant",
+        "text": "Teach Pendant port",
         "label": "COMPONENT",
-        "entity_id": 4,
+        "entity_id": 47,
         "is_new": false,
-        "canonical_text": "Teach Pendant",
-        "occurrences": 2
-      },
-      {
-        "text": "connect",
-        "label": "ACTION",
-        "entity_id": 1,
-        "is_new": false,
-        "canonical_text": "Connect",
+        "canonical_text": "Teach Pendant port",
         "occurrences": 2
       }
     ]
@@ -64,19 +56,27 @@
     "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle.",
     "entities": [
       {
-        "text": "allow",
-        "label": "ACTION",
-        "entity_id": 5,
-        "is_new": true,
-        "canonical_text": "allow",
-        "occurrences": 1
+        "text": "Initialize Robot screen",
+        "label": "COMPONENT",
+        "entity_id": 40,
+        "is_new": false,
+        "canonical_text": "Initialize Robot screen",
+        "occurrences": 2
       },
       {
-        "text": "Idle",
-        "label": "ACTION",
-        "entity_id": 6,
+        "text": "ON button",
+        "label": "COMPONENT",
+        "entity_id": 41,
+        "is_new": false,
+        "canonical_text": "ON button",
+        "occurrences": 2
+      },
+      {
+        "text": "Idle.",
+        "label": "COMPONENT",
+        "entity_id": 149,
         "is_new": true,
-        "canonical_text": "Idle",
+        "canonical_text": "Idle.",
         "occurrences": 1
       }
     ]
@@ -88,34 +88,42 @@
       {
         "text": "Connect",
         "label": "ACTION",
-        "entity_id": 1,
+        "entity_id": 39,
         "is_new": false,
-        "canonical_text": "Connect",
+        "canonical_text": "connect",
+        "occurrences": 8
+      },
+      {
+        "text": "main power cable",
+        "label": "COMPONENT",
+        "entity_id": 84,
+        "is_new": false,
+        "canonical_text": "main power cable",
         "occurrences": 3
       },
       {
-        "text": "power source",
+        "text": "power source and",
         "label": "COMPONENT",
-        "entity_id": 7,
-        "is_new": true,
+        "entity_id": 85,
+        "is_new": false,
         "canonical_text": "power source",
-        "occurrences": 1
+        "occurrences": 3
       },
       {
         "text": "power on",
         "label": "COMPONENT",
-        "entity_id": 8,
+        "entity_id": 150,
         "is_new": true,
         "canonical_text": "power on",
         "occurrences": 1
       },
       {
-        "text": "control box",
+        "text": "control box.",
         "label": "COMPONENT",
-        "entity_id": 9,
-        "is_new": true,
+        "entity_id": 71,
+        "is_new": false,
         "canonical_text": "control box",
-        "occurrences": 1
+        "occurrences": 6
       }
     ]
   }

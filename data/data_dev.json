@@ -1,0 +1,336 @@
+[
+  {
+    "id": 41,
+    "text": "Remove and discard the two cableties used for mounting the Teach Pendant cables.",
+    "entities": [
+      [
+        0,
+        6,
+        "ACTION"
+      ],
+      [
+        11,
+        18,
+        "ACTION"
+      ],
+      [
+        27,
+        36,
+        "COMPONENT"
+      ],
+      [
+        46,
+        54,
+        "ACTION"
+      ],
+      [
+        59,
+        79,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Push the device connectors together until they engage.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        26,
+        "COMPONENT"
+      ],
+      [
+        47,
+        53,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 51,
+    "text": "In the PolyScope Header, tap Installation.",
+    "entities": [
+      [
+        7,
+        23,
+        "LOCATION"
+      ],
+      [
+        25,
+        28,
+        "ACTION"
+      ],
+      [
+        29,
+        41,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Hold the device connector against the level surface prepared for screw fastening.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        25,
+        "COMPONENT"
+      ],
+      [
+        38,
+        51,
+        "LOCATION"
+      ],
+      [
+        65,
+        80,
+        "ACTION"
+      ]
+    ]
+  },
+  {
+    "id": 37,
+    "text": "Click the \"CAx data\" link in the result.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        25,
+        "COMPONENT"
+      ],
+      [
+        33,
+        39,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Release the screws.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        18,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 70,
+    "text": "Now, in Confirm new password, type the same password and press Apply.",
+    "entities": [
+      [
+        8,
+        28,
+        "COMPONENT"
+      ],
+      [
+        30,
+        34,
+        "ACTION"
+      ],
+      [
+        63,
+        68,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 48,
+    "text": "Connect your drive power indicator to the Digital Outputs as shown in the image below.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        13,
+        34,
+        "COMPONENT"
+      ],
+      [
+        42,
+        57,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 59,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink).",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        30,
+        "COMPONENT"
+      ],
+      [
+        34,
+        44,
+        "COMPONENT"
+      ],
+      [
+        49,
+        61,
+        "COMPONENT"
+      ],
+      [
+        65,
+        75,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 71,
+    "text": "In the bottom left of the blue menu, press Exit to return to previous screen.",
+    "entities": [
+      [
+        7,
+        18,
+        "LOCATION"
+      ],
+      [
+        26,
+        35,
+        "COMPONENT"
+      ],
+      [
+        37,
+        42,
+        "ACTION"
+      ],
+      [
+        43,
+        47,
+        "COMPONENT"
+      ],
+      [
+        61,
+        76,
+        "LOCATION"
+      ]
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Enter the article number of the desired device in the \"Products\" field.",
+    "entities": [
+      [
+        0,
+        5,
+        "ACTION"
+      ],
+      [
+        10,
+        24,
+        "PARAMETER"
+      ],
+      [
+        32,
+        46,
+        "COMPONENT"
+      ],
+      [
+        54,
+        70,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Connect the main power cable to the power source and power on the control box.",
+    "entities": [
+      [
+        0,
+        7,
+        "ACTION"
+      ],
+      [
+        12,
+        28,
+        "COMPONENT"
+      ],
+      [
+        36,
+        48,
+        "COMPONENT"
+      ],
+      [
+        53,
+        61,
+        "ACTION"
+      ],
+      [
+        66,
+        77,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Pull the lower half of the device away from the standard mounting rail.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        9,
+        33,
+        "COMPONENT"
+      ],
+      [
+        48,
+        70,
+        "COMPONENT"
+      ]
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Pull on the cable to ensure it is tight.",
+    "entities": [
+      [
+        0,
+        4,
+        "ACTION"
+      ],
+      [
+        12,
+        17,
+        "COMPONENT"
+      ]
+    ]
+  }
+]

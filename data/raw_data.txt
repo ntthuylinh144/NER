@@ -1,0 +1,2204 @@
+1
+Introduction
+2
+Safety instructions
+3
+Description
+Industrial controls
+Safety systems - General
+4
+information
+Safety technology
+3RQ1 force-guided coupling relays
+5
+3RQ1 devices
+6
+System configuration
+Equipment Manual
+7
+Mounting
+8
+Connection
+9
+Configuration / operation
+10
+Commissioning
+11
+Display and diagnostics
+12
+Technical data
+13
+Dimension drawings
+14
+Circuit diagrams
+15
+Accessories
+10/2025
+A5W02967072002A/RS-AA/001
+Legal information
+Warning notice system
+This manual contains notices you have to observe in order to ensure your personal safety, as well as to prevent
+damage to property. The notices referring to your personal safety are highlighted in the manual by a safety alert
+symbol, notices referring only to property damage have no safety alert symbol. These notices shown below are
+graded according to the degree of danger.
+DANGER
+indicates that death or severe personal injury will result if proper precautions are not taken.
+WARNING
+indicates that death or severe personal injury may result if proper precautions are not taken.
+CAUTION
+indicates that minor personal injury can result if proper precautions are not taken.
+NOTICE
+indicates that property damage can result if proper precautions are not taken.
+If more than one degree of danger is present, the warning notice representing the highest degree of danger will
+be used. A notice warning of injury to persons with a safety alert symbol may also include a warning relating to
+property damage.
+Qualified Personnel
+The product/system described in this documentation may be operated only by personnel qualified for the specific
+task in accordance with the relevant documentation, in particular its warning notices and safety instructions.
+Qualified persons are those who, because of their training and experience, are familiar with the installation,
+assembly, commissioning, operation, decommissioning and disassembly of the product and can recognize risks
+and avoid possible hazards.
+Proper use of Siemens products
+Note the following:
+Siemens products may only be used for the application described in the catalog and the associated usage
+information. If products and components from other manufacturers are used, these must be recommended or
+approved by Siemens. Proper transport, storage, installation, assembly, commissioning, operation and maintenance
+are required to ensure that the products operate safely and without any problems. The permissible ambient
+conditions must be complied with. The information in the relevant documentation must be observed.
+Trademarks
+All names identified by ® are registered trademarks of Siemens Aktiengesellschaft. The remaining trademarks in
+this publication may be trademarks whose use by third parties for their own purposes could violate the rights of
+the owner.
+Disclaimer of Liability
+We have reviewed the contents of this publication to ensure consistency with the hardware and software
+described. Since variance cannot be precluded entirely, we cannot guarantee full consistency. However, the
+information in this publication is reviewed regularly and any necessary corrections are included in subsequent
+editions.
+Siemens Aktiengesellschaft Ⓟ 10/2025 Subject to change Copyright © Siemens 2025.
+Smart Infrastructure All rights reserved
+Electrical Products
+Postfach 10 09 53
+93009 Regensburg
+GERMANY
+Table of contents
+1 Introduction...........................................................................................................................................7
+1.1 Purpose of this manual........................................................................................................7
+1.2 Target group........................................................................................................................8
+1.3 Required basic knowledge....................................................................................................9
+1.4 Validity range....................................................................................................................10
+1.5 Siemens Industry Online Support.......................................................................................11
+1.6 Siemens Industry Online Support app.................................................................................13
+1.7 DataMatrix code................................................................................................................14
+1.8 ID link................................................................................................................................15
+1.9 Configurator for 3SK1 safety relays.....................................................................................17
+1.10 User responsibility for system design and function..............................................................18
+1.11 Additional documentation.................................................................................................19
+1.12 Support Request................................................................................................................20
+1.13 Change documentation.....................................................................................................21
+2 Safety instructions...............................................................................................................................23
+2.1 General safety notes..........................................................................................................23
+2.2 Recycling and disposal.......................................................................................................26
+2.3 Intended use......................................................................................................................27
+2.4 Current information about operational safety.....................................................................28
+2.5 Cybersecurity information..................................................................................................29
+2.6 Electromagnetic compatibility (EMC) according to IEC 60947-5-1.......................................30
+3 Description...........................................................................................................................................31
+3.1 Use....................................................................................................................................31
+3.2 Product overview...............................................................................................................32
+4 Safety systems - General information.................................................................................................33
+4.1 What is safety?...................................................................................................................33
+4.2 Safety function..................................................................................................................34
+4.3 Basic terminology..............................................................................................................35
+4.3.1 Redundancy/single-channel and two-channel.....................................................................35
+4.3.2 Cross-circuit detection........................................................................................................36
+4.3.3 Enabling circuit (safety-related output)...............................................................................36
+4.3.4 Signaling circuit.................................................................................................................36
+4.3.5 Feedback circuit.................................................................................................................37
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 3
+4.3.6 Stop category....................................................................................................................37
+4.3.7 Automatic start..................................................................................................................38
+4.3.8 Manual start......................................................................................................................38
+4.3.9 Monitored start..................................................................................................................39
+4.3.10 Two-hand operation/synchronism......................................................................................39
+4.3.11 Cascading..........................................................................................................................40
+4.3.12 Startup testing...................................................................................................................40
+4.3.13 Connection of actuators.....................................................................................................41
+4.3.14 Series connection of sensors..............................................................................................44
+4.3.15 Use of magnetically operated switches...............................................................................45
+5 3RQ1 devices.......................................................................................................................................47
+5.1 3RQ1 output expansion.....................................................................................................47
+5.1.1 Applications.......................................................................................................................47
+5.1.2 Function description..........................................................................................................48
+5.1.3 Display of the operating state.............................................................................................48
+5.1.4 Device features..................................................................................................................49
+5.1.5 3RQ11.00-.E.00, 3RQ1000-.G.00 configuration..................................................................50
+5.1.6 3RQ1000-xHB00, 3RQ1000-xLB00 configuration................................................................51
+5.1.7 Terminal assignment..........................................................................................................51
+6 System configuration...........................................................................................................................53
+6.1 3ZY12 device connector.....................................................................................................53
+6.1.1 Device features..................................................................................................................53
+6.1.2 Applications.......................................................................................................................56
+6.2 System configuration rules.................................................................................................57
+7 Mounting.............................................................................................................................................61
+7.1 Warning notices.................................................................................................................61
+7.2 Terminal coding.................................................................................................................62
+7.3 Mounting the devices on a level surface.............................................................................63
+7.4 Disassembling devices from a level surface.........................................................................65
+7.5 Mounting 22.5 mm/17.5 mm devices on a standard mounting rail.....................................67
+7.6 Mounting the 90 mm devices on a standard mounting rail.................................................68
+7.7 Removing devices from a standard mounting rail................................................................69
+7.8 Mounting 22.5 mm/17.5 mm devices with device connectors on a standard mounting rail .....70
+7.9 Removing 22.5 mm/17.5 mm devices with device connectors from a standard mounting
+rail.....................................................................................................................................73
+7.10 Mounting 90 mm devices with device connectors on a standard mounting rail...................76
+7.11 Removing 90 mm devices with device connectors from a standard mounting rail................79
+7.12 Mounting 22.5 mm/17.5 mm devices with device connectors on the wall...........................82
+7.13 Removing 22.5 mm/17.5 mm devices with device connectors from the wall.......................85
+7.14 Mounting 90 mm devices with device connectors on the wall.............................................87
+7.15 Removing 90 mm devices with device connectors from wall...............................................90
+4 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.16 Mounting the sealable cover..............................................................................................92
+8 Connection...........................................................................................................................................93
+8.1 Warning notices.................................................................................................................93
+8.2 22.5 mm/17.5 mm devices.................................................................................................94
+8.2.1 Terminal assignment..........................................................................................................94
+8.2.2 Connection data for 3RQ1 screw terminal...........................................................................95
+8.2.3 Connecting the screw-type terminals.................................................................................95
+8.2.4 Disconnecting the screw-type terminals.............................................................................96
+8.2.5 Wiring rules for spring-loaded terminal (push-in system)....................................................97
+8.2.6 Connection data for 3SK1 spring-loaded terminal (push-in system).....................................97
+8.2.7 Connection data for 3RQ1 spring-loaded terminal (push-in system)....................................98
+8.2.8 Connecting spring-loaded (push-in) terminals....................................................................98
+8.2.9 Disconnect the spring-loaded (push-in) terminal...............................................................100
+8.2.10 Attaching the terminals....................................................................................................100
+8.2.11 Disconnecting..................................................................................................................101
+8.3 Devices 90 mm................................................................................................................104
+8.3.1 Opening the terminal cover..............................................................................................104
+8.3.2 Connection data for terminals..........................................................................................105
+8.3.3 Connecting terminals.......................................................................................................105
+8.3.4 Mounting terminals.........................................................................................................107
+8.3.5 Disconnecting..................................................................................................................108
+8.4 Device replacement.........................................................................................................110
+9 Configuration / operation..................................................................................................................113
+9.1 Procedure for configuration..............................................................................................114
+9.2 Explanation of the device's functions................................................................................115
+9.3 Modes.............................................................................................................................118
+9.4 Response times................................................................................................................119
+10 Commissioning .................................................................................................................................121
+11 Display and diagnostics.....................................................................................................................123
+11.1 LED display......................................................................................................................123
+11.2 Power-up.........................................................................................................................125
+11.3 Error statuses...................................................................................................................126
+11.4 Diagnostics......................................................................................................................127
+12 Technical data....................................................................................................................................129
+12.1 Technical specifications in the Siemens SiePortal..............................................................129
+12.2 Electrical endurance.........................................................................................................130
+12.3 Overview tables ..............................................................................................................132
+13 Dimension drawings..........................................................................................................................133
+13.1 CAx data in the Siemens SiePortal....................................................................................133
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 5
+14 Circuit diagrams.................................................................................................................................135
+14.1 CAx data in the Siemens SiePortal....................................................................................135
+14.2 Internal circuit diagrams...................................................................................................136
+14.2.1 Internal circuit diagrams for expansion units.....................................................................136
+14.3 Typical circuits.................................................................................................................144
+15 Accessories........................................................................................................................................157
+15.1 Accessories for 3SK1........................................................................................................157
+6 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.1 Purpose of this manual
+This manual contains a detailed description of the 3RQ1 force-guided coupling relays.
+It provides you with the information you require to configure, install, connect, and diagnose
+3RQ1 force-guided coupling relays. A few application examples provide you with a clear and
+practice-oriented introduction.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 7
+1.2 Target group
+The manual is intended for everyone involved in the following tasks:
+• Planning and configuring systems
+• Installation
+• Commissioning
+• Service and maintenance
+8 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.3 Required basic knowledge
+A general knowledge of the following areas is needed in order to understand this manual:
+• Low-voltage switchgear
+• Digital circuit logic
+• Automation systems
+• Safety systems
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 9
+1.4 Validity range
+The equipment manual is valid for 3RQ1 force-guided coupling relays. It describes the
+components that are valid at the time of publication.
+SIEMENS reserves the right of including a Product Information for each new component, and
+for each component of a later version.
+10 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.5 Siemens Industry Online Support
+Information and service
+At Siemens Industry Online Support you can obtain up-to-date information from our global
+support database:
+• Product support
+• Application examples
+• Forum
+• mySupport
+Link: Siemens Industry Online Support (https://support.industry.siemens.com/cs/de/en)
+Product support
+You can find information and comprehensive know-how covering all aspects of your product
+here:
+• FAQs
+Answers to frequently asked questions
+• Manuals/operating instructions
+Read online or download, available as PDF or individually configurable.
+• Certificates
+Clearly sorted according to approving authority, type and country.
+• Characteristics
+For support in planning and configuring your system.
+• Product announcements
+The latest information and news concerning our products.
+• Downloads
+Here you will find updates, service packs, HSPs and much more for your product.
+Function blocks, background and system descriptions, performance statements,
+demonstration systems, and application examples, clearly explained and represented.
+• Technical data
+Technical product data for support in planning and implementing your project
+Link: Product support (https://support.industry.siemens.com/cs/ww/en/ps)
+mySupport
+The following functions are available in your personal work area "mySupport":
+• Support Request
+Search for request number, product or subject
+• My filters
+With filters, you limit the content of the online support to different focal points.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 11
+• My favorites
+With favorites you bookmark articles and products that you need frequently.
+• My notifications
+Your personal mailbox for exchanging information and managing your contacts. You can
+compile your own individual newsletter in the "Notifications" section.
+• My products
+With product lists you can virtually map your control cabinet, your system or your entire
+automation project.
+• My documentation
+Configure your individual documentation from different manuals.
+• CAx data
+Easy access to CAx data, e.g. 3D models, 2D dimension drawings, EPLAN macros, device
+circuit diagrams
+• My IBase registrations
+Register your Siemens products, systems and software.
+12 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.6 Siemens Industry Online Support app
+Siemens Industry Online Support app
+The Siemens Industry Online Support app provides you access to all the device-specific
+information available on the Siemens Industry Online Support portal for a particular article
+number, such as operating instructions, manuals, data sheets, FAQs etc.
+The Siemens Industry Online Support app is available for Android and iOS:
+Android iOS
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 13
+1.7 DataMatrix code
+A DataMatrix code is lasered onto the bottom terminal cover of all safety relays of the 3RQ1
+device series.
+DataMatrix codes are standardized in ISO/IEC 16022. The DataMatrix codes on Siemens
+devices use ECC200 coding for powerful error correction.
+The following device information is encoded in the DataMatrix codes as a bit stream:
+• Article number (MLFB)
+• Serial number
+• MAC address, if applicable
+This information is stored in the following format in the DataMatrix code:
+1P Article number + S serial number
+(+ 23S MAC address)
+Data identifier Net content Separator
+Note
+The information content is displayed without spaces.
+This machine-readable information simplifies and accelerates handling of the respective
+devices.
+As well as fast access to the serial numbers of the respective devices for unique identification,
+the DataMatrix codes simplify communication with Siemens Technical Support.
+14 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.8 ID link
+ID link for the digital nameplate
+The ID link is a globally unique identifier according to IEC 61406-1, which you can find as
+a QR code on your product. The ID link takes you to the digital nameplate of your product.
+Using the ID link saves paper and energy.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 15
+Scan the QR code on the product or on the packaging label with a smartphone camera,
+barcode scanner, or reader app. Call the ID-Link. In the digital nameplate, you will find
+product data, manuals, declarations of conformity, certificates, and other helpful information
+about your product.
+(cid:48)(cid:68)(cid:81)(cid:88)(cid:68)(cid:79)(cid:86)(cid:3)(cid:18)
+(cid:50)(cid:83)(cid:72)(cid:85)(cid:68)(cid:87)(cid:76)(cid:81)(cid:74)(cid:3)(cid:44)(cid:81)(cid:86)(cid:87)(cid:85)(cid:88)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:86)
+(cid:55)(cid:72)(cid:70)(cid:75)(cid:81)(cid:76)(cid:70)(cid:68)(cid:79)(cid:3)(cid:39)(cid:68)(cid:87)(cid:68)
+(cid:13) (cid:41)(cid:36)(cid:52)
+(cid:38)(cid:72)(cid:85)(cid:87)(cid:76)(cid:73)(cid:76)(cid:70)(cid:68)(cid:87)(cid:72)(cid:86)
+(cid:38)(cid:75)(cid:68)(cid:85)(cid:68)(cid:70)(cid:87)(cid:72)(cid:85)(cid:76)(cid:86)(cid:87)(cid:76)(cid:70)(cid:86)
+(cid:51)(cid:85)(cid:82)(cid:71)(cid:88)(cid:70)(cid:87)(cid:3)(cid:81)(cid:82)(cid:87)(cid:72)(cid:86)
+(cid:39)(cid:82)(cid:90)(cid:81)(cid:79)(cid:82)(cid:68)(cid:71)
+(cid:36)(cid:83)(cid:83)(cid:79)(cid:76)(cid:70)(cid:68)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:40)(cid:91)(cid:68)(cid:80)(cid:83)(cid:79)(cid:72)
+(cid:38)(cid:68)(cid:87)(cid:68)(cid:79)(cid:82)(cid:74)(cid:3)(cid:18)(cid:3)(cid:37)(cid:85)(cid:82)(cid:70)(cid:75)(cid:88)(cid:85)(cid:72)
+(cid:13)Android, iOS
+16 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.9 Configurator for 3SK1 safety relays
+Configurator
+Various configurators are available on the Internet to assist you with configuration.
+The configurator for safety relays with accessories is an easy-to-use selection and engineering
+tool. You can select the individual components and plan your system in accordance with your
+specific requirements. You can save your selection, export it as a text file or you can order it
+directly.
+The configurator automatically compiles a document list of the information available in
+Service & Support for every component. You can use it as the basis for putting together your
+system documentation.
+Link:
+Configurator (https://mall.industry.siemens.com/mall/en/de/Catalog/Products/10027588?
+tree=CatalogTree&activetab=configurator)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 17
+1.10 User responsibility for system design and function
+The products described here were developed to perform safety-related functions as part of an
+overall installation or machine.
+A complete, safety-related system is generally equipped with sensors, evaluation units, and
+signaling units, and uses reliable shutdown concepts.
+It is the responsibility of the manufacturer of a system or machine to ensure that the product
+functions properly.
+Siemens AG, its regional offices, and associated companies (hereinafter referred to as
+"Siemens") cannot guarantee all the properties of an entire plant, system or machine that
+has not been designed by Siemens.
+Nor can Siemens assume liability for recommendations that appear or are implied in the
+following description. No new guarantee, warranty, or liability claims beyond the scope
+of the Siemens general terms of supply are to be derived or inferred from the following
+description.
+18 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.11 Additional documentation
+List of references
+You will find further manuals in the table that may be of interest for your project planning. They
+are available to download from the Internet free of charge. You can create your own individual
+system documentation in the Siemens Industry Online Support under "mySupport".
+Title of the manual Document number
+SIRIUS 3RK3 Modular Safety System 3ZX1012-0RK31-1AB1
+SIRIUS 3SK1 Safety Relays 3ZX1012-0SK11-0AB0
+SIRIUS 3SK2 Safety Relays 3ZX1012-0SK21-1AB1
+SIRIUS 3RM1 motor starters 3ZX1012-0RM10-2AB1
+SIRIUS Safety Integrated 3ZX1012-0SK11-1AB1
+Interesting links
+• Safety Evaluation Tool (https://www.siemens.com/global/en/products/automation/topic-
+areas/safety-integrated/factory-automation/support/tia-safety-evaluation-tool.html)
+• Systematic industrial safety technology: Safety Integrated (https://
+support.industry.siemens.com/cs/us/en/view/109747812)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 19
+1.12 Support Request
+Use the Support Request online form to send your question directly to Technical Support:
+Support Request: Internet (https://support.industry.siemens.com/My/ww/en/requests)
+20 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1.13 Change documentation
+Product version New features
+10/2025 Initial release
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 21
+22 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+2.1 General safety notes
+SIL 3 acc. to IEC 62061 / PL e / Cat. 4 acc. to ISO 13849‑1
+The 3SK11 safety relays and SIRIUS 3RQ12 force-guided coupling relays are designed in such a
+way as to allow implementation of applications up to SIL 3 acc. to IEC 62061 and PL e / Cat. 4 acc.
+to ISO 13849-1.
+SIL 2 acc. to IEC 62061 / PL c / Cat. 2 according to ISO 13849‑1 for 3RQ10 coupling relay
+The 3RQ10 force-guided safety-related coupling relays are designed in such a way as to allow
+implementation of applications up to SIL 2 acc. to IEC 62061, PL c / Cat. 2 acc. to ISO 13849-1.
+Hazardous voltage.
+Can cause death, serious injury, or property damage.
+Hazardous electrical voltage can cause electric shock, burns, and damage to property.
+• Turn off and lock out all power supplying the system and device before working on the
+device.
+• To ensure protection against the hazard of electric shock when the terminal cover is open,
+screw in all clamping screws that are not needed to clamp conductors.
+• Close the terminal covers and always keep them closed during operation.
+Loss of safety functions.
+3SK1, 3RQ1 output expansions and 3RM1 Failsafe motor starters that are connected to a 3SK2
+safety relay via 3ZY12 device connectors are supplied with voltage via the device connectors.
+Do not directly connect any separate supply voltage to an output expansion 3SK1 (A1/A2),
+3RQ1 (A1/A2), or to a 3RM1 Failsafe (A1/A2) motor starter, as otherwise the safety function will
+be bypassed.
+Safe state
+The basis of the safety function is the definition of the safe state. In the case of safety relays, this
+is the "OFF state", i.e. an open contact for sensors or shutdown of the actuators.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 23
+Hazardous voltage. Can cause death or serious injury
+To ensure touch protection and degree of protection IP20, screw in all screws which are not
+used for conductor clamping and close the terminal covers.
+Protection against electrically conductive contamination!
+The devices must be protected against conductive contamination while taking account of the
+ambient conditions. One way you can do this is to install the devices in a control cabinet with
+the appropriate degree of protection.
+You will find more information in the IEC 60529 standard, "Degrees of protection provided by
+enclosures (IP Code)" and in the "Technical specifications (Page 129)" section.
+Loss of safety function when adjusting slide switch on 3SK1 output expansions.
+• Use one of the optionally available cover sealings to protect the slide switch of the 3SK1
+output expansion against unauthorized and unintentional adjustment.
+Safe functional extra-low voltage
+The 3SK1 safety relays, SIRIUS 3RQ1 force-guided coupling relays, and 3RM1 Failsafe motor
+starters with a supply voltage of 24 V DC must be operated with safe functional extra-low
+voltage (SELV, PELV). This means these modules must only be subjected to a voltage of Um even
+in the event of a fault. The following applies for these 3SK1 safety relays: U < 60.0 V.
+m
+You will find more detailed information about safe functional extra-low voltage in the data
+sheets of the power supplies to be used.
+Material damage caused by electrostatic charging
+When handling and installing 3SK1 safety relays, SIRIUS 3RQ1 force-guided coupling relays,
+and 3RM1 Failsafe motor starters, ensure that the components are protected from being
+electrostatically charged. Changes to the system configuration and wiring are only permissible
+while the supply voltage is switched off.
+Connection of 3SK1 safety relays is only permissible when the power supply units (PELV and
+SELV) are switched off.
+24 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Noise immunity/grounding
+The following must be grounded in accordance with the regulations to ensure immunity of the
+3SK1 safety relays, SIRIUS 3RQ1 force-guided coupling relays, and 3RM1 Failsafe motor starters
+with 24 V DC supply voltage:
+• PELV / SELV power supply units
+(please also note the documentation for the respective power supply unit in this regard).
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 25
+2.2 Recycling and disposal
+For environmentally friendly recycling and disposal of your old device, please contact a company
+certified for the disposal of old electrical and/or electronic devices and dispose of the device in
+accordance with the regulations in your country.
+26 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+2.3 Intended use
+Hazardous voltage
+Proper use of hardware products
+This equipment is only allowed to be used for the applications described in the catalog and in
+the technical description, and only in conjunction with non-Siemens equipment and
+components recommended by Siemens.
+Correct transport, storage, installation and assembly, as well as careful operation and
+maintenance, are required to ensure that the product operates safely and without faults.
+EU note: Commissioning is absolutely prohibited until it has been ensured that the machine in
+which the component described here is to be installed complies with the stipulations of the
+Directive 2006/42/EC.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 27
+2.4 Current information about operational safety
+Important note for maintaining operational safety of your system
+Loss of safety functions due to obsolete information.
+Please take note of our latest information
+Systems with safety-related characteristics are subject to special operational safety
+requirements on the part of the operator. The supplier is also obliged to comply with special
+product monitoring measures. For this reason, we publish a special newsletter containing
+information on product developments and features that are (or could be) relevant to operation
+of safety-related systems. By subscribing to the appropriate newsletter, you will ensure that you
+are always up-to-date and able to make changes to your system, when necessary:
+For this purpose, go to the page: Safety Integrated for industrial safety technology (http://
+www.siemens.com/safety-integrated)
+28 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+2.5 Cybersecurity information
+Siemens provides products and solutions with industrial cybersecurity functions that support
+the secure operation of plants, systems, machines and networks.
+In order to protect plants, systems, machines and networks against cyber threats, it is
+necessary to implement – and continuously maintain – a holistic, state-of-the-art industrial
+cybersecurity concept. Siemens’ products and solutions constitute one element of such a
+concept.
+Customers are responsible for preventing unauthorized access to their plants, systems,
+machines and networks. Such systems, machines and components should only be connected
+to an enterprise network or the internet if and to the extent such a connection is necessary
+and only when appropriate security measures (e.g. firewalls and/or network segmentation)
+are in place.
+For additional information on industrial cybersecurity measures that may be implemented,
+please visit
+https://www.siemens.com/cybersecurity-industry.
+Siemens’ products and solutions undergo continuous development to make them more
+secure. Siemens strongly recommends that product updates are applied as soon as they are
+available and that the latest product versions are used. Use of product versions that are no
+longer supported, and failure to apply the latest updates may increase customer’s exposure
+to cyber threats.
+To stay informed about product updates, subscribe to the Siemens Industrial Cybersecurity
+RSS Feed under
+https://new.siemens.com/cert.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 29
+2.6 Electromagnetic compatibility (EMC) according to IEC 60947-5-1
+This product is designed for Environment A. It may produce radio interference in domestic
+environments, in which case the user may be required to take adequate mitigation measures.
+30 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+3.1 Use
+The areas of application for the SIRIUS 3RQ1 force-guided coupling relays primarily include
+safety-related applications, such as contact extensions for safety relays (e.g. SIRIUS 3SK), the
+safe coupling and transmission of control signals, an increase of switching capacity up to 10 A,
+and the electrical isolation of actuators and controllers in areas such as industrial automation,
+railway engineering, signal technology, and elevator systems. They enable the fail-safe
+execution of functions with certification up to SIL 3/PL e.
+Applications
+Depending on the version of the device and the external connection of sensors and actuators,
+applications up to SILCL 3 in accordance with IEC 62061, SIL 3 in accordance with IEC 61508, and
+PL e (Cat. 4) in accordance with ISO 13849-1 can be implemented.
+• Monitoring the switch position of the sensors
+• Monitoring of the sensor lines
+• Monitoring the correct function of the safety relay
+• Monitoring of the actuators
+• Safety-related shutdown in case of hazards
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 31
+3.2 Product overview
+You can use the 3RQ1 force-guided coupling relays as an output expansion for 3SK1 units. You
+can achieve a safety level up to SIL 2 / PL c or SIL 3 / PL e (3RQ1) in accordance with IEC 62061 /
+EN ISO 13849 with this combination.
+Expansion units
+Designation Voltages Article number
+3RQ1 force-guided coupling relays 24 V DC 3RQ1y00-xzB00
+24 ... 240 V AC/DC 3RQ1y00-xzW00
+x = 1: Screw-type terminal; x = 2: Spring-loaded (push-in) terminal
+x = 3: (3RM1 only) mixed connection system: Control circuit realized as spring-loaded (push-in) terminal and main circuit as screw
+terminal
+y = 0: SIL 2 / PL c; y = 2: SIL 3 / PL e
+z = E: 1NO 1NC; z = G: 2NO 1NC; z = H: 2NO 2NC; z = L: 4NO 1NC
+Overview of the safety-related outputs
+Type and number of safety-related outputs
+3RQ1000-.E 1NO 1NC - - - - ✓(for 24 V DC)
+3RQ1200-.E
+(SIL 3 / PL e)
+3RQ1000-.G 2NO 1NC - - - - ✓(for 24 V DC)
+3RQ1000-.H 2NO 2NC - - - - ✓(for 24 V DC)
+3RQ1000-.L 4NO 1NC - - - - ✓(for 24 V DC)
+32 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Safety systems - General information
+4.1 What is safety?
+Safety defines a state in which the risk of damage is reduced to a tolerable level, or which can be
+regarded as risk-free. Following on from this definition, functional safety concerns persons,
+machines and the environment.
+The objective of safety systems is to reduce the risk for humans and machines that is posed
+by a use case to an acceptable level. The first step is, therefore, to identify the risk of a
+use case. In order to make a reliable assessment regarding the application, each individual
+function of a machine or plant must be analyzed for potential hazards.
+For further information, refer to the brochure "Safety of machines and plants" which is
+available here as a download: Functional safety (http://www.siemens.com/safety).
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 33
+4.2 Safety function
+A safety function describes the reaction of a machine/plant when a specific event occurs (e.g.
+opening of a protective door). Execution of the safety function(s) is carried out by a safety-
+related control system. This usually comprises three subsystems, detecting, evaluating and
+reacting.
+Detecting (sensors):
+• Detecting a safety requirement,
+e.g.: EMERGENCY STOP or a sensor for monitoring a hazardous area (light array, laser
+scanner, etc.) is operated.
+Evaluating (safety relay):
+• Detecting a safety requirement and safely initiating the reaction (e.g. switching off the safety-
+related outputs).
+• Monitoring the correct operation of sensors and actuators.
+• Initiating a reaction upon detection of faults.
+Reacting (actuators):
+• Switching off the hazard by means of downstream actuators.
+(cid:39)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:81)(cid:74) (cid:40)(cid:89)(cid:68)(cid:79)(cid:88)(cid:68)(cid:87)(cid:76)(cid:81)(cid:74) (cid:53)(cid:72)(cid:68)(cid:70)(cid:87)(cid:76)(cid:81)(cid:74)
+(cid:11)(cid:54)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:12) (cid:11)(cid:86)(cid:68)(cid:73)(cid:72)(cid:87)(cid:92)(cid:3)(cid:85)(cid:72)(cid:79)(cid:68)(cid:92)(cid:12) (cid:11)(cid:68)(cid:70)(cid:87)(cid:88)(cid:68)(cid:87)(cid:82)(cid:85)(cid:86)(cid:12)
+34 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4.3 Basic terminology
+4.3.1 Redundancy/single-channel and two-channel
+Redundancy
+With redundancy, more than one component is implemented for the same function, so a faulty
+function of a component is performed instead by the other component(s).
+A redundant configuration reduces the probability of a function failing due to a single
+defective component. This requirement is essential for achieving SILCL 3 in accordance
+with IEC 62061, SIL 3 in accordance with IEC 61508 and PL e (Cat. 4) in accordance with
+ISO 13849-1 (also necessary for SIL 2 / PL d under certain circumstances).
+The simplest form of redundancy is two-channel redundancy.
+If a circuit fails, two-channel redundancy or appropriate wiring ensures that the safety
+function is maintained.
+In a redundant system configuration, the subsystems for detecting and reacting must also be
+implemented with two-channel redundancy.
+All SIRIUS Safety devices that comply with SILCL 3 in accordance with IEC 62061, SIL 3 in
+accordance with IEC 61508 and PL e (Cat. 4) in accordance with DIN EN ISO 13849-1 are
+redundantly configured with regard to the internal logic as well as with regard to the output
+circuits.
+(cid:19)
+(cid:54)(cid:20)
+(cid:52)(cid:20)
+Figure 4-1 Single-channel sensor connection
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 35
+(cid:54)(cid:21)
+(cid:52)(cid:20) (cid:52)(cid:21)
+Figure 4-2 Two-channel sensor connection
+*= positively-driven auxiliary contacts/mirror contacts
+4.3.2 Cross-circuit detection
+Cross-circuit detection is a diagnostic function of a safety relay that detects short-circuits and
+cross-circuits between the input channels (sensor circuits) during two-channel sensing or
+reading. A cross-circuit can be caused, for example, by a cable casing being squashed. In devices
+without cross-circuit detection, this can mean that a two-channel EMERGENCY STOP circuit does
+not trip even though only one NC contact is faulty (secondary error).
+With 3SK1 devices, a cross-circuit is detected in the sensor circuits by means of signals with
+different clock pulses. If the clocked signals overlap, the device detects a cross-circuit. With
+3SK1 basic units, cross-circuit detection can be deactivated to allow electronic sensors to be
+evaluated (that monitor themselves as well as the cable to the evaluation unit).
+4.3.3 Enabling circuit (safety-related output)
+An enabling circuit provides a safety-related output signal. From an external viewpoint, enabling
+circuits usually act as NO contacts (however, in terms of functionality, safety-oriented opening
+is always the most important aspect).
+An individual enabling circuit that is redundantly configured internally in the safety relay can
+be used for SIL 3 / PL e.
+Note: Enabling current paths can also be used for signaling purposes.
+3SK1 safety relays are only equipped with enabling circuits with NO functionality. This means
+that when the safety function is triggered, or a fault is detected, the enabling circuits will
+always transfer to the safe state (NO contact open).
+4.3.4 Signaling circuit
+A current signaling path provides a safety-related output signal.
+36 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+With 3SK1 relays, the signaling circuits are always implemented as NC circuits. This means
+that when the safety function is triggered, or a fault is detected, the signaling circuits will
+close.
+With 3SK1 semiconductor devices, the signaling circuits are always implemented as NO
+circuits. This means that when the safety function is triggered, or a fault is detected, the
+signaling circuits will open.
+4.3.5 Feedback circuit
+A feedback circuit is used to monitor controlled actuators (e.g. relays or load contactors) with
+force-guided contacts or mirror contacts. The safety-related outputs can only be activated if the
+feedback circuit is closed.
+When 3SK1 output expansions are used on 3ZY12 device connectors with 3SK1 Advanced basic
+units, it is not necessary to incorporate the expansion modules in the feedback circuit wiring.
+This is implemented internally via the device connector.
+Ensuring electrical safety and safety function
+The normally closed contact of 3RQ12. is designed for a voltage of 24 V DC. If higher voltages
+occur, electrical safety cannot be ensured due to the voltage clearance distances. If the 3RQ12.
+is integrated in a system with a device connector, the feedback circuit is routed via the device
+connector. Connection of external voltage is not necessary and not permitted. Connecting
+external voltage can bypass the safety function.
+4.3.6 Stop category
+Stop category 0
+Non-controlled shutdown by immediately switching off the power to the machine's drive
+elements.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 37
+Stop category 1
+Controlled stopping where the energy feed is interrupted with a time delay, or is only interrupted
+once standstill has been reached.
+Time-delayed shutdown of safety-related outputs in accordance with Stop category 1 is not
+ensured under all operating states.
+In the case of some internal device faults, and when disconnecting the supply voltage, these
+safety-related outputs are switched off instantaneously .
+4.3.7 Automatic start
+For an automatic start, the device is started without manual confirmation, but only after the
+input image has been checked and a positive test of the safety relay has been conducted. This
+function is also known as dynamic operation and is not permissible for EMERGENCY STOP
+devices. Safety devices for prohibited danger zones (e.g. position switches, light arrays, safety
+shutdown mats) can use the automatic start function if this does not pose any risk.
+An automatic start is not permitted for EMERGENCY STOP devices.
+4.3.8 Manual start
+For a manual start, the device is started by operating the START button, but only after the input
+image has been checked and a positive test of the safety relay has been conducted. On a manual
+start, the START button is not monitored for correct operation, a positive edge of the START
+button is sufficient for starting.
+Manual start is not permitted for EMERGENCY STOP devices.
+(cid:44)(cid:49)
+(cid:54)(cid:55)(cid:36)(cid:53)(cid:55)
+(cid:50)(cid:56)(cid:55)
+(cid:33)(cid:3)(cid:19)(cid:86) (cid:33)(cid:3)(cid:19)(cid:86)
+Figure 4-3 "Manual start" start function
+38 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4.3.9 Monitored start
+For a monitored start, the device is started by operating the START button, but only after the
+input image has been checked and a positive test of the safety relay has been conducted.
+Contrary to the manual start, the monitored start evaluates a signal change of the
+START button. This means that the START button cannot be bypassed (misuse). For PL e
+(ISO 13849-1) as well as SIL 3 (IEC 62061), the monitored start must be used in the case
+of EMERGENCY STOP. For other safety sensors/functions, the necessity for a monitored start
+command depends on the risk assessment.
+If the START button is operated for more than 2 seconds, the 3SK1 basic unit detects a wiring
+short-circuit in the START button and switches to the fault state (Device = green; SF = flashing
+red; Out = flashing yellow; IN = off)
+In the delivery state of the 3SK1 safety relays, the start type is set to "Monitored start".
+„1“
+„0“
+(cid:33)(cid:3)(cid:19)(cid:86) (cid:19)(cid:15)(cid:20)(cid:24)(cid:17)(cid:17)(cid:17)(cid:21)(cid:86)
+Figure 4-4 "Monitored start" start function
+4.3.10 Two-hand operation/synchronism
+Synchronous sensor operation is a special form of simultaneity of sensors.
+In this case, it is not sufficient for sensor contacts 1 and 2 to be switched to the closed state
+"at any different times". Instead, they must be closed within 0.5 seconds.
+Synchronism of sensors is required, in particular, in the case of two-hand operation of
+presses. This ensures that the presses only become active when the sensors are operated
+simultaneously with both hands. This minimizes the risk of the operator getting a hand in the
+press.
+When 3SK1 safety relays are used, you can achieve applications up to type IIIc in compliance
+with EN 574 / EN 13851 (applications up to PL e/Cat. 4 in compliance with EN 13849-1 or
+SILCL 3 in compliance with IEC 62061).
+In the delivery state of 3SK1 safety relays, monitoring of time synchronism is deactivated.
+Monitoring of time synchronism can be activated using the following adjustable parameters for
+3SK112 Advanced and 3SK122 Advanced:
+• Jumper T1/PAR (NO/NC evaluation)
+• DIP switches (1) Autostart
+• DIP switches (3) 2 x single-channel
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 39
+The 3SK1 Advanced safety relays exclusively support two-hand control units with 2 NO contacts.
+The two-hand circuit must be marked in compliance with EN 574 EN 13851. You can find
+information on determining the response time in the section entitled Response times
+(Page 119).
+4.3.11 Cascading
+Cascading of safety relays is used for tripping safety relays in series.
+Several safety functions can then be logically connected to a shared shutdown path. Several
+safety-related outputs can be created for selective shutdown of drive elements.
+The connection between the individual modules must be arranged on one side only, because
+cascading from the last relay to the first one would create a loop which would prevent
+starting.
+Cascading is implemented within a control cabinet in a single-channel configuration; this is
+even permissible with SIL 3 / PL e, because cable routing within a control cabinet is protected
+against short-circuits and short-circuiting to P potential (fault exclusion in accordance with
+ISO 13849-2).
+The 3SK1 Advanced device series offers an extremely convenient solution for cascading.
+Input expansions can be easily connected to the evaluation unit by means of device
+connectors.
+4.3.12 Startup testing
+The sensor or protection equipment must be opened and closed again after the supply voltage
+is restored before the enables for the 3SK1 safety relay can be switched through.
+Startup testing ensures that any errors in the sensors are detected (again), because safety
+relays lose their ability to store errors at zero voltage.
+Unauthorized manipulation of the protection equipment can also be detected through
+startup testing.
+The plant operator decides whether startup testing should be performed (risk assessment).
+No general statements apply.
+In the delivery state of 3SK1 safety relays, startup testing is deactivated.
+40 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4.3.13 Connection of actuators
+To achieve the Performance Level / Safety Integrity Level given in the following examples, the
+actuators shown must be monitored in the feedback circuit of the corresponding safety relay.
+For capacitive and inductive loads, we recommend an adequate protective circuit. In this way,
+electromagnetic interference can be suppressed and contact service life increased.
+You can find more information in the SIRIUS Innovations - SIRIUS 3RT2 Contactors/Contactor
+Assemblies manual (http://support.automation.siemens.com/WW/view/en/60306557).
+Actuator wiring up to PL c / Cat. 2 in accordance with ISO 13849-1 or SILCL 1 in accordance with
+IEC 62061
+13 23 A1
+(cid:48)
+14 24 Qx
+Q1 Q1
+Figure 4-5 PL c / Cat. 2 in accordance with ISO 13849-1 or SILCL 1 in accordance with IEC 62061
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 41
+Actuator wiring up to PL e / Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with
+(cid:52)(cid:21)
+Q1 Q2 Q1 Q2
+Figure 4-6 PL e/Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with IEC 62061With
+units that have semiconductor outputs, this wiring is only possible from E02/V1.1.0
+PL e/Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with IEC 62061 can only
+be achieved with cross-circuit-proof/short-circuit to P-proof laying of the control cables from
+the relay output (e.g. 14) to the control relays/contactors (Q1 and Q2) (e.g. as a separately
+sheathed cable or in its own cable duct).
+In the case of 3SK1..2 and 3SK1120 (devices with semiconductor outputs with firmware (FW)
+version V1.0.0 and product version E01) it is not possible to achieve PL d/e/Cat. 3/4 in accordance
+with ISO 13849-1 or SILCL 2/3 in accordance with IEC 62061 with the wiring shown above.
+14 24 Qx Qy
+Figure 4-7 PL e / Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with IEC 62061
+42 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Actuator wiring with 3RM1 up to PL e/Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in
+accordance with IEC 62061
+3RM1
+Q1 3RM1 Q1 3RM1
+Figure 4-8 PL e / Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with IEC 62061
+PL e/Cat. 4 in accordance with ISO 13849-1 or SILCL 3 in accordance with IEC 62061 can only be
+achieved with cross-circuit-proof/short-circuit to P-proof laying of the control cables from the
+relay output (e.g. 14) to the 3RM1 Failsafe motor starter (e.g. as a separately sheathed cable or
+in its own cable duct). Thanks to the intrinsic safety of the 3RM1 Failsafe motor starter,
+monitoring by the upstream 3SK1 safety relay (via feedback circuit) is not necessary here.
+More detailed technical information is available in the "SIRIUS 3RM1 motor starters (http://
+support.automation.siemens.com/WW/view/en/66295730)" manual on the Internet.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 43
+4.3.14 Series connection of sensors
+Series connection of EMERGENCY STOP command devices
+It is possible to connect EMERGENCY STOP command elements in series up to the highest safety
+level (SILCL 3 in accordance with IEC 62061, SIL 3 in accordance with IEC 61508, and PL e (Cat. 4)
+in accordance with ISO 13849-1) because it is assumed that only one EMERGENCY STOP is
+operated at a time. This ensures that errors and defects can be detected.
+(cid:40)(cid:48)(cid:40)(cid:53)(cid:42)(cid:40)(cid:49)(cid:38)(cid:60)(cid:3)(cid:54)(cid:55)(cid:50)(cid:51)(cid:3)(cid:20)
+(cid:40)(cid:48)(cid:40)(cid:53)(cid:42)(cid:40)(cid:49)(cid:38)(cid:60)(cid:3)(cid:54)(cid:55)(cid:50)(cid:51)(cid:3)(cid:81)
+(cid:22)(cid:54)(cid:46)(cid:20)
+Series connection of mechanical position switches
+In general, position switches may be connected in series if measures ensure that several
+protective doors are not regularly opened simultaneously (otherwise a fault cannot be detected).
+For safety level SILCL3 in accordance with IEC 62061, SIL3 in accordance with IEC 61508,
+and PL e (Cat. 4) in accordance with ISO 13849-1, however, they must never be connected
+in series because every hazardous error must be detected (independently of the operating
+personnel).
+44 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+(cid:51)(cid:85)(cid:82)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:89)(cid:72)(cid:3)
+(cid:38)(cid:79)(cid:82)(cid:86)(cid:72)(cid:71)
+(cid:71)(cid:82)(cid:82)(cid:85)(cid:3)(cid:20)
+(cid:50)(cid:83)(cid:72)(cid:81)
+(cid:54)(cid:22)
+(cid:71)(cid:82)(cid:82)(cid:85)(cid:3)(cid:21)
+(cid:54)(cid:23)
+4.3.15 Use of magnetically operated switches
+If magnetically operated switches are used, the magnetic contacts may weld on account of
+capacitive effects. The reason for this is that a high peak current may occur when switching these
+loads (e.g. also cable capacitances). A corresponding fuse protection with the rated current of
+the magnetically operated switch must be provided if the device/sensor combinations have not
+been explicitly enabled.
+For more details, please refer to the documentation of the magnetically operated switch.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 45
+46 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+5.1 3RQ1 output expansion
+5.1.1 Applications
+Expansion of safety-related outputs
+The 3RQ1 output expansions are used to expand the safety-related outputs. The maximum
+achievable Performance Level PL/Cat. in accordance with ISO 13849-1, SILCL in accordance with
+IEC 62061, SIL in accordance with IEC 61508 is SIL 2 / PL; for 3RQ12. is SIL 3 / PL e. To achieve this,
+you must realize the external wiring, i.e. the connection between the basic unit and 3RQ1
+output expansion, in a fail-safe manner, e.g. with the 3ZY12 device connector.
+With the 3RQ10., SIL 2 in accordance with IEC 62061 can only be achieved by means of
+additional feedback circuit wiring of the 3RQ1 normally closed contact in the safety circuit of the
+3SK1 basic unit.
+The 3RQ12. output expansions are certified up to SIL 3 / PL e in accordance with IEC 62061 /
+ISO 13849. With these variants, the feedback circuit is situated on the device connector, that
+is to say, additional wiring of the feedback circuit is not necessary.
+If expansion units are controlled via the 3ZY12 device connector, additional feeding of the
+control supply voltage (A1/A2) at one of the output expansions leads to a fault in the system
+configuration.
+Using the output expansions with conventional wiring
+If you require Stop category 1 outputs for the output expansion, terminals A1/A2 of the output
+expansion must be connected to outputs 38 or 48 on 3SK1 basic units with relay outputs or to
+Q1t/Q2t (in the case of 3SK1 with semiconductor outputs).
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 47
+Control
+You can control the output expansions via the supply voltage (A1/A2).
+Alternatively, with the 24 V AC/DC variant, you can control the output expansion via the
+3ZY12 device connector.
+If the expansion units are controlled via the 3ZY12 device connector, additional feeding of
+the control supply voltage (A1/A2) at one of the output expansions leads to a fault in the
+system configuration.
+5.1.2 Function description
+The operating state of the 3RQ1 output expansions is displayed on the DEVICE LED.
+Depending on the variant used, the 3RQ1 output expansions have 1NO/1NC, 2NO/1NC,
+2NO/2NC or 4NO/1NC. The output expansions can be controlled via any output of the basic
+unit via (A1). The NC circuits of the 3RQ1 are used to monitor the output expansion or for
+additional switching.
+In the 24 V DC variants, the expansion units can be controlled and evaluated via the 3ZY12
+device connectors.
+5.1.3 Display of the operating state
+Display of the operating state
+The operating state and functioning of the device are indicated by an LED:
+• (1) DEVICE
+Operating states
+LED State Meaning
+DEVICE Control supply voltage Control state of the relay
+Off Off Inactive position
+Green ON Active position
+48 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+5.1.4 Device features
+Article number
+Article number Number of NO / Voltage supply Width
+NC contacts
+3RQ1000-xEB00 1NO / 1NC 24 V DC 17.5 mm
+3RQ1000-xEB00 1NO / 1NC 24 ... 240 V AC/DC 17.5 mm
+3RQ1000-xGB00 2NO / 1NC 24 V DC 17.5 mm
+3RQ1000-xGB00 2NO / 1NC 24 ... 240 V AC/DC 17.5 mm
+3RQ1000-xHB00 2NO / 2NC 24 V DC 22.5 mm
+3RQ1000-xHB00 2NO / 2NC 24 ... 240 V AC/DC 22.5 mm
+3RQ1000-xLB00 4NO / 1NC 24 V DC 22.5 mm
+3RQ1000-xLB00 4NO / 1NC 24 ... 240 V AC/DC 22.5 mm
+3RQ1200-xEB00 1NO / 1NC 24 V DC 17.5 mm
+3RQ1200-xEW00 1NO / 1NC 24 ... 240 V AC/DC 17.5 mm
+Power supply
+24 V DC:
+• An SELV / PELV power supply must be used for the infeed
+24 ... 240 V AC/DC:
+• Wide-range power supply for connecting a SELV / PELV power supply unit or a direct line
+supply connection L/N.
+Device properties
+• 1 LED for status display
+• Up to 4 safety-related outputs (NO contacts)
+• 1 NC circuit as feedback contact for output expansion to the up-circuit basic unit
+• 3ZY12 device connectors.
+• Enclosure widths 17.5 mm / 22.5 mm
+• Removable terminals
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 49
+5.1.5 3RQ11.00-.E.00, 3RQ1000-.G.00 configuration
+Diagram showing a typical arrangement:
+(cid:20)
+(cid:21)
+(cid:22)
+(cid:24)
+(cid:23)
+(cid:25)
+(cid:26)
+① Top cover flap
+② Top cover flap; internal inscription
+③ Display LEDs
+④ Bottom cover flap
+⑤ Bottom cover flap; internal inscription
+⑥ DataMatrix code
+⑦ Device identification label
+50 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+5.1.6 3RQ1000-xHB00, 3RQ1000-xLB00 configuration
+5.1.7 Terminal assignment
+3RQ100-.E.00 / 3RQ1200-.E.00
+Terminal Explanation
+A1 +
+A2 -
+13 - 14 Safety-related output 1 (NO contact, relay contact)
+21 - 22 NC circuit as feedback contact (NC, relay contact)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 51
+3RQ1000-.GB00
+23 - 24 Safety-related output 2 (NO contact, relay contact)
+31 - 32 NC circuit as feedback contact (NC, relay contact)
+3RQ1000-.HB00
+41 - 42 NC circuit as feedback contact (NC, relay contact)
+3RQ1000-.LB00
+33 - 34 Safety-related output 3 (NO contact, relay contact)
+43 - 44 Safety-related output 4 (NO contact, relay contact)
+51 - 52 NC circuit as feedback contact (NC, relay contact)
+52 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+6.1 3ZY12 device connector
+6.1.1 Device features
+Article number:
+(cid:20) (cid:21) (cid:22)
+① Cover (included in the scope of supply of each device termination connector.)
+② 3ZY12 device connectors
+③ 3ZY12 device termination connectors
+Article number Device connector for
+3ZY1212-1BA00 3SK1 safety relay
+3SK1 / 3RQ1 output expansion
+Width 17.5 mm
+3ZY1212-2BA00 3SK1 safety relay
+Width 22.5 mm
+3ZY1212-2EA00 3RM1 motor starter
+3ZY1212-2AB00 Device connector for looping through signals
+3ZY1210-2AA00 Device connector without function
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 53
+Article number Device termination connector for
+3ZY1212-2FA00 3RM1 motor starter
+3ZY1212-2DA00 3SK1 safety relay
+3ZY1212-1DA00 3RQ1 output expansion
+3ZY1212-0FA01 Set for 3SK1 safety relay, > 45 mm wide
+Set consists of 3ZY1212-2FA00 device connector and
+3ZY1210-2AA00 device connector
+Use of device connectors
+• A device connector is always necessary when other devices have to be plugged in.
+• A device termination connector is always required in the system for the last module on the
+right.
+Use of the device connectors to expand the Advanced basic units is optional.
+The device connectors cannot be used with the Standard series.
+Only safety relays with a supply voltage of 24 V DC may be used on the 3ZY12 device connectors.
+54 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+The following device connectors are required for the various enclosure widths of the
+Advanced device series:
+Devices Device connector for Device connector for Device termination Device termination
+3SK1 safety relay 3SK1 safety relay connector for 3SK1 connector for 3RQ1
+17.5 mm 22.5 mm safety relay 17.5 mm
+3ZY1212-1BA00 3ZY1212-2BA00 22.5 mm 3ZY1212-1DA00
+3ZY1212-2DA00
+3SK1 Advanced basic units
+3SK1121 - x x -
+3SK1122 - x x -
+3SK1120 x - - -
+Output expansions 3SK1
+3SK1211 (4RO) - x x -
+3SK1213 (3RO) - - - -
+3RQ1*E/G* x - - x
+(17.5 mm)
+3RQ1*H/L* - x x -
+(22.5 mm)
+Input expansions 3SK1
+3SK1220 x - - -
+3SK1230 - x - -
+power supply
+3RM1 Failsafe motor starters
+3RM1 - - - -
+Devices Device connector for Device termination Device termination Device connector for
+3RM1 motor starter connector for 3RM1 connector set for en‐ looping through sig‐
+22.5 mm motor starter closures nals
+3ZY1212-2EA00 22.5 mm >45 mm1) 22.5 mm
+3ZY1212-2FA00 3ZY1212-0FA01 3ZY1212-2AB00
+3SK1121 - - - -
+3SK1122 - - - -
+3SK1120 - - - -
+3SK1211 (4RO) - - - -
+3SK1213 (3RO) - - x -
+3RQ1*E/G* - - - -
+3RQ1*H/L* - - - -
+3SK1220 - - - -
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 55
+3SK1230 - - - -
+3RM1 x x - x
+1) Set consists of 3ZY1212-2FA00 device connector and 3ZY1210-2AA00 device connector
+If a basic unit is expanded on the right, the last output expansion must be terminated with a
+device termination connector of the corresponding device.
+If a basic unit is only expanded on the left, a device termination connector for 3SK1 safety relays
+must be mounted below the basic unit.
+6.1.2 Applications
+The 3SK1 Advanced basic unit can be expanded on the input and output sides using 3ZY12
+device connectors (connecting plugs) without any additional wiring outlay. When configuring
+the system, it is important to ensure that input expansions are connected on the left and 3RQ1
+force-guided coupling relays/3RM1 Failsafe motor starters on the right of a basic unit.
+56 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+6.2 System configuration rules
+General information
+• All basic units can be operated as a stand-alone device without a device connector.
+Expansion on the input side
+• If an (additional) input expansion is detected on the left when the basic device or an input
+expansion powers up, it will be loaded into the device configuration.
+• An input expansion evaluates the sensor states and generates an enable signal for the basic
+unit depending on the start condition. The enable signal is then acquired by an input
+expansion on the right-hand side, or acquired by the basic unit and ANDed with its sensor
+statuses.
+You can find information on the start characteristics in the system configuration of the 3SK1
+Advanced in the chapter "Explanation of the device’s function (Page 115)".
+• The 3ZY12 device connector used below the final device must be fitted with a cover on the
+left side (included with the device termination connectors).
+• A 3SK1230 power supply can also be used in the 3SK system. This 3SK1230 power supply
+must always be plugged into the system on the extreme left.
+• No more than one 3SK1230 power supply is admissible for each system.
+• If a 3SK1230 power supply is used, no additional, external 24 V DC voltage is permitted to be
+connected to a basic unit.
+Output expansion
+• If an output expansion is detected on the right when the device powers up, this will be loaded
+into the device configuration. The internal feedback circuit of the contact extension is
+evaluated and checked.
+• If both the 3SK1211 / 3RQ1 output expansion and 3RM1 Failsafe motor starters are used in
+a system, the 3RM1 Failsafe motor starters must be positioned on the right of the 3SK1211 /
+3RQ1 output expansions.
+• If a 3SK1213 output expansion is used in the system, this must always be the final station in
+the system (on the right) and must be fitted with a 3ZY1212-0FA01 device termination
+connector. Only one 3SK1213 output expansion can be used in the system with a device
+connector; further 3SK1213 output expansions can be optionally interfaced by wiring.
+• On the 3SK121 output expansions, a slide switch on the device front must be used to set
+whether the (UNDELAYED) or (DELAYED) output signal of the basic unit is to trigger a
+response. If a purely instantaneous 3SK112 basic unit is used, the slide switch MUST be set
+to the (UNDELAYED) position.
+The 3RQ1 output expansions do not have a slide switch and always react to the (UNDELAYED)
+output signal.
+• In the case of a change to the device configuration during operation, error mode is activated
+immediately. Restarting must be triggered via Power OFF/ON.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 57
+• If output expansions are used, a device termination connector for the 3SK1 safety relay must
+ALWAYS be used under the final device on the right (for 3SK1211) with the switch setting: "1"
+(switch in top position), device termination connector set for 3SK1 safety relay, > 45 mm
+wide (for 3SK1213) or device termination connectors for 3RM1 motor starters must be used
+• 22.5 mm device termination connector for 3SK1 / 3RQ1:
+(cid:18)
+① Below 3SK1211 output expansion: The switch of the device termination connector must be
+closed, i.e. in position 1 at the top
+② Below basic unit: The switch of the device termination connector must be open, i.e. in position
+2 at the bottom.
+• No switch needs to be set on the device termination connector for 3RM1 motor starters
+• As from certain load limits/temperature ranges, clearances must be observed for 3RM1
+Failsafe motor starters. To this end, there are appropriate device connectors for looping
+through signals (3ZY1212-2AB00).
+• In the configuration with a 3SK1 Advanced basic unit on a 3ZY12 device connector, 3RM1
+Failsafe motor starters can only be controlled by the instantaneous enable signal of the 3SK1
+unit. If control of the 3RM1 Failsafe motor starters by means of the time-delayed output is
+desired, this can only be done by wiring the time-delayed safety-related output of the 3SK1
+basic unit.
+You will find further information on the configuration guidelines for 3RM1 Failsafe motor
+starters in the SIRIUS 3RM1 motor starters (http://support.automation.siemens.com/WW/
+view/en/66295730) manual, in the chapter "Load feeders - protection against short circuit".
+Configuration notes for using device connectors
+Further configuration notes:
+connector; connection of external voltage is not necessary and not permitted. Connecting
+58 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Supply voltage must only be fed in on the basic unit
+The supply voltage of 24 V DC must only be fed in on the basic unit, otherwise the safety
+function is bypassed.
+Power supply by means of the 3SK1230 power supply
+• When device connectors are used, only one 3SK1230 power supply is permitted in each
+system.
+• The 3SK1230 power supply must always be located on the extreme left.
+• If a 3SK1230 power supply is used, an additional (external) 24 V DC connection is not
+permitted (this also applies to the cascading input, as well as to non-floating sensors).
+24 V DC supply voltage from an external power supply unit
+• It is only permitted to connect a voltage of 24 V DC to the terminals on the basic unit.
+• It is not permitted to supply 24 V DC to an expansion component or 3RM1 Failsafe motor
+starter.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 59
+60 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.1 Warning notices
+Hazardous Voltage
+Can Cause Death, Serious Injury, or Property Damage.
+Hazardous electrical voltages can cause electric shock, burns and damage.
+screw in all terminal screws that are not needed to clamp conductors.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 61
+7.2 Terminal coding
+You can provide the terminals with coding pins (3ZY1440-1AA00). This helps you to avoid errors
+when replacing the terminals.
+Figure 7-1 Module with coding pins
+Figure 7-2 Stud position rotated by 60° in each case
+62 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.3 Mounting the devices on a level surface
+Requirements
+Please note the following requirements for mounting on a level surface:
+• Mounting position: Any (except 3SK1213). With 3SK1213: +/- 22.5° lateral inclination.
+• Clearances: The distance to be maintained to the side with side-by-side mounting is 0 mm.
+The distance to be maintained to the side from grounded parts is 5 mm.
+• Properly executed drill holes with thread or plug on the level surface.
+For details of the distances between the drilled holes, refer to the relevant dimension
+drawings (Page 133).
+• Two headed screws for 17.5 mm or 22.5 mm devices / four headed screws for 90 mm devices
+to fit the holes M4 x 12 in accordance with DIN 784.
+• Plastic push-in lugs: Refer to the accessories list for the relevant article number in the chapter
+"Accessories (Page 157)".
+Procedure
+Figure 7-3 17.5 mm and 22.5 mm devices
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 63
+Figure 7-4 90 mm device
+1. Insert the push-in lugs into the openings provided on the device until they engage.
+2. Hold the device up to the surface prepared for screw fastening.
+3. Insert the screws through the elongated holes into the push-in lugs.
+4. Screw the device onto the level surface so that it is secure.
+Tightening torque: 1 Nm
+64 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.4 Disassembling devices from a level surface
+Before starting work, therefore, disconnect the system and devices from the power supply.
+• The terminals have been removed or disconnected.
+Figure 7-5 Disassembling 17.5 mm and 22.5 mm devices
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 65
+Figure 7-6 Disassembling 90 mm devices
+1. Hold the device firmly.
+2. Unscrew the cap screws.
+3. Lift the device from the level surface.
+4. Remove the push-in lugs from the device.
+66 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.5 Mounting 22.5 mm/17.5 mm devices on a standard mounting rail
+• A horizontal 35 mm wide mounting rail in accordance with DIN EN 60715 has been properly
+secured at the installation location.
+• Please observe the information about the mounting position in the technical data
+(Page 129).
+The figures show 22.5 mm devices. The 17.5 mm devices are mounted correspondingly.
+1. Place the back of the device onto the upper edge of the standard mounting rail.
+2. Press the lower half of the device against the DIN rail until the device engages.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 67
+7.6 Mounting the 90 mm devices on a standard mounting rail
+68 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.7 Removing devices from a standard mounting rail
+1. Press the device downwards.
+2. Pull the lower half of the device away from the standard mounting rail.
+3. Lift the device from the upper edge of the standard mounting rail.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 69
+7.8 Mounting 22.5 mm/17.5 mm devices with device connectors on a standard mounting rail
+7.8 Mounting 22.5 mm/17.5 mm devices with device connectors on
+a standard mounting rail
+• Device connectors:
+Refer to the accessories list for the relevant article number in the chapter "Accessories
+(Page 157)".
+1. Place the back of the device connector on the upper edge of the standard mounting rail.
+2. Press the lower half of the device connector against the standard mounting rail until the
+connector engages. Repeat the procedure with all the required device connectors.
+70 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4. Push the device connectors together until they engage.
+5. Mount the cover on the left of the first device connector. The cover is included in the
+scope of supply of the device termination connector.
+6. Set the slide switch in the device termination connector for the 3SK1 safety relay to the
+following positions:
+• Below 3SK1211 output expansion
+Position ① (top; i.e. closed)
+• Below 3SK1 basic device
+Position ② (bottom; i.e. open)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 71
+7. Mount the device on the device connector.
+8. Mount all the devices required for the system configuration in accordance with the
+respective installation guidelines on the device connectors.
+72 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.9 Removing 22.5 mm/17.5 mm devices with device connectors from a standard mounting rail
+7.9 Removing 22.5 mm/17.5 mm devices with device connectors
+from a standard mounting rail
+The figures show 22.5 mm devices. The 17.5 mm devices are removed correspondingly.
+1. Unlock the device using a screwdriver.
+2. Pull the lower half of the device away from the device connector.
+3. Unlock the device using a screwdriver.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 73
+4.Pull the device away from the device connector.
+5.Separate the device connectors using a screwdriver.
+6.Remove the cover.
+74 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+(cid:28)
+(cid:27)
+7.Press the device connector down.
+8.Pull the lower half of the device connector away from the standard mounting rail.
+9.Lift the device connector from the upper edge of the standard mounting rail.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 75
+7.10 Mounting 90 mm devices with device connectors on a standard mounting rail
+7.10 Mounting 90 mm devices with device connectors on a standard
+mounting rail
+• Use the device termination connector set for 3SK1 safety relays, > 45 mm wide.
+• Please observe the obligatory mounting rules in the chapter: "System configuration rules
+(Page 57)".
+1. Hang the back of the device connector onto the upper edge of the standard mounting rail.
+connector engages.
+3. Repeat the procedure with all the required device connectors.
+76 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4.Push the device connectors together until they engage.
+5.Mount the cover on the left of the first device connector piece and the device connectors
+supplied in the set for enclosures of 45 mm upwards (right-hand side).
+112,5
+22,5 90
+45
+6.Note the clearances required for the 90 mm devices.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 77
+7.Mount the 3SK1213 output expansion on the device connectors.
+8.Mount all the devices required for the system configuration on the device connectors in
+accordance with the respective installation guidelines.
+78 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.11 Removing 90 mm devices with device connectors from a standard mounting rail
+7.11 Removing 90 mm devices with device connectors from a
+standard mounting rail
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 79
+6.Disassemble the terminating section.
+80 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 81
+7.12 Mounting 22.5 mm/17.5 mm devices with device connectors on the wall
+7.12 Mounting 22.5 mm/17.5 mm devices with device connectors on
+the wall
+• Two properly executed drill holes (per device connector) with thread or plug on the level
+surface.
+• Two screws (per device connector) to fit the holes M4 x12 in accordance with DIN 784.
+• Device connector
+Procedure for mounting on a level surface
+82 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Push the device connectors together until they engage.
+1. Mount the cover on the left of the first device connector. The cover is included in the scope
+of supply of the device termination connector.
+2. Set the slide switch in the device termination connector for the 3SK1 safety relays to the
+– Below 3SK1211 output expansion
+– Below 3SK1 basic device
+(not applicable when mounting 3RM1 Failsafe motor starters)
+3. Hold the device connector against the level surface prepared for screw fastening.
+4. Insert the screws through the holes in the device connectors.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 83
+5. Screw the device connector securely onto the level surface.
+Tightening torques:
+– Top: < 0.1 Nm
+– Bottom: 1 Nm
+6. Mount the device on the device connector.
+7. Mount all the devices required for the system configuration in accordance with the respective
+installation guidelines on the device connectors.
+84 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.13 Removing 22.5 mm/17.5 mm devices with device connectors from the wall
+7.13 Removing 22.5 mm/17.5 mm devices with device connectors
+from the wall
+1. Unlock the device (below) using a screwdriver.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 85
+3. Unlock the device (above) using a screwdriver.
+4. Pull the device away from the device connector.
+5. Release the screws.
+6. Separate the device connectors.
+7. Remove the cover.
+86 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+7.14 Mounting 90 mm devices with device connectors on the wall
+• Two properly executed drill holes with thread or plug on the level surface (per device
+connector).
+• Two M4 x 12 screws in accordance with DIN 784 (per device connector) to fit the holes.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 87
+1. Push the device connectors together until they engage.
+2. Mount the cover on the left of the first device connector.
+(cid:20)(cid:25)(cid:15)(cid:27)
+(cid:25)(cid:15)(cid:27)(cid:20)
+(cid:21)(cid:21)(cid:15)(cid:28) (cid:25)(cid:26)(cid:15)(cid:23) (cid:25)(cid:15)(cid:21)
+(cid:19)(cid:27)
+(cid:3544)(cid:23)(cid:15)(cid:24)
+3. Note the clearances required for the 90 mm devices.
+Mount the device connector supplied in the set for enclosures of 45 mm upwards (right-hand
+side).
+88 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+4. Hold the device connector against the level surface prepared for screw fastening.
+5. Insert the screws through the holes in the device connectors.
+6. Screw the device connector securely onto the level surface.
+7. Mount the 3SK1213 output expansion on the device connectors.
+8. Mount all the devices required for the system configuration in accordance with the respective
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 89
+7.15 Removing 90 mm devices with device connectors from wall
+1. Unlock the device (bottom) using a screwdriver.
+90 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+3. Unlock the device (top) using a screwdriver.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 91
+7.16 Mounting the sealable cover
+The sealable cover (3ZY1321-1AA00 for 17.5 mm devices, 3ZY1321-2AA00 for 22.5 mm
+devices) can be used to secure the DIP switches (and, if present, the potentiometers for setting
+the delay time) of the safety relays against unauthorized or unintended readjustment.
+As an alternative, Siemens also offers a sealable membrane (3TK2820-0AA00) for securing
+the safety relays. The sealable membrane is fixed to the front of the safety relay and secures
+the DIP switches and the buttons (and potentiometers) against unintentional readjustment.
+Mounting the sealable cover
+1. Attach the hooks on the cover to the openings on the device and fold the cover up.
+2. Seal the cover to secure it against unauthorized removal.
+Sealing wire diameter, max.: 2 mm
+92 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+8.1 Warning notices
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 93
+8.2 22.5 mm/17.5 mm devices
+8.2.1 Terminal assignment
+Location of the connections
+The inside faces of the terminal covers are labeled with the designations of the relevant
+terminals. The position of the label corresponds to the position of the respective terminal.
+(cid:38)
+(cid:37)
+(cid:36)
+94 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+8.2.2 Connection data for 3RQ1 screw terminal
+Specification and value
+in the case of removable terminals with screw-type terminals
+Screwdriver Cross-tip screwdriver
+Size: PZ 1x80 (⌀ 4.5 mm)
+Torque: 0.6 to 0.8 Nm
+Rigid cable A = 10 mm
+1 x 0.5 ... 4.0 mm²
+2 x 0.5 ... 2.5 mm²
+Flexible conductor with end sleeve A = 10 mm
+2 x 0.5 ... 1.5 mm²
+Flexible cable Not permissible
+AWG 1 x 20 to 12
+2 x 20 to 14
+8.2.3 Connecting the screw-type terminals
+Tools and materials
+• Cross-tip screwdriver size PZ 1 x 80.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 95
+1. Insert the relevant cable into square on the screw-type terminal until it engages.
+2. Hold the cable in the screw-type terminal.
+3. Tighten the screw with a torque of 0.6 … 0.8 Nm.
+4. Pull on the cable to ensure it is screwed tight.
+8.2.4 Disconnecting the screw-type terminals
+Tools
+• Cross-tip screwdriver size PZ 1 x 80
+1. Unscrew the screw of the screw-type terminal.
+2. Remove the cable from the unscrewed screw terminal.
+96 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+8.2.5 Wiring rules for spring-loaded terminal (push-in system)
+Notes on handling spring-loaded terminals (push‑in system)
+The terminal area of the spring-loaded (push-in) terminals is rectangular, and the maximum
+overall dimensions of the conductor to be wired must not exceed 1.5 x 2.4 mm (control current
+terminals).
+Attention must be paid to the orientation of the terminal area, which may call for vertical
+fitting of rectangularly crimped cables.
+To make optimum use of available terminal area, you are advised to choose a form of
+crimping that creates a corresponding rectangular contour. Trapezoidal crimping is generally
+very highly suitable in this case.
+When use is made of a cable that utilizes the full overall height, the terminal's spring is
+deflected to the maximum. Therefore, removal of this cable may become a problem because
+it requires further deflection of the spring.
+Control current terminals
+2.4 mm
+1.5 mm
+Terminal area of control current terminals
+8.2.6 Connection data for 3SK1 spring-loaded terminal (push-in system)
+Connection data for ... Control current terminals
+Connectable conductor cross-sections for solid cables 2 x 0.5 ... 2 x 1.5 mm²
+(AWG1): 20 ... 16)
+Connectable conductor cross-sections for Without end sleeve 2 x 0.5 ... 2 x 1.5 mm²
+flexible cables
+With end sleeve (with and without 2 x 0.5 ... 2 x 1.0 mm² 2)
+plastic sleeve)
+(AWG1): 20 ... 18)
+With TWIN end sleeve ---
+---
+Cable stripping length 10 ... 11 mm
+End sleeves according to DIN 46228‑4 with plastic sleeve 10 mm
+1) AWG: American Wire Gauge (AWG does not define use of end sleeves)
+2) When 2 x 1.0 mm² end sleeves with a plastic sleeve are used, space problems may arise with the sleeves; as an alternative,
+you are advised to use end sleeves without plastic sleeves
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 97
+8.2.7 Connection data for 3RQ1 spring-loaded terminal (push-in system)
+Connectable conductor cross-sections for solid cables 1 x (0.5 .. 4.0) mm²
+(AWG1): 1 x 20 to 12)
+Connectable conductor cross-sections for Without end sleeve 1 x (0.5 ... 4.0) mm²
+With end sleeve (with and without 1 x (0.5 ... 2.5) mm²
+Cable stripping length 10 mm
+8.2.8 Connecting spring-loaded (push-in) terminals
+The spring-loaded (push-in) system allows wiring without tools for rigid conductors or
+conductors equipped with end sleeves.
+A screwdriver is required for wiring finely-stranded or stranded conductors without end
+sleeves on spring-loaded (push-in) terminals.
+• 0.5 x 3 mm screwdriver DIN 5264 (for finely-stranded conductors only).
+98 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Rigid cables or cables equipped with end sleeves
+1. Insert the cable into the oval opening as far as it will go.
+2. Pull on the cable to ensure it is tight.
+Finely-stranded cables
+1. Insert the screwdriver in the rectangular opening to open the terminal (oval opening).
+2. Insert the cable as far as it will go into the oval opening and remove the screwdriver.
+3. Pull on the cable to ensure it is tight.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 99
+8.2.9 Disconnect the spring-loaded (push-in) terminal
+• Screwdriver DIN 5264 of the size 0.5 x 3 mm
+1. Insert the screwdriver into the rectangular opening of the spring-loaded (push-in) terminal
+until it engages.
+2. Remove the cable from the oval opening.
+3. Remove the screwdriver.
+8.2.10 Attaching the terminals
+100 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+You must have removed the terminals, for the purpose of replacing a device, for example.
+Procedure when plugging in the terminals
+1. Insert the detachable terminals into the guide rail of the device.
+2. Slide the detachable terminals back until they audibly engage.
+8.2.11 Disconnecting
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 101
+Removing terminals from the device
+1. Press the clip of the terminals upwards.
+2. Pull the terminals out to the front.
+3. Lift the terminals out of the guide rail of the device.
+Screw terminals: Disconnecting the conductor
+2. Remove the cable from the unscrewed screw-type terminal.
+102 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Push-in terminals Disconnecting the conductor
+1. Insert the screwdriver into the rectangular opening of the push-in terminal until it engages.
+Please observe a 10° horizontal angular deviation of the screwdriver to the oval opening.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 103
+8.3 Devices 90 mm
+8.3.1 Opening the terminal cover
+Positions of the terminals and opening the terminal cover
+Ther removable terminals are located under the lower terminal cover.
+To open the terminal cover, press on it in the middle ① and lift it up ②.
+104 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+8.3.2 Connection data for terminals
+Screwdriver Screwdriver
+for removable terminals with screw for removable terminals with spring-
+terminal loaded connection
+Screwdriver Cross-tip screwdriver Screwdriver
+Size: PZ 1 (⌀ 4 mm) Size: 0 or 1 (width to 3 mm) for raising
+Torque: 0.8 to 1.2 Nm the terminal springs
+DIN 5264-A; 0.5 x 3
+Rigid cable A = 10 mm A = 10 mm
+1 x 0.5 ... 4.0 mm2 1 x 0.5 ... 1.5 mm²
+2 x 0.5 ... 2.5 mm2 2 x 0.5 ... 1.5 mm²
+Flexible cable with end sleeve/cable lug A = 10 mm A = 10 mm
+1 x 0.5 ... 2.5 mm² 1 x 0.5 ... 1.5 mm²
+2 x 0.5 ... 1.5 mm² 2 x 0.5 ... 1.5 mm²
+Flexible cable Not permissible A = 10 mm
+1 x 0.5 ... 1.5 mm²
+AWG 1 x 20 to 12 1 x 20 to 16
+2 x 18 to 14 2 x 20 to 16
+8.3.3 Connecting terminals
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 105
+Procedure for screw terminal blocks
+3. Tighten the screw of the terminal in which the cable is inserted.
+Procedure for spring-loaded terminals
+1. To release the terminal springs, insert the screwdriver as far as it will go into the rectangular
+opening of the spring-loaded terminal. Please observe a 10° horizontal angular deviation of
+the screwdriver to the oval opening.
+2. Insert the cable into the oval opening as far as it will go.
+106 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+3. Hold the cable in the spring-loaded terminal.
+4. Remove the screwdriver.
+5. Pull on the cable to ensure it is tight.
+8.3.4 Mounting terminals
+Procedure for mounting terminals
+3. Check that the clip of the removable terminals closes flush with the front panel.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 107
+8.3.5 Disconnecting
+1. Insert a flat-head screwdriver between the clip of the terminals and the front panel.
+Disconnecting the screw terminal
+108 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+1. Insert the screwdriver into the screw-type terminal.
+2. Unscrew the screw of the screw-type terminal.
+3. Remove the cable from the unscrewed screw-type terminal.
+Disconnecting the spring-loaded terminal
+3 mm
+~10°
+1. Insert the flat-head screwdriver into the rectangular opening of the spring-loaded terminal
+until it engages. Please observe a 10° horizontal angular deviation of the screwdriver to the
+oval opening.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 109
+8.4 Device replacement
+When replacing a device, you do not need to re-wire it. The terminals can be disconnected
+from the defective device and then connected to the new device.
+You can provide the terminals with coding pins. These are to help you avoid errors when
+replacing the terminals (see the chapter "Terminal coding (Page 62)" for more details).
+Replacing the module
+Carry out function test of the plant
+To ensure the safety of the system, a full functional test must be conducted and a successful
+result obtained after a device has been replaced.
+Only replace a defective device with a device of an identical article number.
+1. Disconnect the defective device at the terminals.
+– Chapter for 22.5 mm / 17.5 mm devices "Disconnecting (Page 101)"
+– Chapter for 90 mm devices "Disconnecting (Page 108)"
+2. Deinstall the defective device.
+– Chapter "Removing devices from a standard mounting rail (Page 69)"
+– Chapter "Removing 22.5 mm/17.5 mm devices with device connectors from a standard
+mounting rail (Page 73)"
+– Chapter "Removing 90 mm devices with device connectors from a standard mounting rail
+(Page 79)"
+110 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+3. Mount the new device
+– Chapter "Mounting the devices on a level surface (Page 63)"
+– Chapter "Mounting 22.5 mm/17.5 mm devices on a standard mounting rail (Page 67)"
+– Chapter "Mounting the 90 mm devices on a standard mounting rail (Page 68)"
+– Chapter "Mounting 22.5 mm/17.5 mm devices with device connectors on the wall
+(Page 82)"
+– Chapter "Mounting 90 mm devices with device connectors on the wall (Page 87)"
+4. Connect the defective device at the terminals
+– Chapter for 22.5 mm / 17.5 mm devices "Connecting the screw-type terminals (Page 95)",
+"Connecting spring-loaded (push-in) terminals (Page 98)" and "Attaching the terminals
+(Page 100)"
+– Chapter for 90 mm devices "Connecting terminals (Page 105)" and "Mounting terminals
+(Page 107)"
+5. Set the DIP switches/slide switches and, if applicable, the times according to the defective
+After applying the supply voltage, the new 3SK1 basic unit checks whether the hardware
+configuration matches the device configuration.
+If there are no deviations, the system re-enters safety mode.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 111
+112 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+This chapter only refers to the 3SK1 basic units. If the 3RQ1 force-guided coupling relay is used
+without 3SK1 basic units, this chapter does not contain any relevant information.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 113
+9.1 Procedure for configuration
+General information:
+• It is only possible to change the configuration (DIP switch, NC/NO evaluation, potentiometer,
+input and output expansion) in configuration mode. Modifications during operation are not
+accepted.
+• A configuration change (DIP switch, NC/NO evaluation, potentiometer) is indicated in safety
+mode by the "DEVICE" LED flashing green/yellow, but does not change the device function.
+• In safety mode, if a change in the system configuration (input and output expansion) is
+detected, the device switches to error mode ("DEVICE" LED and "SF" LED red). A restart is only
+possible using Power OFF/ON.
+Procedure for configuring a basic unit
+1. Set the configuration (DIP, PAR, potentiometer, input expansion, output expansion) in
+accordance with the desired function.
+2. Connect the power supply.
+3. If the device detects a modified configuration, it remains in configuration mode (LEDs flash)
+during power up.
+4. Confirm the new configuration by operating the SET/RESET pushbutton for more than 1s.
+5. The configuration has been accepted and the device changes to safety mode.
+Configuration and setting the delay time
+A change to the configuration must only ever be carried out when the system is disconnected
+from the power.
+In safety mode, an adjustment to the potentiometer does not result in a change to the
+parameterized delay time.
+A change to the potentiometer setting made during operation is not accepted and is indicated
+in safety mode by a yellow/green flashing "DEVICE" LED. The device can be restarted by
+performing a RESET (pressing the SET/RESET button) or by disconnecting and reconnecting the
+supply voltage. Following a restart, the device remains in safety configuration mode during
+power up (all safety-related outputs are shut down) until the new delay time is accepted by
+pressing the SET/RESET button.
+114 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+9.2 Explanation of the device's functions
+Explanation of the device functions (DIP switches)
+DIP Parameter Function
+switch
+1 Start type • Autostart: The safety-related outputs are switched to the active position as soon as the
+switch-on condition is satisfied at the sensor inputs IN1, IN2, INF and INK. The START button
+connecting terminal INS is not queried.
+• Monitored start: The safety-related outputs are switched to the active position as soon as
+the switch-on condition is met at the IN1, IN2, INF and INK sensor inputs and the START
+button at the INS terminal is actuated (start with the falling edge).
+2 Cross-circuit de‐ Cross-circuit detection is only possible with floating sensors. The sensors must be connected
+tection between T1 - IN1 and T2 – IN2. At the terminals IN1 and PAR (if used), the test signal of terminal
+T1 is expected; at the terminals IN2 and INF , the test signal of T2 is expected. The device detects
+a sensor fault if the signal at the terminals IN1, PAR or IN2, INF does not match the test signals
+T1, T2.
+Cross-circuit detection must be deactivated if electronic sensors such as light arrays or laser
+scanners are connected. The 3SK1 now no longer monitors the sensor inputs for cross-circuit
+detection. Usually, the outputs of safety sensors (OSSD) are already monitored for cross-circuits
+in the sensor.
+Devices with PAR terminals expect the test signal T2 at the parameterization input. A 24 V signal
+at the PAR or INF terminals results in a fault (cross-circuit at the input).
+3 Type of connec‐ • 1 sensor with 2 contacts 1 x two-channel; NC/NC.
+tion It is expected here that both contacts be open simultaneously.
+With the additional connection of T1 to PAR, this DIP parameterization applies to ONE two-
+channel sensor with NC/NO contacts.
+• 2 sensors with one contact each 2 x single-channel; NC / NC.
+In this case, both sensors are AND-connected. Simultaneity is not monitored.
+4 Startup testing After a power failure, startup testing requires that the sensors at IN1 and IN2 are actuated once
+by the system operator.
+INK input for cascading
+The INK cascading input is set up redundantly from the terminal in the device.
+With protected installation, safety applications up to Performance Level e (PL e) or Safety
+Integrity Level 3 (SIL 3) can be implemented.
+This applies if the connected sensor or output is suitable.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 115
+The INK cascading input can be used for the following applications:
+• Safe connection of safety relays
+In this application, a higher-level safety relay switches off the 3SK1 safety relay via the
+cascading input via a safe output.
+• Additional safety sensor circuit
+The cascading input INK is AND-linked with the sensor inputs IN1 and IN2.
+The cascading input can be connected to 1-channel safety sensors (forced opening). The
+start function for the INK cascading input corresponds to the start response of sensor inputs
+IN1 and IN2 (autostart or monitored start).
+• Functional switching
+The INK cascading input can also be used for normal switching duty (not safe).
+When using a 3SK1 safety relay with instantaneous and time-delayed contacts, the two
+following safety notes must always be observed:
+In the event of external faults such as:
+• Cross-circuit fault
+• Short circuit to ground
+• Current-source short circuit
+and to access the configuration mode for copying a delay time after a reset, the following
+device behavior must always be taken into account:
+The outputs of stop category 0 switch instantaneously, while the outputs of stop category 1
+have a time delay.
+The sequence cannot be interrupted.
+Exception: Switching off the power supply.
+116 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Saving the starting command:
+1. If the safe state is restored during the time delay, (e.g. the protective door is closed) and the
+START button is actuated, the safety-related outputs switch to the active position
+immediately after the delay time has elapsed.
+The actuation of the START button is saved.
+The OFF-delayed enabling contacts or outputs of the 3SK112-CB4 safety relays (relay and
+semiconductor outputs) cannot be retriggered. This means that if an OFF command in the
+sensor circuit is canceled before the delay time has elapsed, the delay time still elapses in
+full length. If a start command has been issued during this time or if autostart has been set,
+after this time has elapsed the OFF-delayed enabling contacts switch off briefly and switch
+on again immediately with the instantaneous enabling contacts (start command is saved).
+2. If a sensor is actuated at an input expansion within the system configuration, the entire
+system is disconnected. If the sensor at the input expansion is activated (e.g. protective door
+is open) and the START button on the basic unit is actuated, this command will be saved by
+the basic unit. This results in an automatic start of the system once the sensor at the input
+expansion is reset (for example, a protective door is closed again). This system response is
+identical in the system configuration for all 3SK1 basic units.
+For additional notes/explanations on this topic, see the following FAQ (https://
+support.industry.siemens.com/cs/ww/en/view/103655974)
+Observe the following in the case of protective doors with tumblers:
+If the voltage Us is disconnected on devices with time-delayed outputs between switching the
+instantaneous outputs and the time-delayed outputs, the delay time expires when the voltage
+Us is restored, and the time-delayed contacts change their switch positions.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 117
+9.3 Modes
+The 3SK1 safety relays have 4 main operating modes:
+• Power-up
+• Configuration mode
+• Safety mode
+• Error mode
+Power-up
+During start-up (up to 7 seconds), the 3SK1 safety relay runs through a complete function test.
+Configuration mode
+A saved configuration can only be modified in configuration mode.
+The configuration must only ever be modified after disconnecting the power supply.
+If the device detects a configuration change during the restart (DIP, PAR, potentiometer, input
+expansion, output expansion), it does not change automatically to safety mode after power
+up, but instead remains in configuration mode.
+In configuration mode, those LEDs flash yellow whose ON DIP switch position is on the right;
+all other parameter settings are not explicitly indicated.
+The configuration is accepted by pressing the SET/RESET button for approximately 1 s.
+In configuration mode, the device is in the safe state. No monitoring functions are active.
+A configuration change made during operation is not accepted, and in safety mode, this is
+indicated by a yellow/green flashing "DEVICE" LED. The device can be restarted by performing a
+RESET (pressing the SET/RESET button) or by disconnecting and reconnecting the supply
+voltage.
+Safety mode (DEVICE LED: green)
+In safety mode, all monitoring functions are active in accordance with the set configuration.
+Parameterized startup testing is indicated by a green flashing "DEVICE" LED. Only when this has
+been successfully executed does the "DEVICE" LED show a green light.
+Error mode
+Error mode is indicated by a red "DEVICE" LED or by a red "SF" LED. In error mode, the
+device ALWAYS changes to the safe state.
+118 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+9.4 Response times
+Verification of response times in the case of safety circuits
+When safety equipment is commissioned, steps must be taken to verify that a safety-related
+output will switch off within a maximum permissible response time if the input signal changes
+at the relevant input.
+To provide this verification, you must determine the total response time of the application
+you have configured.
+Note that the calculation of the response time affects the level of safety and governs the overall
+design of the system.
+You can find the response data of the safety relays in the technical specifications of the
+respective devices in the chapter "Technical data (Page 129)".
+You can find the response data of the 3RM1 Failsafe motor starters
+in the technical specifications in the "SIRIUS 3RM1 motor starters (http://
+support.automation.siemens.com/WW/view/EN/ 66295730)" manual.
+Calculation of the response times
+To calculate the response times of the overall system configuration, you must add up the
+individual response times of all input expansions affected by deactivation and also the response
+time of the basic unit.
+If output expansions are used, the response times of the relevant output module are also
+added to the total time from the sensor to the actuator.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 119
+120 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Since commissioning of the 3SK1 safety relays is an important, safety-related step, it must be
+carried out by qualified personnel.
+Carry out function test of the plant.
+To guarantee the safety of the system, a full functional test must be carried out and successfully
+concluded following commissioning.
+Commissioning 3SK1 safety relays
+3SK1 safety relays are commissioned by applying the operating voltage.
+After the supply voltage has been applied, all LEDs show a green light for about 1 s (lamp
+test). The LEDs then go out for approx. 0.5 s. The device configuration is then displayed on
+the configuration LEDs for approx. 3 s.
+If no configuration change (DIP, PAR, potentiometer, input expansion, output expansion) has
+been detected, the device changes automatically to safety mode and is ready for operation.
+However, if the device detects a deviation of the set parameters from the saved
+configuration, it remains in safe configuration mode until the new configuration is accepted
+by pressing the SET/RESET button.
+Observe the following during commissioning:
+The cascading input must be bypassed (24 V DC) if it is not to be used.
+Monitoring of the feedback circuits is not optional.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 121
+122 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+11.1 LED display
+The LED displays of the 3SK1 Advanced safety relays are shown in the tables below.
+LED Display Explanation
+(1)DEVICE OFF* No voltage, group error
+Configuration mode DIP (1) position: left
+Green Device is ready for operation
+Power-up: hardware test
+Green flashing No startup testing
+Short-circuit on the SET/RESET button
+Yellow Power-up DIP (1) position: right
+Yellow flashing Configuration mode DIP (1) position: right
+Green/yellow flashing Configuration changed
+Red Device error
+(2)OUT OFF* Output inactive
+Configuration mode DIP (2) position: left
+Green Output active
+Green flashing Feedback circuit error
+Yellow Power-up DIP (2) position: right
+Yellow flashing Configuration mode DIP (2) position: right
+START button pressed too long
+Green/yellow flashing Instantaneous outputs inactive, delayed outputs active
+(3)IN OFF* Start conditions not fulfilled
+Configuration mode DIP (3) position: left
+Green Start conditions fulfilled
+Green flashing • If 1 x two-channel: Simultaneity of sensors not fulfilled
+• Two-hand operation: time monitoring violated
+• With monitored start: START button not yet pressed
+Yellow Power-up DIP (3) position: right
+Yellow flashing Short-circuit of T1/T2 to ground or 24 V
+With input expansion: missing enabling signal of input expansion
+Group error: Cross-circuit at input
+Configuration mode DIP (3) position: right
+Flickering yellow Configuration mode: Special two-hand operation configuration
+Flickering red Configuration mode: impermissible configuration
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 123
+(4)SF OFF* No group error,
+Configuration mode DIP (4) position: left
+Green Power-up: hardware test
+Green flashing Short-circuit on the SET/RESET button
+Yellow Power-up DIP (4) position: right
+Yellow flashing Configuration mode DIP (4) position: right
+Red Group error, e.g. cross-circuit at input, short-circuit to P, device configura‐
+tion changed.
+Red flashing Error message (e.g. short-circuit T1/T2, violation of simultaneity, violation of
+two-hand operation timeout, feedback circuit error, START-button pressed
+too long, connection of control supply voltage (A1/A2) to an expansion unit
+that is connected via a device connector)
+*LED flashes briefly in configuration mode due to lamp test
+124 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+11.2 Power-up
+Display mode during power-up / parameterization in configuration mode
+(1)DEVICE Yellow or yellow flashing Monitored start
+Off Autostart
+(2)OUT Yellow or yellow flashing Cross-circuit detection ON
+Off Cross-circuit detection off
+(3)IN Yellow or yellow flashing 1 x two-channel
+Off 2 x single-channel
+(4)SF Yellow or yellow flashing Startup testing off
+Off Startup testing ON
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 125
+11.3 Error statuses
+(1)DEVICE Red Device error
+(4)SF Red Group error
+Red flashing Fault message
+126 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+11.4 Diagnostics
+Explanation DEVICE OUT IN SF
+Hardware test Green Green Green Green
+Note: Input expansions remain in this state until acknowl‐
+edged by the device on the right-hand side.
+The SET/RESET button is stuck, or has been pressed too long. Green flashing Green flashing Green flashing Green flashing
+The device remains in this state until the button is released
+again.
+Display of DIP switch configuration. If the DIP switch position is at ON (right), the relevant LED shows
+a yellow light.
+Configuration
+Indication of a modified configuration. If the DIP switch position is at ON (right), the relevant LED flash‐
+es yellow
+Special configuration, two-hand operation Off If the DIP Flickering yel‐ If the DIP
+NC/NO, autostart, 2 x single-channel. switch posi‐ low switch posi‐
+tion is at ON tion is at ON
+(right), the rel‐ (right), the rel‐
+evant LED evant LED
+flashes yellow flashes yellow
+Impermissible configuration Yellow flash‐ If the DIP Flickering red If the DIP
+NC/NO, monitored start, 2 x single-channel ing switch posi‐ switch posi‐
+All DIP switches are in OFF position (left) All LEDs light up briefly (yellow) at intervals
+Safety mode
+No startup testing. Green flashing Off Off Off
+Device ready for operation, all outputs OFF. Green Off Off Off
+Device ready for operation, all outputs ON. Green Green Green Off
+Device ready for operation, instantaneous outputs OFF, Green Green/yellow Off Off
+time-delayed outputs ON. flashing
+If "monitored start": START button not yet pressed. Green Off Green flashing Off
+With input expansion: Missing enabling signal of input ex‐ Green Off Yellow flash‐ Off
+pansion. ing
+Configuration has been changed (PAR, DIP switch, potenti‐ Green/yellow — 1) — 1) — 1)
+ometer) flashing
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 127
+If 1 x two-channel: Simultaneity violated Green Off Green flashing Red flashing
+If two-hand operation: Time monitoring violated.
+Short-circuit test clock output T1 or T2 Green2) Off Yellow flash‐ Red flashing
+ing
+If "monitored start": START button was pressed too long or Green Yellow flash‐ Off Red flashing
+has a short-circuit. ing
+Feedback circuit error Green Green flashing Green Red flashing
+1) Dependent on device status
+2) Green flashing DEVICE LED: No startup testing
+Device error Red Off3) Off3) Off3)
+Restart possible by pressing the SET/RESET button.
+Group error Off3) Off3) Off3) Red
+Restart possible by pressing the SET/RESET button
+Group error, cross-circuit at input Off3) Off3) Yellow flash‐ Red
+Restart possible by pressing the SET/RESET button. ing3)
+System stop Red Off3) Off3) Red
+Restart only possible by disconnecting and re-connecting
+the operating voltage.
+3) On time-delayed devices, the LED flashes green/yellow provided the time-delayed outputs are still switched on
+128 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+12.1 Technical specifications in the Siemens SiePortal
+Technical data sheet
+You can find the technical specifications for the product in Siemens SiePortal (https://
+support.industry.siemens.com/cs/ww/en/ps/).
+1. Enter the article number of the desired device in the "Products" field.
+2. Click the "Technical specifications" link in the result.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 129
+12.2 Electrical endurance
+You can find FAQs and more tables on the topic of electrical endurance on the Internet (https://
+support.industry.siemens.com/cs/us/en/view/109995353).
+Electrical endurance of 3RQ1 coupling relays
+When using the devices to equip furnaces to DIN EN 50156-1, the load (utilization category)
+listed below must not be exceeded.
+The electrical endurance is ≥ 250,000 operating cycles under the following conditions:
+Utilization category 3RQ1000-.HB00; 3RQ1000-.LB00; 3RQ1000-.HW00;
+3RQ1000-.LW00
+AC-1, 240 V 1.5 A
+AC-15, 240 V 0.2 A
+DC-13, 24 V 2.0 A
+Electrical endurance of 3RQ1 coupling relays for the following device versions
+3SK1121-.AB40 3RQ1000-.HB00
+3SK1111-.AB30 3RQ1000-.LB00
+3SK1111-.AW20 3RQ1000-.HW00
+3SK1211-.BB40 3RQ1000-.LW00
+3SK1211-.BB00
+3SK1211-.BW20
+Utilization category Ue (V) Ie (A) B10 value Electrical endurance
+d
+(operating cycles) of safety-related outputs
+(typical)
+AC-1 240 5 500,000 85,000
+4 860,000 140,000
+2 1,300,000 210,000
+AC-15 240 4 300,000 50,000
+3 850,000 85,000
+1 1,100,000 120,000
+DC-13 24 5 300,000 50,000
+2 2,000,000 230,000
+1 7,000,000 1,100,000
+DC-1 24 5 500,000
+130 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+3RQ1.00-.E.00
+3RQ1000-.G.00
+AC-1 230 5 340,000 170,000
+AC‑15 230 2 85,000 85,000
+230 1 220,000 220,000
+DC‑13 24 2 120,000 13,000
+DC‑1 24 5 1,560,000 780,000
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 131
+12.3 Overview tables
+Overview tables technical data
+You will find overview tables with technical data in the "Product information" tab in our online
+ordering system (https://sieportal.siemens.com/en-ww/search?
+scope=catalog&Type=products&SearchTerm=3RQ1&CatalogSearchSettings.Limit=20&Catalog
+SearchSettings.Index=0&SortingOption=Relevance).
+132 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+13.1 CAx data in the Siemens SiePortal
+You can find CAx data for the product in the SiePortal (https://
+2. Click the "CAx data" link in the result.
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 133
+134 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+14.1 CAx data in the Siemens SiePortal
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 135
+14.2 Internal circuit diagrams
+14.2.1 Internal circuit diagrams for expansion units
+Output expansion 3RQ1000-.EB00 (24 V DC)
+(cid:47)(cid:82)(cid:74)(cid:76)(cid:70)
+(cid:54)(cid:60)(cid:54)
+(cid:16)(cid:46) (cid:36)(cid:20) (cid:20)(cid:22) (cid:21)(cid:20)
+(cid:14)
+(cid:16)
+(cid:36)(cid:21) (cid:20)(cid:23) (cid:21)(cid:21)
+136 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Output expansion 3RQ1000-.EW00 (24 - 240 V AC/DC)
+Output expansion 3RQ1000-.GB00 (24 V DC)
+(cid:16)(cid:46) (cid:36)(cid:20) (cid:20)(cid:22) (cid:21)(cid:22) (cid:22)(cid:20)
+(cid:36)(cid:21) (cid:20)(cid:23) (cid:21)(cid:23) (cid:22)(cid:21)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 137
+Output expansion 3RQ1000-.GW00 (24 - 240 V AC/DC)
+Output expansion 3RQ1000-.HB00 (24 V DC)
+(cid:16)(cid:46) (cid:36)(cid:20) (cid:20)(cid:22) (cid:21)(cid:22) (cid:22)(cid:20) (cid:23)(cid:20)
+(cid:36)(cid:21) (cid:20)(cid:23) (cid:21)(cid:23) (cid:22)(cid:21) (cid:23)(cid:21)
+138 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Output expansion 3RQ1000-.HW00 (24 - 240 V AC/DC)
+Output expansion 3RQ1000-.LB00 (24 V DC)
+(cid:16)(cid:46) (cid:36)(cid:20) (cid:20)(cid:22) (cid:21)(cid:22) (cid:22)(cid:22) (cid:23)(cid:22) (cid:24)(cid:20)
+(cid:36)(cid:21) (cid:20)(cid:23) (cid:21)(cid:23) (cid:22)(cid:23) (cid:23)(cid:23) (cid:24)(cid:21)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 139
+Output expansion 3RQ1000-.LW00 (24 - 240 V AC/DC)
+Output expansion 3RQ1200-.EB00 (24 V DC)
+140 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Output expansion 3RQ1200-.EW00 (24–240 V AC/DC)
+Output expansion 3SK1211 (110–240 V)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 141
+Output expansion 3SK1211 (24 V DC)
+(cid:39)(cid:72)(cid:79)(cid:68)(cid:92)(cid:72)(cid:71)(cid:3)
+(cid:18)(cid:3)(cid:56)(cid:81)(cid:71)(cid:72)(cid:79)(cid:68)(cid:92)(cid:72)(cid:71)
+Output expansion 3SK1213-.A.20 (110–240 V)
+(cid:16)(cid:46) (cid:36)(cid:20) (cid:20)(cid:22) (cid:21)(cid:22) (cid:22)(cid:22) (cid:23)(cid:20)
+(cid:36)(cid:21) (cid:20)(cid:23) (cid:21)(cid:23) (cid:22)(cid:23) (cid:23)(cid:21)
+142 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Output expansion 3SK1213-.AB40 (24 V DC)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 143
+14.3 Typical circuits
+The black fields show the positions of the switches. Here, "Autostart" in each case.
+(cid:36)(cid:88)(cid:87)(cid:82)
+(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87)
+If use of the feedback circuit is not desired for the application, this has to be jumpered with
+the corresponding test output.
+Typical circuit for 3SK1111 Standard relay basic unit
+Table 14-1 Typical circuit 1:
+Single-channel, with monitored start
+• Monitored start
+• 3SK1111 Standard relay
+(cid:47)(cid:14)
+• Sensor: 1 NC contact
+Slide switch
+(cid:13) Auto Monitored
+(cid:52)(cid:81)
+— ON
+(cid:36)(cid:20) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:55)(cid:22) (cid:44)(cid:49)(cid:22) (cid:55)(cid:23) (cid:44)(cid:49)
+(cid:14) (cid:41)(cid:18)(cid:54) Bottom
+Up to PL in accordance with ISO 13849-1 c
+Up to Safety Integrity Level (SILCL) to 1
+(cid:36)(cid:88)(cid:87)(cid:82) (cid:52)(cid:20) (cid:52)(cid:81) IEC 62061
+(cid:48) (cid:48)
+(cid:36)(cid:21)
+(cid:47)(cid:16)
+*For 3SK1111-.AB30 basic unit only
+144 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Table 14-2 Typical circuit 2:
+• 3SK1111-.AB30 Standard relay
+Auto Monitored
+Table 14-3 Typical circuit 3:
+single-channel, with autostart
+• Autostart
+ON —
+(cid:14) (cid:41)(cid:18)(cid:54) Top
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 145
+Table 14-4 Typical circuit 4:
+Table 14-5 Typical circuit 5:
+2-channel EMERGENCY STOP, with cross-circuit detection, with monitored start
+• With cross-circuit detection
+• Sensor: 2 NC contacts
+(cid:13)
+(cid:14) (cid:41)(cid:18)(cid:54) Auto Monitored
+Bottom
+(cid:36)(cid:88)(cid:87)(cid:82) Up to PL in accordance with ISO 13849-1 e
+(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71) Up to Safety Integrity Level (SILCL) to 3
+146 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+When connecting magnetically operated switches as sensors, observe the information in
+chapter Use of magnetically operated switches (Page 45).
+Table 14-6 Typical circuit 6:
+Two-channel, with cross-circuit detection, with autostart
+Top
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 147
+Table 14-7 Typical circuit 7:
+Sensors with solid-state outputs, without cross-circuit detection, with autostart
+• Without cross-circuit detection
+• Sensor: 2-channel non-floating
+(cid:20)(cid:14)
+(cid:21)(cid:14) Slide switch
+(cid:44)(cid:49)(cid:20) (cid:44)(cid:49)(cid:22)
+(cid:47)(cid:14) (cid:52)(cid:20) ON —
+(cid:52)(cid:81) Top
+(cid:36)(cid:20) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:55)(cid:22) (cid:44)(cid:49)(cid:22) (cid:55)(cid:23) (cid:44)(cid:49) Up to PL in accordance with ISO 13849-1 e
+(cid:14) (cid:41)(cid:18)(cid:54)
+Up to Safety Integrity Level (SILCL) to 3
+148 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Typical circuits for 3SK1 Standard solid-state basic units or 3SK1 Advanced basic units
+Table 14-8 Typical circuit 8: EMERGENCY STOP two-channel, with cross-circuit detection, with monitored start
+• 1 x two-channel
+(cid:52)(cid:20) • Sensor: 2 NC contacts
+(cid:52)(cid:81) • 3SK1112 Standard solid-state and
+3SK112 / 3SK122 Advanced
+(cid:36)(cid:20) (cid:44)(cid:49)(cid:46) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:44)(cid:49)(cid:41)(cid:44)(cid:49)(cid:54)
+DIP switch
+1 2 3 4
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) ON ON ON —
+(cid:52)(cid:20) Right Right Right
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49)
+(cid:52)(cid:81) Up to PL in accordance with ISO 13849-1 e
+(cid:22) (cid:21)(cid:3)(cid:86)(cid:76)(cid:81)(cid:74)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:3)(cid:18)(cid:3)(cid:20)(cid:3)(cid:71)(cid:82)(cid:88)(cid:69)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)
+(cid:23) (cid:54)(cid:87)(cid:68)(cid:85)(cid:87)(cid:88)(cid:83)(cid:3)(cid:55)(cid:72)(cid:86)(cid:87)(cid:3)(cid:92)(cid:72)(cid:86)(cid:3)(cid:18)(cid:3)(cid:81)(cid:82)
+(cid:54)(cid:40)(cid:55)(cid:3)(cid:18)(cid:3)(cid:53)(cid:40)(cid:54)(cid:40)(cid:55) (cid:48)
+Table 14-9 Typical circuit 9: Two-channel, with cross-circuit detection, with autostart
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) OFF ON ON —
+Left Right Right
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 149
+Table 14-10 Typical circuit 10:
+Electronic sensor, 2-channel, without cross-circuit detection, with monitored start
+• 3SK1112 Standard solid-state and
+(cid:36)(cid:20) (cid:44)(cid:49)(cid:46) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:44)(cid:49)(cid:41)(cid:44)(cid:49)(cid:54) DIP switch
+ON OFF ON —
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) Right Left Right
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49) Up to PL in accordance with ISO 13849-1 e
+(cid:22) (cid:21)(cid:3)(cid:86)(cid:76)(cid:81)(cid:74)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:3)(cid:18)(cid:3)(cid:20)(cid:3)(cid:71)(cid:82)(cid:88)(cid:69)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85) Up to Safety Integrity Level (SILCL) to 3
+(cid:54)(cid:40)(cid:55)(cid:3)(cid:18)(cid:3)(cid:53)(cid:40)(cid:54)(cid:40)(cid:55)
+Table 14-11 Typical circuit 11:
+Electronic sensor, two-channel, without cross-circuit detection, with autostart
+OFF OFF ON —
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) Left Left Right
+(cid:22) (cid:21)(cid:3)(cid:86)(cid:76)(cid:81)(cid:74)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:3)(cid:18)(cid:3)(cid:20)(cid:3)(cid:71)(cid:82)(cid:88)(cid:69)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85) (cid:52)(cid:81) Up to Safety Integrity Level (SILCL) to 3
+150 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Single-channel connection
+If only one single-channel sensor is used, the other sensor circuit must be jumpered.
+Table 14-12 Typical circuit 12: 2 x single-channel, without cross-circuit detection, with monitored start
+• 2 x single-channel
+(cid:52)(cid:20) • Sensor: 2 x single-channel NC sensors
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) ON OFF OFF —
+(cid:52)(cid:20) (cid:52)(cid:81) Right Left Left
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 151
+Table 14-13 Typical circuit 13: 2 x single-channel, without cross-circuit detection, with autostart
+(cid:52)(cid:20) • Sensor: 2 x single-channel NC
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) OFF OFF OFF —
+Left Left Left
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49) (cid:52)(cid:20) (cid:52)(cid:81)
+Also possible: 2 x single-channel with T1-IN1, T2-IN2 and DIP switch 2 cross-circuit detection
+to ON.
+152 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Typical circuits for 3SK1 Advanced basic units only
+Table 14-14 Typical circuit 14:
+1NC/1NO sensor, with cross-circuit detection, with monitored start
+(cid:52)(cid:20) • Jumper T1/PAR for NC/NO evaluation
+(cid:52)(cid:81) • Sensor: NC/NO sensor
+(cid:36)(cid:20) (cid:44)(cid:49)(cid:46) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20)(cid:51)(cid:36)(cid:53) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:44)(cid:49)(cid:41) (cid:44)(cid:49)(cid:54) • 3SK112 / 3SK122 Advanced
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49) Right Right Right
+(cid:22) (cid:21)(cid:3)(cid:86)(cid:76)(cid:81)(cid:74)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:3)(cid:18)(cid:3)(cid:20)(cid:3)(cid:71)(cid:82)(cid:88)(cid:69)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85) (cid:52)(cid:81) Up to PL in accordance with ISO 13849-1 e
+(cid:23) (cid:54)(cid:87)(cid:68)(cid:85)(cid:87)(cid:88)(cid:83)(cid:3)(cid:55)(cid:72)(cid:86)(cid:87)(cid:3)(cid:92)(cid:72)(cid:86)(cid:3)(cid:18)(cid:3)(cid:81)(cid:82) Up to Safety Integrity Level (SILCL) to 3
+IEC 61508
+Table 14-15 Typical circuit 15:
+1NC/1NO sensor, with cross-circuit detection, with autostart
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49) Left Right Right
+(cid:22) (cid:21)(cid:3)(cid:86)(cid:76)(cid:81)(cid:74)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85)(cid:86)(cid:3)(cid:18)(cid:3)(cid:20)(cid:3)(cid:71)(cid:82)(cid:88)(cid:69)(cid:79)(cid:72)(cid:16)(cid:70)(cid:75)(cid:17)(cid:3)(cid:86)(cid:72)(cid:81)(cid:86)(cid:82)(cid:85) (cid:52)(cid:81) PL in accordance with ISO 13849-1 e
+(cid:23) (cid:54)(cid:87)(cid:68)(cid:85)(cid:87)(cid:88)(cid:83)(cid:3)(cid:55)(cid:72)(cid:86)(cid:87)(cid:3)(cid:92)(cid:72)(cid:86)(cid:3)(cid:18)(cid:3)(cid:81)(cid:82) Safety Integrity Level (SILCL) to IEC 61508 3
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 153
+Table 14-16 Typical circuit 16:
+Two-hand operation with cross-circuit detection, with autostart
+(cid:52)(cid:81) • Sensor: Two-hand NO/NO sensor
+(cid:20) (cid:36)(cid:88)(cid:87)(cid:82)(cid:86)(cid:87)(cid:68)(cid:85)(cid:87)(cid:3)(cid:18)(cid:3)(cid:48)(cid:82)(cid:81)(cid:76)(cid:87)(cid:82)(cid:85)(cid:72)(cid:71)(cid:3)(cid:54)(cid:87)(cid:68)(cid:85)(cid:87) OFF ON OFF —
+(cid:21) (cid:38)(cid:85)(cid:82)(cid:86)(cid:86)(cid:3)(cid:73)(cid:68)(cid:88)(cid:79)(cid:87)(cid:3)(cid:71)(cid:72)(cid:87)(cid:72)(cid:70)(cid:87)(cid:76)(cid:82)(cid:81)(cid:3)(cid:50)(cid:41)(cid:41)(cid:3)(cid:18)(cid:3)(cid:50)(cid:49) Left Right Left
+You can find further information on two-hand operation in chapter Two-hand operation/
+synchronism (Page 39).
+Table 14-17 Typical circuit diagram 17:
+Advanced cascading input with monitored start
+• Sensor: 1-channel1
+(cid:44)(cid:81)(cid:83)(cid:88)(cid:87) (cid:21)(cid:23)(cid:3)(cid:57)(cid:3)(cid:39)(cid:38) • 3SK1112 Standard solid-state and 3SK112/3SK122
+(cid:52)(cid:20) Advanced
+(cid:52)(cid:81) DIP switch
+(cid:36)(cid:20) (cid:44)(cid:49)(cid:46) (cid:55)(cid:20) (cid:44)(cid:49)(cid:20) (cid:55)(cid:21) (cid:44)(cid:49)(cid:21) (cid:44)(cid:49)(cid:41) (cid:44)(cid:49)(cid:54)
+(cid:14) ON --- --- —
+Right
+PL in accordance with ISO 13849-1 e
+(cid:52)(cid:20) Safety Integrity Level (SIL) acc. to 3
+1 Safety level PL/SIL of the application always corre‐
+(cid:23) (cid:54)(cid:87)(cid:68)(cid:85)(cid:87)(cid:88)(cid:83)(cid:3)(cid:55)(cid:72)(cid:86)(cid:87)(cid:3)(cid:92)(cid:72)(cid:86)(cid:3)(cid:18)(cid:3)(cid:81)(cid:82) sponds to the lowest safety level of a subsystem of the
+(cid:54)(cid:40)(cid:55)(cid:3)(cid:18)(cid:3)(cid:53)(cid:40)(cid:54)(cid:40)(cid:55) (cid:48) application.
+Consequently, in order to achieve SIL 3/PL e, the con‐
+(cid:16) nected sensor must be appropriately qualified via the
+INK input and an error exclusion (protected laying of the
+control line) must be applied.
+(cid:47)(cid:16)(cid:3)(cid:3)
+154 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+Table 14-18 Typical circuit diagram 18:
+Autostart – single-channel via cascading INK input
+(cid:14) OFF --- --- —
+Left
+Further information:
+• SIRIUS Safety Integrated Application Manual (https://
+support.industry.siemens.com/cs/ww/en/view/81366718)
+• FAQs on 3SK1 (https://support.industry.siemens.com/cs/ww/en/ps/16382/faq)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 155
+156 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+15.1 Accessories for 3SK1
+The following accessories are available for the 3SK1 safety relay system.
+Designation Article number Image
+SIRIUS terminal 2-pole screw-type terminal 3ZY1121-1BA00
+2 x 1.5 mm2 or 1 x 2.5 mm²
+SIRIUS terminal 3-pole screw-type terminal 3ZY1131-1BA00
+SIRIUS terminal 2-pole screw-type terminal 3ZY1122-1BA00
+2 x 2.5 mm² or 1 x 4 mm²
+Example 3ZY1121-1BA00
+SIRIUS spring-loaded terminal (push-in) 2-pole 3ZY1121-2BA00
+2 x 1.5 mm² or 1 x 2.5 mm²
+SIRIUS spring-loaded terminal (push-in) 3-pole 3ZY1131-2BA00
+SIRIUS spring-loaded terminal (push-in) 3ZY1122-2BA00
+2-pole 2 x 2.5 mm² or 1 x 4 mm²
+Example 3ZY1121-2BA00
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 157
+SIRIUS device connector for 3SK1 / 3RQ1 safety relay, 3ZY1212-1BA00
+17.5 mm wide
+SIRIUS device connector for 3RQ1 safety relay, 3ZY1212-1DA00
+SIRIUS device connector for 3SK1 / 3RQ1 safety relay, 3ZY1212-2BA00
+22.5 mm wide
+SIRIUS device termination connector for 3SK1 / 3RQ1 3ZY1212-2DA00
+safety relay,
+SIRIUS device connector for 3RM1 motor starters, 3ZY1212-2EA00
+SIRIUS device termination connector for 3RM1 motor 3ZY1212-2FA00
+starters,
+SIRIUS device termination connector set for 3SK1 safety 3ZY1212-0FA01
+relay,
+≥ 45 mm wide
+SIRIUS device connector for looping through signals, 3ZY1212-2AB00
+22.5 mm wide (for 3RM1 motor starters)
+SIRIUS device connector for height compensation with‐ 3ZY1210-2AA00
+out electrical function, 22.5 mm wide
+SIRIUS push-in lugs for wall mounting (Contents: 12 3ZY1311-0AA00
+units)
+158 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+SIRIUS sealable cover, 17.5 mm 3ZY1321-1AA00
+SIRIUS sealable cover, 22.5 mm 3ZY1321-2AA00
+Coding pins for SIRIUS terminals 3ZY1440-1AA00
+SIRIUS device identification label 3RT2900-1SB10
+17 sheets of 48 labels; size 10 x 7 mm
+SIRIUS device identification label 3RT2900-1SB20
+17 sheets of 20 labels; size 20 x 7 mm
+SIRIUS device identification label 3RT2900-1SB60
+10 sheets of 306 adhesive labels; size 19 x 6 mm
+Use of removable terminals for 3SK1
+The following removable terminals are available for the safety relays for pre-wiring of the
+terminals in the control cabinet, or for replacing terminals:
+3SK1 safety relays Terminal
+2-pin 3-pin 2-pin
+3ZY1121-*BA00 3ZY1131-*BA00 3ZY1122-*BA00
+3SK1111 --- ✓ ---
+3SK1112 ✓ --- ---
+3SK1120 --- ✓ ---
+3SK1121 --- ✓ ---
+3SK1122 ✓bottom ✓top ---
+Output expansions
+3SK1211 ✓ --- ---
+3SK1213 --- --- ---
+3RQ1 --- --- ✓
+Input expansions
+3SK1220 --- ✓top ---
+3SK1230 ✓bottom --- ---
+*- 1 Screw terminal
+*- 2 Spring-loaded terminal (push-in)
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 159
+Device connectors for 3SK112., 3SK12.. and 3SK2
+Device connectors can be used to interconnect multiple devices of the 3SK-/3RM-/3RQ1
+system. It is not possible to use device connectors with the 3SK1 Standard.
+Device connectors are available in different designs specifically for the 3SK safety relays:
+For type Device connector
+3ZY1212-1BA00-2BA00 3ZY1212-2BA00 3ZY1212-2GA00 3ZY1212-4GA01
+For 3SK1/3RQ1, For 3SK1/3RQ1, For 3SK2, 22.5 mm For 3SK2, 45 mm
+17.5 mm wide 22.5 mm wide wide wide
+3SK1120 ✓ -- -- --
+3SK1121 -- ✓ -- --
+3SK1122 -- ✓ -- --
+3SK2 basic units
+3SK2112 -- -- ✓ --
+3SK2122 -- -- -- ✓
+3SK1211 -- ✓ -- --
+3SK1213 -- -- -- --
+3RQ1 ✓ -- -- --
+17.5 mm
+3RQ, -- ✓ -- --
+22.5 mm
+3SK1220 ✓ -- -- --
+3SK1230 -- ✓ -- --
+✓Possible
+-- Not possible
+160 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001
+For type Device termination connector
+3ZY1212-1DA00 3ZY1212-2DA00 3ZY1212-0FA01
+For 3RQ1, 17.5 mm wide For 3SK1/3RQ1, 22.5 mm For 3SK1, set for enclo‐
+wide sures ≥ 45 mm
+3SK1120 -- -- --
+3SK1121 -- ✓ --
+3SK1122 -- ✓ --
+3SK2112 -- -- --
+3SK2122 -- -- --
+3SK1211 -- ✓ --
+3SK1213 -- -- ✓
+3RQ1 ✓ -- --
+3RQ, -- ✓ --
+3SK1220 -- -- --
+3SK1230 -- -- --
+Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001 161
+162 Equipment Manual, 10/2025, A5W02967072002A/RS-AA/001

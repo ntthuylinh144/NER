@@ -17,8 +17,8 @@ import json
 import re
 
 # CONFIGURATION
-INPUT_FILE = "instructions.json"
-OUTPUT_FILE = "spacy_ready.json"
+INPUT_FILE = "data\\annotated_data.json"
+OUTPUT_FILE = "data\\spacy_ready.json"
 
 def convert_to_spacy_format(data):
     """

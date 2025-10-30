@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "text": "Hold the device up to the surface prepared for screw fastening"
+  },
+  {
+    "id": 2,
+    "text": "Hold the device firmly"
+  },
+  {
+    "id": 3,
+    "text": "Remove the push-in lugs from the device"
+  },
+  {
+    "id": 4,
+    "text": "Place the back of the device onto the upper edge of the standard mounting rail"
+  },
+  {
+    "id": 5,
+    "text": "Pull the lower half of the device away from the standard mounting rail"
+  },
+  {
+    "id": 6,
+    "text": "Place the back of the device connector on the upper edge of the standard mounting rail"
+  },
+  {
+    "id": 7,
+    "text": "Push the device connectors together until they engage"
+  },
+  {
+    "id": 8,
+    "text": "Pull the lower half of the device away from the device connector"
+  },
+  {
+    "id": 9,
+    "text": "Hang the back of the device connector onto the upper edge of the standard mounting rail"
+  },
+  {
+    "id": 10,
+    "text": "Hold the device connector against the level surface prepared for screw fastening"
+  },
+  {
+    "id": 11,
+    "text": "Pull the device away from the device connector"
+  },
+  {
+    "id": 12,
+    "text": "Release the screws"
+  },
+  {
+    "id": 13,
+    "text": "Remove the cover"
+  },
+  {
+    "id": 14,
+    "text": "Note the clearances required for the 90 mm devices"
+  },
+  {
+    "id": 15,
+    "text": "Seal the cover to secure it against unauthorized removal"
+  },
+  {
+    "id": 16,
+    "text": "Hold the cable in the screw-type terminal"
+  },
+  {
+    "id": 17,
+    "text": "Tighten the screw with a torque of 0.6 … 0.8 Nm"
+  },
+  {
+    "id": 18,
+    "text": "Pull on the cable to ensure it is screwed tight"
+  },
+  {
+    "id": 19,
+    "text": "Remove the cable from the unscrewed screw terminal"
+  },
+  {
+    "id": 20,
+    "text": "Control current terminals 2.4 mm 1.5 mm Terminal area of control current terminals 8.2.6 Connection data for 3SK1 spring-loaded terminal (push-in system)"
+  },
+  {
+    "id": 21,
+    "text": "Pull on the cable to ensure it is tight"
+  },
+  {
+    "id": 22,
+    "text": "Disconnect the spring-loaded (push-in) terminal • Screwdriver DIN 5264 of the size 0.5 x 3 mm"
+  },
+  {
+    "id": 23,
+    "text": "Remove the cable from the oval opening"
+  },
+  {
+    "id": 24,
+    "text": "Remove the screwdriver"
+  },
+  {
+    "id": 25,
+    "text": "Attaching the terminals You must have removed the terminals, for the purpose of replacing a device, for example"
+  },
+  {
+    "id": 26,
+    "text": "Pull the terminals out to the front"
+  },
+  {
+    "id": 27,
+    "text": "Remove the cable from the unscrewed screw-type terminal"
+  },
+  {
+    "id": 28,
+    "text": "Push-in terminals Disconnecting the conductor"
+  },
+  {
+    "id": 29,
+    "text": "Tighten the screw of the terminal in which the cable is inserted"
+  },
+  {
+    "id": 30,
+    "text": "Hold the cable in the spring-loaded terminal"
+  },
+  {
+    "id": 31,
+    "text": "Mounting terminals Procedure for mounting terminals"
+  },
+  {
+    "id": 32,
+    "text": "Check that the clip of the removable terminals closes flush with the front panel"
+  },
+  {
+    "id": 33,
+    "text": "Disconnecting the spring-loaded terminal 3 mm ~10°"
+  },
+  {
+    "id": 34,
+    "text": "Deinstall the defective device"
+  },
+  {
+    "id": 35,
+    "text": "Connect the defective device at the terminals"
+  },
+  {
+    "id": 36,
+    "text": "Connect the power supply"
+  },
+  {
+    "id": 37,
+    "text": "Confirm the new configuration by operating the SET/RESET pushbutton for more than 1s"
+  },
+  {
+    "id": 38,
+    "text": "Enter the article number of the desired device in the Products field"
+  },
+  {
+    "id": 39,
+    "text": "Click the \"Technical specifications\" link in the result"
+  },
+  {
+    "id": 40,
+    "text": "Click the \"CAx data\" link in the result"
+  }
+]

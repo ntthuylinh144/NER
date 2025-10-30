@@ -19,9 +19,9 @@ import time
 import os
 
 # Configuration
-GEMINI_API_KEY = "YOUR_GEMINI_API_KEY"  # Get here: https://aistudio.google.com/apikey
-INPUT_FILE = "annotated_instructions1.json"
-OUTPUT_FILE = "annotated_instructions2.json"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")  # Get here: https://aistudio.google.com/apikey
+INPUT_FILE = "data\\instructions.json"
+OUTPUT_FILE = "data\\annotated_data.json"
 DELAY = 1.0 #second between API calls
 
 
@@ -91,7 +91,7 @@ Sentence: "{text}"
 # ---------- MAIN PIPELINE ----------
 def main():
     # Check for API key
-    if GEMINI_API_KEY == "YOUR_GEMINI_API_KEY":
+    if GEMINI_API_KEY == "GEMINI_API_KEY":
         print(" Please set your Gemini API key first:")
         print("Get one here: https://aistudio.google.com/apikey")
         return
@@ -147,6 +147,5 @@ def main():
     print(f" Results saved to: {OUTPUT_FILE}")
 
 
-# ---------- ENTRY POINT ----------
 if __name__ == "__main__":
     main()

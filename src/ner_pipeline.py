@@ -38,21 +38,37 @@ class NERPipeline:
             max_context_entities: Max entities to provide as context
         """
         # Initialize NER extractors
-        print(" Initializing NER Pipeline...")
+        print("Initializing NER Pipeline...")
 
         self.classical_ner = ClassicalNER(model_path=classical_model_path)
-        print("  Classical NER loaded")
+        print("Classical NER loaded")
 
         self.llm_ner = LLMNER(api_key=gemini_api_key, delay=1.0) if gemini_api_key else None
         if self.llm_ner:
-            print("  LLM NER loaded")
+            print("LLM NER loaded")
         else:
-            print("    LLM NER not initialized (no API key)")
+            print("LLM NER not initialized (no API key)")
 
         # Initialize entity managers (separate for each method)
         self.classical_entity_manager = EntityManager(similarity_threshold)
         self.llm_entity_manager = EntityManager(similarity_threshold)
+        # Load existing global entities (if available)
+        classical_global_file = Path("data") / "classical_global_entities.json"
+        llm_global_file = Path("data") / "llm_global_entities.json"
 
+        if classical_global_file.exists():
+            print(f"Loading classical global entities from {classical_global_file}")
+            self.classical_entity_manager.load_from_file(classical_global_file)
+        else:
+            print("No classical global entity file found, starting fresh.")
+
+        if llm_global_file.exists() and self.llm_ner:
+            print(f"Loading LLM global entities from {llm_global_file}")
+            self.llm_entity_manager.load_from_file(llm_global_file)
+        elif not self.llm_ner:
+            print("LLM not configured; skipping LLM global load.")
+
+        # --- set max context entities (important!) ---
         self.max_context_entities = max_context_entities
 
         print(" Pipeline initialized!\n")
@@ -92,7 +108,7 @@ class NERPipeline:
                 existing_entities=set(context)
             )
 
-            print(f"  Extracted: {len(extracted)} entities")
+            print(f"Extracted: {len(extracted)} entities")
 
             # Process with entity manager
             processed = self.classical_entity_manager.process_extraction_results(
@@ -113,8 +129,8 @@ class NERPipeline:
 
         total_time = time.time() - start_time
 
-        print(f"\n  Total time: {total_time:.2f}s")
-        print(f" Average: {total_time / len(texts):.3f}s per text")
+        print(f"\nTotal time: {total_time:.2f}s")
+        print(f"Average: {total_time / len(texts):.3f}s per text")
 
         return {
             "method": "classical",
@@ -162,7 +178,7 @@ class NERPipeline:
                 existing_entities=set(context)
             )
 
-            print(f"  Extracted: {len(extracted)} entities")
+            print(f"Extracted: {len(extracted)} entities")
 
             # Process with entity manager
             processed = self.llm_entity_manager.process_extraction_results(
@@ -173,7 +189,7 @@ class NERPipeline:
             # Show linking results
             new_count = sum(1 for e in processed if e["is_new"])
             linked_count = len(processed) - new_count
-            print(f"  Result: {new_count} new, {linked_count} linked")
+            print(f"Result: {new_count} new, {linked_count} linked")
 
             results.append({
                 "id": text_id,
@@ -187,8 +203,8 @@ class NERPipeline:
 
         total_time = time.time() - start_time
 
-        print(f"\n  Total time: {total_time:.2f}s")
-        print(f"⚡ Average: {total_time / len(texts):.3f}s per text")
+        print(f"\nTotal time: {total_time:.2f}s")
+        print(f"Average: {total_time / len(texts):.3f}s per text")
 
         return {
             "method": "llm",
@@ -232,7 +248,7 @@ class NERPipeline:
             return
 
         # Time comparison
-        print(f"\n  PROCESSING TIME")
+        print(f"\n PROCESSING TIME")
         print(f"  Classical: {classical_results['time']:.2f}s")
         print(f"  LLM:       {llm_results['time']:.2f}s")
         print(f"  Speed:     Classical is {llm_results['time'] / classical_results['time']:.1f}x faster")
@@ -290,32 +306,46 @@ class NERPipeline:
         return results
 
     def _save_results(self, results: Dict, input_file: str):
-        """Save results to JSON files inside 'results/' folder."""
+        """
+        Save results and update global entity files.
+        - results: dict returned by process_with_classical/process_with_llm/process_both_methods
+        - input_file: original input filename (used to create output base name)
+        """
         base_name = Path(input_file).stem
         results_dir = Path("results")
-        results_dir.mkdir(exist_ok=True)  # tạo thư mục nếu chưa có
+        results_dir.mkdir(parents=True, exist_ok=True)
 
+        # Save classical results & updated global file
         if "classical" in results and results["classical"]:
-            # Save classical results
             output_file = results_dir / f"{base_name}_classical_results.json"
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(results["classical"]["results"], f, indent=2, ensure_ascii=False)
             print(f"\n Classical results saved to {output_file}")
 
-            # Save entity list
-            entity_file = results_dir / f"{base_name}_classical_entities.json"
-            self.classical_entity_manager.save_to_file(entity_file)
+            # Save entity list for classical (and also update global memory file)
+            classical_entities_file = results_dir / f"{base_name}_classical_entities.json"
+            self.classical_entity_manager.save_to_file(classical_entities_file)
+            print(f" Classical entity list saved to {classical_entities_file}")
 
+            # Update canonical global file in data/
+            global_classical = Path("data") / "classical_global_entities.json"
+            self.classical_entity_manager.save_to_file(global_classical)
+            print(f" Updated global classical entities -> {global_classical}")
+
+        # Save LLM results & updated global file
         if "llm" in results and results["llm"]:
-            # Save LLM results
             output_file = results_dir / f"{base_name}_llm_results.json"
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(results["llm"]["results"], f, indent=2, ensure_ascii=False)
             print(f" LLM results saved to {output_file}")
 
-            # Save entity list
-            entity_file = results_dir / f"{base_name}_llm_entities.json"
-            self.llm_entity_manager.save_to_file(entity_file)
+            llm_entities_file = results_dir / f"{base_name}_llm_entities.json"
+            self.llm_entity_manager.save_to_file(llm_entities_file)
+            print(f" LLM entity list saved to {llm_entities_file}")
+
+            global_llm = Path("data") / "llm_global_entities.json"
+            self.llm_entity_manager.save_to_file(global_llm)
+            print(f" Updated global LLM entities -> {global_llm}")
 
     def print_entity_summaries(self):
         """Print summaries for both entity managers."""

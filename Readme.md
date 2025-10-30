@@ -26,6 +26,7 @@ NER/
 │   ├── ner_llm_model.py          # LLM NER module (Gemini)
 │   ├── ner_classical_model.py    # Classical NER module (spaCy)
 │   ├── manage_entities.py        # Entity management system
+│   ├── aggregate_entities.py     # Create classical and LLM global entities list
 │   ├── build_dataset.py          # Extract text from pdf file
 │   ├── text_preprocessing.py     # Clean and extract command line
 │   ├── llm_annotate.py           # Use LLM to annotate
@@ -36,21 +37,27 @@ NER/
 ├── model_ner/                    # Trained spaCy model (generated after training)
 │
 ├── results/                                # Output results
-│   ├── test_file_classical_entities.json   # classical entities 
-│   ├── test_file_classical_results.json    # classical results 
-│   ├── test_file_llm_entities.json         # LLM entities
-│   ├── test_file_llm_results.json          # LLM results
-│   └── entity_database.json
+│   ├── test_file_classical_entities.json   # new classical entities file 
+│   ├── test_file_classical_results.json    # test classical results file 
+│   ├── test_file_llm_entities.json         # new LLM entities file 
+│   └── test_file_llm_results.json          # test LLM results file 
 │
-├── data_train.json               # Training data (entity annotations)
-├── data_dev.json                 # Development data
-├── data_test.json                # Test data
-├── test_file.json                # Sample input texts
-├── coupling_relay_3RQ1_en-US.pdf # PDF file
-├── test_file.json                # Sample input texts
-├── instructions.json             # Dataset format json
-├── spacy_ready.json              # Dataset format spacy
+├── data/   
+│   ├── data_train.json                 # Training data (entity annotations)
+│   ├── data_dev.json                   # Development data
+│   ├── data_test.json                  # Test data
+│   ├── test_file.json                  # Sample input texts
+│   ├── raw_data.json                   # Raw text data
+│   ├── cleaned_data.json               # Clean text 
+│   ├── instructions.json               # Main dataset 
+│   ├── annotated_data.json             # Human and LLM annotations
+│   ├── spacy_ready.json                # spaCy format
+│   ├── classical_global_entities.json  # Classical entities
+│   └── llm_global_entities.json        # LLM entities
+│
 ├── requirements.txt              # Python dependencies
+├── test_file.json                # Sample test 
+├── coupling_relay_3RQ1_en-US.pdf # PDF file
 └── README.md                     # This file
 ```
 ---
@@ -113,3 +120,12 @@ and corrected for quality assurance.
 | PARAMETER   | Technical parameters, measurements, or numerical values used in the process. | 5V, 10mm, 30 °C, torque = 5 Nm                                     |
 | LOCATION    | Physical or relative positions mentioned in the assembly steps.              | left side, base, top, rear panel, slot A                           |
 | MATERIAL    | Materials or substances used in the assembly or fabrication process.         | aluminum, plastic, copper wire, adhesive, silicone                 |
+
+==============================================
+🧪 Model Evaluation Results
+============================================== 
+| Model Type       | Precision | Recall | F1-score |
+| ---------------- | --------- | ------ | -------- | 
+| Classical NER    | 0.3043    | 0.2059 | 0.2456   | 
+| LLM NER (Gemini) | 0.5652    | 0.5652 | 0.5652   | 
+

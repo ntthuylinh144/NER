@@ -10,15 +10,14 @@ The script:
 """
 
 
-
 import re
 import json
 import spacy
 import os
 
 # Configuration
-INPUT_FILE = "instructions.txt"
-OUTPUT_FILE = "numbered_instructions1.json"
+INPUT_FILE = "data\\raw_data.txt"
+OUTPUT_FILE = "data\\clean_data.json"
 BOOK_CODE_PATTERN = "A5W02967072002A/RS-AA/001"
 
 # ---------- Load spaCy ----------

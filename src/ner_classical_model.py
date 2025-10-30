@@ -298,14 +298,14 @@ if __name__ == "__main__":
 
     # Train the model
     ner.train(
-        train_file="data_train.json",
-        dev_file="data_dev.json",
+        train_file="data\\data_train.json",
+        dev_file="data\\data_dev.json",
         n_epochs=30,
         output_dir="model_ner"
     )
 
     try:
-        ner.evaluate("data_dev.json")
+        ner.evaluate("data\\data_test.json")
     except FileNotFoundError:
         print("No dev file found for evaluation")
 

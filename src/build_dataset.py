@@ -8,22 +8,22 @@ import pdfplumber
 
 # Configuration
 PDF_FILE = "coupling_relay_3RQ1_en-US.pdf"
-OUTPUT_FILE = "instructions.txt"
+OUTPUT_FILE = "data\\raw_data.txt"
 
 
-instructions = []
+raw_data = []
 
 with pdfplumber.open(PDF_FILE) as pdf:
     for i, page in enumerate(pdf.pages, start=1):
         text = page.extract_text()
         if text:
             lines = [line.strip() for line in text.split("\n") if line.strip()]
-            instructions.extend(lines)
+            raw_data.extend(lines)
 
-unique_instructions = list(dict.fromkeys(instructions)) # remove duplicates
+unique_raw_data = list(dict.fromkeys(raw_data)) # remove duplicates
 
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    for line in unique_instructions:
+    for line in unique_raw_data:
         f.write(line + "\n")
 
-print(f"Saved {len(unique_instructions)} lines to '{OUTPUT_FILE}'")
+print(f"Saved {len(unique_raw_data)} lines to '{OUTPUT_FILE}'")

@@ -1,0 +1,1612 @@
+[
+  {
+    "id": 1,
+    "text": "Hold the device up to the surface prepared for screw fastening",
+    "entities": [
+      {
+        "text": "Hold",
+        "label": "ACTION"
+      },
+      {
+        "text": "device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "surface",
+        "label": "LOCATION"
+      },
+      {
+        "text": "screw fastening",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "text": "Hold the device firmly",
+    "entities": [
+      {
+        "text": "Hold",
+        "label": "ACTION"
+      },
+      {
+        "text": "device",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "text": "Remove the push-in lugs from the device",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "push-in lugs",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "device",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "text": "Place the back of the device onto the upper edge of the standard mounting rail",
+    "entities": [
+      {
+        "text": "Place",
+        "label": "ACTION"
+      },
+      {
+        "text": "back",
+        "label": "LOCATION"
+      },
+      {
+        "text": "device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "onto",
+        "label": "LOCATION"
+      },
+      {
+        "text": "upper edge",
+        "label": "LOCATION"
+      },
+      {
+        "text": "standard mounting rail",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "text": "Pull the lower half of the device away from the standard mounting rail",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "lower half of the device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "away from",
+        "label": "LOCATION"
+      },
+      {
+        "text": "standard mounting rail",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "text": "Place the back of the device connector on the upper edge of the standard mounting rail",
+    "entities": [
+      {
+        "text": "Place",
+        "label": "ACTION"
+      },
+      {
+        "text": "back of the device connector",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "upper edge",
+        "label": "LOCATION"
+      },
+      {
+        "text": "standard mounting rail",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "text": "Push the device connectors together until they engage",
+    "entities": [
+      {
+        "text": "Push",
+        "label": "ACTION"
+      },
+      {
+        "text": "device connectors",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "engage",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "text": "Pull the lower half of the device away from the device connector",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "lower half of the device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "away from",
+        "label": "LOCATION"
+      },
+      {
+        "text": "device connector",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "text": "Hang the back of the device connector onto the upper edge of the standard mounting rail",
+    "entities": [
+      {
+        "text": "Hang",
+        "label": "ACTION"
+      },
+      {
+        "text": "back of the device connector",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "onto",
+        "label": "LOCATION"
+      },
+      {
+        "text": "upper edge",
+        "label": "LOCATION"
+      },
+      {
+        "text": "standard mounting rail",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "text": "Hold the device connector against the level surface prepared for screw fastening",
+    "entities": [
+      {
+        "text": "Hold",
+        "label": "ACTION"
+      },
+      {
+        "text": "device connector",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "against",
+        "label": "LOCATION"
+      },
+      {
+        "text": "level surface",
+        "label": "LOCATION"
+      },
+      {
+        "text": "screw fastening",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "text": "Pull the device away from the device connector",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "device connector",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "text": "Release the screws",
+    "entities": [
+      {
+        "text": "Release",
+        "label": "ACTION"
+      },
+      {
+        "text": "screws",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Remove the cover",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "cover",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "text": "Note the clearances required for the 90 mm devices",
+    "entities": [
+      {
+        "text": "Note",
+        "label": "ACTION"
+      },
+      {
+        "text": "clearances",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "90 mm",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "devices",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "text": "Seal the cover to secure it against unauthorized removal",
+    "entities": [
+      {
+        "text": "Seal",
+        "label": "ACTION"
+      },
+      {
+        "text": "cover",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "text": "Hold the cable in the screw-type terminal.",
+    "entities": [
+      {
+        "text": "Hold",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "screw-type terminal",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+    {
+    "id": 17,
+    "text": "Tighten the screw with a torque of 0.6 … 0.8 Nm.",
+    "entities": [
+      {
+        "text": "Tighten",
+        "label": "ACTION"
+      },
+      {
+        "text": "screw",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "torch",
+        "label": "TOOL"
+      },
+      {
+        "text": "0.6 … 0.8 Nm",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "text": "Pull on the cable to ensure it is screwed tight.",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "screwed",
+        "label": "ACTION"
+      },
+      {
+        "text": "tight",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "text": "Remove the cable from the unscrewed screw terminal.",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "screw terminal",
+        "label": "COMPONENT"  
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "text": "Pull on the cable to ensure it is tight.",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "tight",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "text": "Disconnect the spring-loaded (push-in) terminal • Screwdriver DIN 5264 of the size 0.5 x 3 mm",
+    "entities": [
+      {
+        "text": "Disconnect",
+        "label": "ACTION"
+      },
+      {
+        "text": "spring-loaded (push-in) terminal",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "Screwdriver",
+        "label": "TOOL"
+      },
+      {
+        "text": "size 0.5 x 3 mm",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "text": "Remove the cable from the oval opening.",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "oval opening",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "text": "Remove the screwdriver.",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "screwdriver",
+        "label": "TOOL"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "text": "Pull the terminals out to the front.",
+    "entities": [
+      {
+        "text": "Pull",
+        "label": "ACTION"
+      },
+      {
+        "text": "terminals",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "front",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "text": "Remove the cable from the unscrewed screw-type terminal.",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "screw-type terminal",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "text": "Push-in terminals Disconnecting the conductor",
+    "entities": [
+      {
+        "text": "Push-in terminals",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "Disconnecting",
+        "label": "ACTION"
+      },
+      {
+        "text": "conductor",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "text": "Tighten the screw of the terminal in which the cable is inserted.",
+    "entities": [
+      {
+        "text": "Tighten",
+        "label": "ACTION"
+      },
+      {
+        "text": "screw",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "terminal",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "text": "Hold the cable in the spring-loaded terminal.",
+    "entities": [
+      {
+        "text": "Hold",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "spring-loaded terminal",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "text": "Check that the clip of the removable terminals closes flush with the front panel.",
+    "entities": [
+      {
+        "text": "Check",
+        "label": "ACTION"
+      },
+      {
+        "text": "clip",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "removable terminals",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "closes flush",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "front panel",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "text": "Disconnecting the spring-loaded terminal 3 mm ~10°",
+    "entities": [
+      {
+        "text": "Disconnecting",
+        "label": "ACTION"
+      },
+      {
+        "text": "spring-loaded terminal",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "3 mm",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "~10°",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "text": "Deinstall the defective device.",
+    "entities": [
+      {
+        "text": "Deinstall",
+        "label": "ACTION"
+      },
+      {
+        "text": "defective device",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "text": "Connect the defective device at the terminals",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "defective device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "terminals",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "text": "Connect the power supply.",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "power supply",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "text": "Confirm the new configuration by operating the SET/RESET push button for more than 1s.",
+    "entities": [
+      {
+        "text": "Confirm",
+        "label": "ACTION"
+      },
+      {
+        "text": "new configuration",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "operating",
+        "label": "ACTION"
+      },
+      {
+        "text": "SET/RESET push button",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "1s",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "text": "Enter the article number of the desired device in the \"Products\" field.",
+    "entities": [
+      {
+        "text": "Enter",
+        "label": "ACTION"
+      },
+      {
+        "text": "article number",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "desired device",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "in the \"Products\" field",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "text": "Click the \"Technical specifications\" link in the result.",
+    "entities": [
+      {
+        "text": "Click",
+        "label": "ACTION"
+      },
+      {
+        "text": "Technical specifications",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "link",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "result",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "text": "Click the \"CAx data\" link in the result.",
+    "entities": [
+      {
+        "text": "Click",
+        "label": "ACTION"
+      },
+      {
+        "text": "\"CAx data\" link",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "result",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "text": "To connect the Ethernet cable by passing it through the hole at the base of the Control Box, and plugging it into the Ethernet port on the underside of the bracket.",
+    "entities": [
+      {
+        "text": "connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "Ethernet cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "passing",
+        "label": "ACTION"
+      },
+      {
+        "text": "hole",
+        "label": "LOCATION"
+      },
+      {
+        "text": "base",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Control Box",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "plugging",
+        "label": "ACTION"
+      },
+      {
+        "text": "Ethernet port",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "underside",
+        "label": "LOCATION"
+      },
+      {
+        "text": "bracket",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "text": "Replace the cap at the base of the Control Box with an appropriate cable gland to connect the cable to the Ethernet port.",
+    "entities": [
+      {
+        "text": "Replace",
+        "label": "ACTION"
+      },
+      {
+        "text": "cap",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "base",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Control Box",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "cable gland",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "Ethernet port",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "text": "Power down the control box and disconnect the main power cable from the power source.",
+    "entities": [
+      {
+        "text": "Power down",
+        "label": "ACTION"
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "disconnect",
+        "label": "ACTION"
+      },
+      {
+        "text": "main power cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "power source",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "text": "Remove and discard the two cableties used for mounting the Teach Pendant cables.",
+    "entities": [
+      {
+        "text": "Remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "discard",
+        "label": "ACTION"
+      },
+      {
+        "text": "two cableties",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "mounting",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant cables",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "text": "Pressinthe clips on both sides of the Teach Pendant plug as illustrated, and pull down to disconnect from the Teach Pendant port.",
+    "entities": [
+      {
+        "text": "Press",
+        "label": "ACTION"
+      },
+      {
+        "text": "clips",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "both sides",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Teach Pendant plug",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "pull down",
+        "label": "ACTION"
+      },
+      {
+        "text": "disconnect",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant port",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "text": "Fully open/loosen the plastic grommet at the bottom of the control box and remove the Teach Pendant plug and cable.",
+    "entities": [
+      {
+        "text": "open/loosen",
+        "label": "ACTION"
+      },
+      {
+        "text": "plastic grommet",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "bottom",
+        "label": "LOCATION"
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "remove",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant plug",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "cable",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "text": "Place the Teach Pendant plug and cable in through the bottom of the control box and fully close/tighten the plastic grommet.",
+    "entities": [
+      {
+        "text": "Place",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant plug and cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "bottom",
+        "label": "LOCATION"
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "close/tighten",
+        "label": "ACTION"
+      },
+      {
+        "text": "plastic grommet",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "text": "Push the Teach Pendant plug into the Teach Pendant port to connect.",
+    "entities": [
+      {
+        "text": "Push",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant plug",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "into",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Teach Pendant port",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "connect",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "text": "Use two new cableties to mount the Teach Pendant cables.",
+    "entities": [
+      {
+        "text": "cableties",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "mount",
+        "label": "ACTION"
+      },
+      {
+        "text": "Teach Pendant cables",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "text": "Connect the main power cable to the power source and power on the control box.",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "main power cable",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "power source",
+        "label": "LOCATION"
+      },
+      {
+        "text": "power on",
+        "label": "ACTION"
+      },
+      {
+        "text": "control box",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "text": "Connect your drive power indicator to the Digital Outputs as shown in the image below.",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "drive power indicator",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "Digital Outputs",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "text": "Verify the drive power indicator is correctly connected.",
+    "entities": [
+      {
+        "text": "Verify",
+        "label": "ACTION"
+      },
+      {
+        "text": "drive power indicator",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "connected",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "text": "You can power on the robot arm and verify the light turns on.",
+    "entities": [
+      {
+        "text": "power on",
+        "label": "ACTION"
+      },
+      {
+        "text": "robot arm",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "verify",
+        "label": "ACTION"
+      },
+      {
+        "text": "light",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "turns on",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "text": "In the PolyScope Header, tap Installation.",
+    "entities": [
+      {
+        "text": "PolyScope Header",
+        "label": "LOCATION"
+      },
+      {
+        "text": "tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "Installation",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "text": "In the Side Menu on the left, tap General and select I/O Setup.",
+    "entities": [
+      {
+        "text": "Side Menu",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "left",
+        "label": "LOCATION"
+      },
+      {
+        "text": "tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "General",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "select",
+        "label": "ACTION"
+      },
+      {
+        "text": "I/O Setup",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "text": "Under Output, select one of the digital_out outputs.",
+    "entities": [
+      {
+        "text": "Output",
+        "label": "LOCATION"
+      },
+      {
+        "text": "select",
+        "label": "ACTION"
+      },
+      {
+        "text": "digital_out outputs",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "text": "Tap the Action in program dropdown.",
+    "entities": [
+      {
+        "text": "Tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "Action",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "program dropdown",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "text": "Select High when drive power is on, otherwise Low.",
+    "entities": [
+      {
+        "text": "Select",
+        "label": "ACTION"
+      },
+      {
+        "text": "High",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "drive power",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "on",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "Low",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "text": "In the Header, tap Installation.",
+    "entities": [
+      {
+        "text": "Header",
+        "label": "LOCATION"
+      },
+      {
+        "text": "tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "Installation",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "text": "In the list on the left, tap General.",
+    "entities": [
+      {
+        "text": "list",
+        "label": "LOCATION"
+      },
+      {
+        "text": "left",
+        "label": "LOCATION"
+      },
+      {
+        "text": "tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "General",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "text": "Tap Tool IO and select Dual Pin Power.",
+    "entities": [
+      {
+        "text": "Tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "Tool IO",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "select",
+        "label": "ACTION"
+      },
+      {
+        "text": "Dual Pin Power",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "text": "Connect the wires Power (gray) to TO0 (blue) and Ground (red) to TO1 (pink).",
+    "entities": [
+      {
+        "text": "Connect",
+        "label": "ACTION"
+      },
+      {
+        "text": "wires Power (gray)",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "TO0 (blue)",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Ground (red)",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "TO1 (pink)",
+        "label": "LOCATION"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "text": "On the Teach Pendant, press the emergency stop button.",
+    "entities": [
+      {
+        "text": "Teach Pendant",
+        "label": "LOCATION"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "emergency stop button",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "text": "On the Teach Pendant, press the power button and allow the system to start, displaying text on the PolyScope.",
+    "entities": [
+      {
+        "text": "Teach Pendant",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "power button",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "start",
+        "label": "ACTION"
+      },
+      {
+        "text": "displaying",
+        "label": "ACTION"
+      },
+      {
+        "text": "PolyScope",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "text": "A popup appears on the touch screen indicating that the system is ready and that the robot must be initialized.",
+    "entities": [
+      {
+        "text": "popup",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "touch screen",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "initialized",
+        "label": "ACTION"
+      },
+      {
+        "text": "robot",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "text": "Unlock the emergency stop button to change the robot state from Emergency Stopped to Power off.",
+    "entities": [
+      {
+        "text": "Unlock",
+        "label": "ACTION"
+      },
+      {
+        "text": "emergency stop button",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "change",
+        "label": "ACTION"
+      },
+      {
+        "text": "robot state",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "Emergency Stopped",
+        "label": "PARAMETER"
+      },
+      {
+        "text": "Power off",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "text": "Step outside the reach (workspace) of the robot.",
+    "entities": [
+      {
+        "text": "Step outside",
+        "label": "ACTION"
+      },
+      {
+        "text": "reach (workspace)",
+        "label": "LOCATION"
+      },
+      {
+        "text": "robot",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "text": "On the Initialize Robot screen, tap the ON button and allow the robot state to change to Idle.",
+    "entities": [
+      {
+        "text": "Initialize Robot screen",
+        "label": "LOCATION"
+      },
+      {
+        "text": "tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "ON button",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "allow",
+        "label": "ACTION"
+      },
+      {
+        "text": "robot state",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "change",
+        "label": "ACTION"
+      },
+      {
+        "text": "Idle",
+        "label": "PARAMETER"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "text": "In the Payload field, in Active Payload, verify the payload mass.",
+    "entities": [
+      {
+        "text": "Payload field",
+        "label": "LOCATION"
+      },
+      {
+        "text": "Active Payload",
+        "label": "LOCATION"
+      },
+      {
+        "text": "verify",
+        "label": "ACTION"
+      },
+      {
+        "text": "payload mass",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "text": "Tap the Start button, for the robot to release its brake system.",
+    "entities": [
+      {
+        "text": "Tap",
+        "label": "ACTION"
+      },
+      {
+        "text": "Start button",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "release",
+        "label": "ACTION"
+      },
+      {
+        "text": "brake system",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "text": "In your Poly Scope header right corner, press the Hamburger menu and select Settings.",
+    "entities": [
+      {
+        "text": "Poly Scope header",
+        "label": "LOCATION"
+      },
+      {
+        "text": "right corner",
+        "label": "LOCATION"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "Hamburger menu",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "select",
+        "label": "ACTION"
+      },
+      {
+        "text": "Settings",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "text": "On the left of the screen, in the blue menu, press Password and select Safety.",
+    "entities": [
+      {
+        "text": "left",
+        "label": "LOCATION"
+      },
+      {
+        "text": "screen",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "blue menu",
+        "label": "LOCATION"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "Password",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "select",
+        "label": "ACTION"
+      },
+      {
+        "text": "Safety",
+        "label": "COMPONENT"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "text": "Now, in Confirm new password, type the same password and press Apply.",
+    "entities": [
+      {
+        "text": "Confirm new password",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "type",
+        "label": "ACTION"
+      },
+      {
+        "text": "password",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "Apply",
+        "label": "ACTION"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "text": "In the bottom left of the blue menu, press Exit to return to previous screen.",
+    "entities": [
+      {
+        "text": "bottom left",
+        "label": "LOCATION"
+      },
+      {
+        "text": "blue menu",
+        "label": "COMPONENT"
+      },
+      {
+        "text": "press",
+        "label": "ACTION"
+      },
+      {
+        "text": "Exit",
+        "label": "ACTION"
+      },
+      {
+        "text": "return",
+        "label": "ACTION"
+      },
+      {
+        "text": "previous screen",
+        "label": "LOCATION"
+      }
+    ]
+  }
+]

@@ -156,6 +156,7 @@ class ClassicalNER:
         Returns:
             Dictionary with final training losses
         """
+        self.prepare_training_data(train_file, dev_file or train_file)
         print(f"Starting training for {n_epochs} epochs...")
 
         # Load training data
@@ -273,6 +274,10 @@ class ClassicalNER:
 
         # Calculate scores
         scores = self.nlp.evaluate(examples)
+
+        result_path = Path("results") / "classical_eval_results.json"
+        with open(result_path, "w", encoding="utf-8") as f:
+            json.dump(scores, f, ensure_ascii=False, indent=4)
 
         print(f"\n Evaluation Results:")
         print(f"  Precision: {scores['ents_p']:.4f}")

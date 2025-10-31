@@ -121,8 +121,8 @@
       "label": "ACTION",
       "occurrences": 5,
       "aliases": [
-        "select",
-        "Select"
+        "Select",
+        "select"
       ],
       "source_texts": [
         "sent_0002",
@@ -365,8 +365,8 @@
       "label": "ACTION",
       "occurrences": 8,
       "aliases": [
-        "Remove",
-        "remove"
+        "remove",
+        "Remove"
       ],
       "source_texts": [
         "sent_0009",
@@ -487,20 +487,21 @@
       "id": 36,
       "text": "Push",
       "label": "ACTION",
-      "occurrences": 2,
+      "occurrences": 3,
       "aliases": [
         "Push"
       ],
       "source_texts": [
         "sent_0012",
-        "sent_0051"
+        "sent_0051",
+        9
       ]
     },
     {
       "id": 37,
       "text": "Teach Pendant plug",
       "label": "COMPONENT",
-      "occurrences": 5,
+      "occurrences": 6,
       "aliases": [
         "Teach Pendant plug"
       ],
@@ -528,7 +529,7 @@
       "id": 39,
       "text": "connect",
       "label": "ACTION",
-      "occurrences": 8,
+      "occurrences": 11,
       "aliases": [
         "Connect",
         "connect"
@@ -541,14 +542,15 @@
         "sent_0058",
         "sent_0061",
         23,
-        11
+        11,
+        9
       ]
     },
     {
       "id": 40,
       "text": "Initialize Robot screen",
       "label": "COMPONENT",
-      "occurrences": 2,
+      "occurrences": 3,
       "aliases": [
         "Initialize Robot screen"
       ],
@@ -574,13 +576,14 @@
       "id": 42,
       "text": "allow",
       "label": "ACTION",
-      "occurrences": 2,
+      "occurrences": 3,
       "aliases": [
         "allow"
       ],
       "source_texts": [
         "sent_0013",
-        "sent_0049"
+        "sent_0049",
+        30
       ]
     },
     {
@@ -635,7 +638,7 @@
       "id": 47,
       "text": "Teach Pendant port",
       "label": "COMPONENT",
-      "occurrences": 2,
+      "occurrences": 3,
       "aliases": [
         "Teach Pendant port"
       ],
@@ -936,11 +939,11 @@
       "id": 71,
       "text": "control box",
       "label": "COMPONENT",
-      "occurrences": 6,
+      "occurrences": 7,
       "aliases": [
         "control box",
-        "Control Box",
-        "control box."
+        "control box.",
+        "Control Box"
       ],
       "source_texts": [
         "sent_0026",
@@ -1102,7 +1105,7 @@
       "id": 84,
       "text": "main power cable",
       "label": "COMPONENT",
-      "occurrences": 3,
+      "occurrences": 4,
       "aliases": [
         "main power cable"
       ],
@@ -1116,7 +1119,7 @@
       "id": 85,
       "text": "power source",
       "label": "COMPONENT",
-      "occurrences": 3,
+      "occurrences": 4,
       "aliases": [
         "power source",
         "power source and"
@@ -1774,10 +1777,10 @@
       "id": 139,
       "text": "Ground (red)",
       "label": "COMPONENT",
-      "occurrences": 2,
+      "occurrences": 3,
       "aliases": [
-        "Ground (red",
-        "Ground (red)"
+        "Ground (red)",
+        "Ground (red"
       ],
       "source_texts": [
         "sent_0058",
@@ -1884,7 +1887,7 @@
       "id": 148,
       "text": "wires Power (",
       "label": "COMPONENT",
-      "occurrences": 1,
+      "occurrences": 2,
       "aliases": [
         "wires Power ("
       ],
@@ -1896,7 +1899,7 @@
       "id": 149,
       "text": "Idle.",
       "label": "COMPONENT",
-      "occurrences": 1,
+      "occurrences": 2,
       "aliases": [
         "Idle."
       ],
@@ -1908,26 +1911,62 @@
       "id": 150,
       "text": "power on",
       "label": "COMPONENT",
-      "occurrences": 1,
+      "occurrences": 2,
       "aliases": [
         "power on"
       ],
       "source_texts": [
         11
       ]
+    },
+    {
+      "id": 151,
+      "text": "ON button and",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "ON button and"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 152,
+      "text": "robot state to",
+      "label": "COMPONENT",
+      "occurrences": 1,
+      "aliases": [
+        "robot state to"
+      ],
+      "source_texts": [
+        30
+      ]
+    },
+    {
+      "id": 153,
+      "text": "change",
+      "label": "ACTION",
+      "occurrences": 1,
+      "aliases": [
+        "change"
+      ],
+      "source_texts": [
+        30
+      ]
     }
   ],
   "statistics": {
-    "total_entities": 150,
+    "total_entities": 153,
     "processed_texts": 4,
     "entities_by_label": {
       "ACTION": {
-        "count": 40,
-        "total_occurrences": 89
+        "count": 41,
+        "total_occurrences": 95
       },
       "COMPONENT": {
-        "count": 81,
-        "total_occurrences": 127
+        "count": 83,
+        "total_occurrences": 139
       },
       "LOCATION": {
         "count": 17,
@@ -1944,6 +1983,11 @@
     },
     "top_10_entities": [
       {
+        "text": "connect",
+        "label": "ACTION",
+        "count": 11
+      },
+      {
         "text": "cable",
         "label": "COMPONENT",
         "count": 10
@@ -1954,9 +1998,9 @@
         "count": 8
       },
       {
-        "text": "connect",
-        "label": "ACTION",
-        "count": 8
+        "text": "control box",
+        "label": "COMPONENT",
+        "count": 7
       },
       {
         "text": "Pull",
@@ -1974,7 +2018,7 @@
         "count": 6
       },
       {
-        "text": "control box",
+        "text": "Teach Pendant plug",
         "label": "COMPONENT",
         "count": 6
       },
@@ -1986,11 +2030,6 @@
       {
         "text": "Disconnect",
         "label": "ACTION",
-        "count": 5
-      },
-      {
-        "text": "Teach Pendant plug",
-        "label": "COMPONENT",
         "count": 5
       }
     ]

@@ -220,47 +220,47 @@ Return ONLY the JSON array:"""
 
         return results
 
-    def extract_with_context_management(self, texts: List[str],
-                                        max_context_entities: int = 50) -> List[List[Dict[str, str]]]:
-        """
-        Extract entities with growing context management.
-        Maintains a global entity list that grows with each text.
-
-        Args:
-            texts: List of input texts
-            max_context_entities: Maximum number of entities to include in context
-
-        Returns:
-            List of entity lists for each text
-        """
-        all_entities = set()  # Global entity list
-        results = []
-
-        for i, text in enumerate(texts, 1):
-            print(f"Processing [{i}/{len(texts)}]: {text[:60]}...")
-
-            # Use limited context to avoid token limits
-            context_entities = list(all_entities)[-max_context_entities:]
-            context_set = set(context_entities) if context_entities else None
-
-            # Extract entities
-            entities = self.extract_entities(text, context_set)
-            results.append(entities)
-
-            # Update global entity list
-            for ent in entities:
-                all_entities.add(ent["text"])
-
-            if entities:
-                print(f"  Found {len(entities)} entities | Total unique: {len(all_entities)}")
-            else:
-                print(f"   No entities found | Total unique: {len(all_entities)}")
-
-            # Delay between requests
-            if i < len(texts):
-                time.sleep(self.delay)
-
-        return results
+    # def extract_with_context_management(self, texts: List[str],
+    #                                     max_context_entities: int = 50) -> List[List[Dict[str, str]]]:
+    #     """
+    #     Extract entities with growing context management.
+    #     Maintains a global entity list that grows with each text.
+    #
+    #     Args:
+    #         texts: List of input texts
+    #         max_context_entities: Maximum number of entities to include in context
+    #
+    #     Returns:
+    #         List of entity lists for each text
+    #     """
+    #     all_entities = set()  # Global entity list
+    #     results = []
+    #
+    #     for i, text in enumerate(texts, 1):
+    #         print(f"Processing [{i}/{len(texts)}]: {text[:60]}...")
+    #
+    #         # Use limited context to avoid token limits
+    #         context_entities = list(all_entities)[-max_context_entities:]
+    #         context_set = set(context_entities) if context_entities else None
+    #
+    #         # Extract entities
+    #         entities = self.extract_entities(text, context_set)
+    #         results.append(entities)
+    #
+    #         # Update global entity list
+    #         for ent in entities:
+    #             all_entities.add(ent["text"])
+    #
+    #         if entities:
+    #             print(f"  Found {len(entities)} entities | Total unique: {len(all_entities)}")
+    #         else:
+    #             print(f"   No entities found | Total unique: {len(all_entities)}")
+    #
+    #         # Delay between requests
+    #         if i < len(texts):
+    #             time.sleep(self.delay)
+    #
+    #     return results
 
     def save_results(self, results: List[Dict], output_file: str):
         """
@@ -297,7 +297,7 @@ Return ONLY the JSON array:"""
         texts = [item["text"] for item in data]
 
         # Process with context management
-        entity_results = self.extract_with_context_management(texts)
+        entity_results = self.extract_batch(texts)
 
         # Format results
         results = []
@@ -377,6 +377,18 @@ Return ONLY the JSON array:"""
         precision = precision_score(y_true, y_pred, average='micro')
         recall = recall_score(y_true, y_pred, average='micro')
         f1 = f1_score(y_true, y_pred, average='micro')
+
+        summary = {
+            "precision": precision,
+            "recall": recall,
+            "f1": f1,
+        }
+        results_to_save = {
+            "summary": summary
+        }
+        result_path = Path("results") / "llm_eval_results.json"
+        with open(result_path, "w", encoding="utf-8") as f:
+            json.dump(results_to_save, f, ensure_ascii=False, indent=4)
 
         print(f"Precision (micro): {precision:.4f}")
         print(f"Recall (micro): {recall:.4f}")

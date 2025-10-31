@@ -40,7 +40,9 @@ NER/
 │   ├── test_file_classical_entities.json   # new classical entities file 
 │   ├── test_file_classical_results.json    # test classical results file 
 │   ├── test_file_llm_entities.json         # new LLM entities file 
-│   └── test_file_llm_results.json          # test LLM results file 
+│   ├── test_file_llm_results.json          # test LLM results file 
+│   ├── classical_eval_results.json         # results classical models 
+│   └── llm_eval_results.json               # results llm models
 │
 ├── data/   
 │   ├── data_train.json                 # Training data (entity annotations)
@@ -126,6 +128,6 @@ and corrected for quality assurance.
 ============================================== 
 | Model Type       | Precision | Recall | F1-score |
 | ---------------- | --------- | ------ | -------- | 
-| Classical NER    | 0.3043    | 0.2059 | 0.2456   | 
-| LLM NER (Gemini) | 0.5652    | 0.5652 | 0.5652   | 
+| Classical NER    | 0.2903    | 0.2647 | 0.2769   | 
+| LLM NER (Gemini) | 0.5778    | 0.5778 | 0.5778   | 
 
